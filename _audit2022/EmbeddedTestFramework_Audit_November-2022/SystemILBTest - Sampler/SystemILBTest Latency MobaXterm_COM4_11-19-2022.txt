@@ -1,0 +1,335 @@
+
+ Platform initialized...
+ Starting test now...
+ Setting up Timer
+ Timer Setup Completed.Successfully ran XDMaPs_Example_W_Intr
+
+ resetting both sampler and sampler.
+ sampler SCREGISTER value is currently at 0x7AA00004 is 0
+ Enabling sampler.
+ sampler SCREGISTER value is currently at 0x7AA00004 is 10
+ ********************* Latency Measurements *********************
+ PS_Clock is 50MHz, Clock speed of Private Timer is CLK_3x_2x or 250MHz with  Zynq set to 6:2:1
+ *************** Test of DMA burst length: 1    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1923
+                         1439
+                         1405
+                         1370
+                         1387
+ average values is: 1504
+ ---DMA burst size: 8
+                         1393
+                         1385
+                         1397
+                         1381
+                         1393
+ average values is: 1389
+ ---DMA burst size: 16
+                         1373
+                         1398
+                         1411
+                         1377
+                         1400
+ average values is: 1391
+ *************** Test of DMA burst length: 2    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1514
+                         1463
+                         1435
+                         1446
+                         1449
+ average values is: 1461
+ ---DMA burst size: 8
+                         1449
+                         1451
+                         1429
+                         1455
+                         1494
+ average values is: 1455
+ ---DMA burst size: 16
+                         1452
+                         1441
+                         1445
+                         1455
+                         1470
+ average values is: 1452
+ *************** Test of DMA burst length: 4    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1392
+                         1362
+                         1357
+                         1369
+                         1353
+ average values is: 1366
+ ---DMA burst size: 8
+                         1461
+                         1460
+                         1464
+                         1486
+                         1470
+ average values is: 1468
+ ---DMA burst size: 16
+                         1452
+                         1474
+                         1463
+                         1490
+                         1464
+ average values is: 1468
+ *************** Test of DMA burst length: 8    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1419
+                         1405
+                         1385
+                         1370
+                         1363
+ average values is: 1388
+ ---DMA burst size: 8
+                         1378
+                         1361
+                         1375
+                         1364
+                         1367
+ average values is: 1369
+ ---DMA burst size: 16
+                         1515
+                         1514
+                         1513
+                         1505
+                         1513
+ average values is: 1512
+ *************** Test of DMA burst length: 16    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1455
+                         1410
+                         1425
+                         1396
+                         1401
+ average values is: 1417
+ ---DMA burst size: 8
+                         1374
+                         1377
+                         1392
+                         1388
+                         1379
+ average values is: 1382
+ ---DMA burst size: 16
+                         1395
+                         1389
+                         1435
+                         1375
+                         1389
+ average values is: 1396
+ *************** Test of DMA burst length: 32    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1508
+                         1487
+                         1485
+                         1457
+                         1460
+ average values is: 1479
+ ---DMA burst size: 8
+                         1418
+                         1429
+                         1417
+                         1413
+                         1412
+ average values is: 1417
+ ---DMA burst size: 16
+                         1393
+                         1402
+                         1400
+                         1394
+                         1403
+ average values is: 1398
+ *************** Test of DMA burst length: 64    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1696
+                         1590
+                         1601
+                         1591
+                         1603
+ average values is: 1616
+ ---DMA burst size: 8
+                         1546
+                         1504
+                         1508
+                         1555
+                         1510
+ average values is: 1524
+ ---DMA burst size: 16
+                         1499
+                         1455
+                         1489
+                         1515
+                         1441
+ average values is: 1479
+ *************** Test of DMA burst length: 128    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         1880
+                         1849
+                         1838
+                         1824
+                         1843
+ average values is: 1846
+ ---DMA burst size: 8
+                         1679
+                         1651
+                         1669
+                         1666
+                         1671
+ average values is: 1667
+ ---DMA burst size: 16
+                         1569
+                         1575
+                         1574
+                         1569
+                         1586
+ average values is: 1574
+ *************** Test of DMA burst length: 256    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         2468
+                         2439
+                         2435
+                         2431
+                         2428
+ average values is: 2440
+ ---DMA burst size: 8
+                         2229
+                         2189
+                         2191
+                         2180
+                         2194
+ average values is: 2196
+ ---DMA burst size: 16
+                         1828
+                         1878
+                         1831
+                         1832
+                         1838
+ average values is: 1841
+ *************** Test of DMA burst length: 512    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         3720
+                         3672
+                         3667
+                         3685
+                         3667
+ average values is: 3682
+ ---DMA burst size: 8
+                         3371
+                         3375
+                         3384
+                         3370
+                         3348
+ average values is: 3369
+ ---DMA burst size: 16
+                         2907
+                         2907
+                         2935
+                         2905
+                         2894
+ average values is: 2909
+ *************** Test of DMA burst length: 1024    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         6191
+                         6155
+                         6209
+                         6151
+                         6143
+ average values is: 6169
+ ---DMA burst size: 8
+                         5755
+                         5742
+                         5760
+                         5745
+                         5743
+ average values is: 5749
+ ---DMA burst size: 16
+                         5237
+                         5267
+                         5257
+                         5268
+                         5239
+ average values is: 5253
+ *************** Test of DMA burst length: 2048    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         11258
+                         11124
+                         11106
+                         11188
+                         11120
+ average values is: 11159
+ ---DMA burst size: 8
+                         10509
+                         10512
+                         10506
+                         10542
+                         10495
+ average values is: 10512
+ ---DMA burst size: 16
+                         9907
+                         9919
+                         9914
+                         9881
+                         9944
+ average values is: 9913
+ *************** Test of DMA burst length: 4096    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         21210
+                         21043
+                         21035
+                         21087
+                         21035
+ average values is: 21082
+ ---DMA burst size: 8
+                         20008
+                         20005
+                         19999
+                         20001
+                         20009
+ average values is: 20004
+ ---DMA burst size: 16
+                         19178
+                         19179
+                         19200
+                         19168
+                         19206
+ average values is: 19186
+ *************** Test of DMA burst length: 8192    ******************
+                         Clock Cycles
+ ---DMA burst size: 4
+                         41195
+                         40902
+                         40876
+                         40870
+                         40886
+ average values is: 40945
+ ---DMA burst size: 8
+                         39023
+                         39068
+                         39024
+                         39028
+                         39027
+ average values is: 39034
+ ---DMA burst size: 16
+                         37805
+                         37804
+                         37852
+                         37799
+                         37809
+ average values is: 37813
+ END OF TESTS

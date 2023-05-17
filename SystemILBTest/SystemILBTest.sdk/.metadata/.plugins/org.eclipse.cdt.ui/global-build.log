@@ -1,0 +1,1128 @@
+20:16:33 **** Clean-only build of configuration Debug for project SystemILBTest ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  SystemILBTest.elf.size  SystemILBTest.elf
+' '
+20:16:33 **** Clean-only build of project SystemILBTest_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+20:16:35 **** Build of project SystemILBTest_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+20:16:51 **** Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:250:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:223:6: warning: unused variable 'accumulateTimes' [-Wunused-variable]
+  int accumulateTimes = 5;
+      ^~~~~~~~~~~~~~~
+../src/main.c:222:6: warning: unused variable 'accumulate' [-Wunused-variable]
+  int accumulate = 0;
+      ^~~~~~~~~~
+../src/main.c:221:6: warning: unused variable 'repeat' [-Wunused-variable]
+  int repeat = 0;
+      ^~~~~~
+../src/main.c:220:6: warning: unused variable 'prescalerValue' [-Wunused-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:219:6: warning: unused variable 'trials' [-Wunused-variable]
+  int trials = 3;
+      ^~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  58736	 152884	  25534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+20:16:59 **** Auto Build of project SystemILBTest_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+20:17:15 **** Auto Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:250:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:223:6: warning: unused variable 'accumulateTimes' [-Wunused-variable]
+  int accumulateTimes = 5;
+      ^~~~~~~~~~~~~~~
+../src/main.c:222:6: warning: unused variable 'accumulate' [-Wunused-variable]
+  int accumulate = 0;
+      ^~~~~~~~~~
+../src/main.c:221:6: warning: unused variable 'repeat' [-Wunused-variable]
+  int repeat = 0;
+      ^~~~~~
+../src/main.c:220:6: warning: unused variable 'prescalerValue' [-Wunused-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:219:6: warning: unused variable 'trials' [-Wunused-variable]
+  int trials = 3;
+      ^~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  58736	 152884	  25534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+20:17:41 **** Incremental Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:19:07 **** Auto Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:250:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:223:6: warning: unused variable 'accumulateTimes' [-Wunused-variable]
+  int accumulateTimes = 5;
+      ^~~~~~~~~~~~~~~
+../src/main.c:222:6: warning: unused variable 'accumulate' [-Wunused-variable]
+  int accumulate = 0;
+      ^~~~~~~~~~
+../src/main.c:221:6: warning: unused variable 'repeat' [-Wunused-variable]
+  int repeat = 0;
+      ^~~~~~
+../src/main.c:220:6: warning: unused variable 'prescalerValue' [-Wunused-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:219:6: warning: unused variable 'trials' [-Wunused-variable]
+  int trials = 3;
+      ^~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  91504	 185652	  2d534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+20:19:21 **** Incremental Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:32:01 **** Clean-only build of project SystemILBTest_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+rm -f ps7_cortexa9_0/lib/libxil.a
+20:32:03 **** Clean-only build of configuration Debug for project SystemILBTest ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  SystemILBTest.elf.size  SystemILBTest.elf
+rm: cannot remove `SystemILBTest.elf': Permission denied
+make: [clean] Error 1 (ignored)
+' '
+20:32:03 **** Build of project SystemILBTest_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+20:32:20 **** Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:250:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:223:6: warning: unused variable 'accumulateTimes' [-Wunused-variable]
+  int accumulateTimes = 5;
+      ^~~~~~~~~~~~~~~
+../src/main.c:222:6: warning: unused variable 'accumulate' [-Wunused-variable]
+  int accumulate = 0;
+      ^~~~~~~~~~
+../src/main.c:221:6: warning: unused variable 'repeat' [-Wunused-variable]
+  int repeat = 0;
+      ^~~~~~
+../src/main.c:220:6: warning: unused variable 'prescalerValue' [-Wunused-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:219:6: warning: unused variable 'trials' [-Wunused-variable]
+  int trials = 3;
+      ^~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  91504	 185652	  2d534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+20:33:03 **** Auto Build of project SystemILBTest_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+20:33:19 **** Auto Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:250:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:223:6: warning: unused variable 'accumulateTimes' [-Wunused-variable]
+  int accumulateTimes = 5;
+      ^~~~~~~~~~~~~~~
+../src/main.c:222:6: warning: unused variable 'accumulate' [-Wunused-variable]
+  int accumulate = 0;
+      ^~~~~~~~~~
+../src/main.c:221:6: warning: unused variable 'repeat' [-Wunused-variable]
+  int repeat = 0;
+      ^~~~~~
+../src/main.c:220:6: warning: unused variable 'prescalerValue' [-Wunused-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:219:6: warning: unused variable 'trials' [-Wunused-variable]
+  int trials = 3;
+      ^~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: unused variable 'counter' [-Wunused-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  91504	 185652	  2d534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+20:34:18 **** Incremental Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:36:20 **** Auto Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:313:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0],size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:220:6: warning: variable 'prescalerValue' set but not used [-Wunused-but-set-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: variable 'counter' set but not used [-Wunused-but-set-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  91504	 185652	  2d534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+20:36:47 **** Incremental Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:16:45 **** Build of project SystemILBTest_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+13:16:56 **** Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:27: warning: passing argument 4 of 'XDmaPs_Example_W_Intr' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:140:81: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+  status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &samplerBuffer[0], SAMPLER_BASE_ADDR);
+                                                                                 ^~~~~~~~~~~~~~~~~
+../src/main.c:66:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+     ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:313:74: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+       status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0],size, h);
+                                                                          ^~~~~~~~~~~~~~~~~
+../src/main.c:65:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:224:8: warning: unused variable 'latency' [-Wunused-variable]
+  float latency = 0.0;
+        ^~~~~~~
+../src/main.c:220:6: warning: variable 'prescalerValue' set but not used [-Wunused-but-set-variable]
+  int prescalerValue = 0;
+      ^~~~~~~~~~~~~~
+../src/main.c:218:6: warning: unused variable 'size_dma' [-Wunused-variable]
+  int size_dma = 32;
+      ^~~~~~~~
+../src/main.c:214:6: warning: variable 'counter' set but not used [-Wunused-but-set-variable]
+  int counter = 0;
+      ^~~~~~~
+../src/main.c:113:18: warning: unused variable 'g' [-Wunused-variable]
+     volatile int g = 0;
+                  ^
+../src/main.c: In function 'XDmaPs_Example_W_Intr':
+../src/main.c:489:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+                    ^
+../src/main.c:490:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrAlt':
+../src/main.c:548:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:549:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'XDmaPs_Example_W_IntrSampler':
+../src/main.c:659:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.SrcAddr = (u32 *) newSource;
+                    ^
+../src/main.c:660:20: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+                    ^
+../src/main.c: In function 'captureILA':
+../src/main.c:57:27: warning: passing argument 3 of 'XDmaPs_Example_W_IntrSampler' makes pointer from integer without a cast [-Wint-conversion]
+ #define SAMPLER_BASE_ADDR 0x7AA00000
+                           ^
+../src/main.c:788:70: note: in expansion of macro 'SAMPLER_BASE_ADDR'
+   status = XDmaPs_Example_W_IntrSampler(&GicInstance, DMA_DEVICE_ID, SAMPLER_BASE_ADDR , 0,  &samplerBuffer[0], 16, 4);
+                                                                      ^~~~~~~~~~~~~~~~~
+../src/main.c:638:5: note: expected 'int *' but argument is of type 'int'
+ int XDmaPs_Example_W_IntrSampler(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress, int size, int burstlength)
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:17:0:
+../../SystemILBTest_bsp/ps7_cortexa9_0/include/xstatus.h:65:41: warning: 'return' with a value, in function returning void
+ #define XST_FAILURE                     1L
+                                         ^
+../src/main.c:791:11: note: in expansion of macro 'XST_FAILURE'
+    return XST_FAILURE;
+           ^~~~~~~~~~~
+../src/main.c:763:6: note: declared here
+ void captureILA(void){
+      ^~~~~~~~~~
+../src/main.c:769:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../SystemILBTest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: SystemILBTest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../SystemILBTest_bsp/ps7_cortexa9_0/lib -o "SystemILBTest.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: SystemILBTest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size SystemILBTest.elf  |tee "SystemILBTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89964	   4184	  91504	 185652	  2d534	SystemILBTest.elf
+'Finished building: SystemILBTest.elf.size'
+' '
+13:19:29 **** Incremental Build of configuration Debug for project SystemILBTest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

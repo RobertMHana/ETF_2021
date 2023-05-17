@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Sampler_Characterization_AXI_Sampler_0_0_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_AXI_Sampler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="Sampler_Characterization_AXI_Sampler_0_0_synth_1"/>
+	</Run>
+</Runs>
+

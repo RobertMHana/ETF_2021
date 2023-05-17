@@ -1,0 +1,30 @@
+// BMM LOC annotation file.
+//
+// SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+// Vivado v2018.2 (64-bit)
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'EmbeddedTestFramework_i_processing_system7_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP EmbeddedTestFramework_i_processing_system7_0 ARM 100 EmbeddedTestFramework_i/processing_system7_0
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'EmbeddedTestFramework_i_processing_system7_0' address space 'EmbeddedTestFramework_i_VGASubsection_BRAMController' 0x40000000:0x40001FFF (8 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE EmbeddedTestFramework_i_VGASubsection_BRAMController RAMB32 [0x40000000:0x40001FFF] EmbeddedTestFramework_i/VGASubsection/BRAMController
+        BUS_BLOCK
+            EmbeddedTestFramework_i/VGASubsection/LineBuffer/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [31:16] [0:2047] PLACED = X2Y2;
+            EmbeddedTestFramework_i/VGASubsection/LineBuffer/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram RAMB32 [15:0] [0:2047] PLACED = X2Y1;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

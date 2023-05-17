@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Wed Dec 26 01:21:10 UTC 2018
+VLNV: xilinx.com:user:TestMultiReg:1.0
+SynthRuntime: 40

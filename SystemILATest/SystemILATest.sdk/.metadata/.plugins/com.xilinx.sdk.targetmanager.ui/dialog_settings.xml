@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="SystemILATest_wrapper_hw_platform_0-device"/>
+	<item value="SystemILATest_wrapper.bit" key="SystemILATest_wrapper_hw_platform_0-bitFile"/>
+	<item value="false" key="SystemILATest_wrapper_hw_platform_0-partial_bit"/>
+	<item value="SystemILATest_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="" key="SystemILATest_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="SystemILATest_wrapper_hw_platform_0-target"/>
+</section>

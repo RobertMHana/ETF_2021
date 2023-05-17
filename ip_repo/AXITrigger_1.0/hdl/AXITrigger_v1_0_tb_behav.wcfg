@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="AXITrigger_v1_0_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="AXITrigger_v1_0_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="30000000000fs"></ZoomStartTime>
+      <ZoomEndTime time="216000000001fs"></ZoomEndTime>
+      <Cursor1Time time="150400000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="288"></NameColumnWidth>
+      <ValueColumnWidth column_width="175"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_aclk" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_aresetn" type="logic">
+      <obj_property name="ElementShortName">s00_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s00_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider257">
+      <obj_property name="label">AXI Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group253" type="group">
+      <obj_property name="label">Write - Address</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awid" type="array">
+         <obj_property name="ElementShortName">s00_axi_awid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awaddr" type="array">
+         <obj_property name="ElementShortName">s00_axi_awaddr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awaddr[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awlen" type="array">
+         <obj_property name="ElementShortName">s00_axi_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awsize" type="array">
+         <obj_property name="ElementShortName">s00_axi_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awburst" type="array">
+         <obj_property name="ElementShortName">s00_axi_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awlock" type="logic">
+         <obj_property name="ElementShortName">s00_axi_awlock</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awlock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awcache" type="array">
+         <obj_property name="ElementShortName">s00_axi_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awprot" type="array">
+         <obj_property name="ElementShortName">s00_axi_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awqos" type="array">
+         <obj_property name="ElementShortName">s00_axi_awqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awregion" type="array">
+         <obj_property name="ElementShortName">s00_axi_awregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awuser" type="array">
+         <obj_property name="ElementShortName">s00_axi_awuser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awuser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_awready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_awready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_awready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group255" type="group">
+      <obj_property name="label">Write - Data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_wdata" type="array">
+         <obj_property name="ElementShortName">s00_axi_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_wstrb" type="array">
+         <obj_property name="ElementShortName">s00_axi_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_wlast" type="logic">
+         <obj_property name="ElementShortName">s00_axi_wlast</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_wuser" type="array">
+         <obj_property name="ElementShortName">s00_axi_wuser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wuser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_wvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_wready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_wready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_bid" type="array">
+         <obj_property name="ElementShortName">s00_axi_bid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_bid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_bresp" type="array">
+         <obj_property name="ElementShortName">s00_axi_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_buser" type="array">
+         <obj_property name="ElementShortName">s00_axi_buser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_buser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_bvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_bready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_bready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_bready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group256" type="group">
+      <obj_property name="label">Read - Address</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arid" type="array">
+         <obj_property name="ElementShortName">s00_axi_arid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_araddr" type="array">
+         <obj_property name="ElementShortName">s00_axi_araddr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_araddr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arlen" type="array">
+         <obj_property name="ElementShortName">s00_axi_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arsize" type="array">
+         <obj_property name="ElementShortName">s00_axi_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arburst" type="array">
+         <obj_property name="ElementShortName">s00_axi_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arlock" type="logic">
+         <obj_property name="ElementShortName">s00_axi_arlock</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arlock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arcache" type="array">
+         <obj_property name="ElementShortName">s00_axi_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arprot" type="array">
+         <obj_property name="ElementShortName">s00_axi_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arqos" type="array">
+         <obj_property name="ElementShortName">s00_axi_arqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arregion" type="array">
+         <obj_property name="ElementShortName">s00_axi_arregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_aruser" type="array">
+         <obj_property name="ElementShortName">s00_axi_aruser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_aruser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_arready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_arready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_arready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_rid" type="array">
+         <obj_property name="ElementShortName">s00_axi_rid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_rid[0:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group258" type="group">
+      <obj_property name="label">Read - Data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_rdata" type="array">
+         <obj_property name="ElementShortName">s00_axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_rdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_rresp" type="array">
+         <obj_property name="ElementShortName">s00_axi_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_rlast" type="logic">
+         <obj_property name="ElementShortName">s00_axi_rlast</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_rlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_ruser" type="array">
+         <obj_property name="ElementShortName">s00_axi_ruser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_ruser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_rvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/s00_axi_rready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_rready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_rready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group273" type="group">
+      <obj_property name="label">Register Values</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider275">
+      <obj_property name="label">Internals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#FFFF00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/test" type="other">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/subTest" type="other">
+      <obj_property name="ElementShortName">subTest</obj_property>
+      <obj_property name="ObjectShortName">subTest</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/EndOfTests" type="logic">
+      <obj_property name="ElementShortName">EndOfTests</obj_property>
+      <obj_property name="ObjectShortName">EndOfTests</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/test" type="other">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/subTest" type="other">
+      <obj_property name="ElementShortName">subTest</obj_property>
+      <obj_property name="ObjectShortName">subTest</obj_property>
+   </wvobject>
+   <wvobject fp_name="group274" type="group">
+      <obj_property name="label">Trigger logic and regs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/mem_address" type="array">
+         <obj_property name="ElementShortName">mem_address[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_address[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/mem_data_out" type="array">
+         <obj_property name="ElementShortName">mem_data_out[0:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_data_out[0:0][31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/mem_select" type="array">
+         <obj_property name="ElementShortName">mem_select[0:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_select[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/axi_rdata" type="array">
+         <obj_property name="ElementShortName">axi_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_rdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/axi_araddr" type="array">
+         <obj_property name="ElementShortName">axi_araddr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_araddr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/axi_awaddr" type="array">
+         <obj_property name="ElementShortName">axi_awaddr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">axi_awaddr[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/axi_arv_arr_flag" type="logic">
+         <obj_property name="ElementShortName">axi_arv_arr_flag</obj_property>
+         <obj_property name="ObjectShortName">axi_arv_arr_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/axi_awv_awr_flag" type="logic">
+         <obj_property name="ElementShortName">axi_awv_awr_flag</obj_property>
+         <obj_property name="ObjectShortName">axi_awv_awr_flag</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/t_trigger_input" type="logic">
+      <obj_property name="ElementShortName">t_trigger_input</obj_property>
+      <obj_property name="ObjectShortName">t_trigger_input</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/q_trigger_output" type="logic">
+      <obj_property name="ElementShortName">q_trigger_output</obj_property>
+      <obj_property name="ObjectShortName">q_trigger_output</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/t_periodic" type="logic">
+      <obj_property name="ElementShortName">t_periodic</obj_property>
+      <obj_property name="ObjectShortName">t_periodic</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/trigger_input" type="logic">
+      <obj_property name="ElementShortName">trigger_input</obj_property>
+      <obj_property name="ObjectShortName">trigger_input</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/clock_en" type="logic">
+      <obj_property name="ElementShortName">clock_en</obj_property>
+      <obj_property name="ObjectShortName">clock_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/trigger_in" type="logic">
+      <obj_property name="ElementShortName">trigger_in</obj_property>
+      <obj_property name="ObjectShortName">trigger_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/trigger_in_regA" type="logic">
+      <obj_property name="ElementShortName">trigger_in_regA</obj_property>
+      <obj_property name="ObjectShortName">trigger_in_regA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/trigger_in_regB" type="logic">
+      <obj_property name="ElementShortName">trigger_in_regB</obj_property>
+      <obj_property name="ObjectShortName">trigger_in_regB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/edge_rising" type="logic">
+      <obj_property name="ElementShortName">edge_rising</obj_property>
+      <obj_property name="ObjectShortName">edge_rising</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/edge_falling" type="logic">
+      <obj_property name="ElementShortName">edge_falling</obj_property>
+      <obj_property name="ObjectShortName">edge_falling</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/edge_select" type="logic">
+      <obj_property name="ElementShortName">edge_select</obj_property>
+      <obj_property name="ObjectShortName">edge_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/pattern_select" type="logic">
+      <obj_property name="ElementShortName">pattern_select</obj_property>
+      <obj_property name="ObjectShortName">pattern_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/pattern_register" type="array">
+      <obj_property name="ElementShortName">pattern_register[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pattern_register[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/input_pattern" type="array">
+      <obj_property name="ElementShortName">input_pattern[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_pattern[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/precount_reg" type="array">
+      <obj_property name="ElementShortName">precount_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">precount_reg[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/postcount_reg" type="array">
+      <obj_property name="ElementShortName">postcount_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">postcount_reg[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/counter_trigger" type="logic">
+      <obj_property name="ElementShortName">counter_trigger</obj_property>
+      <obj_property name="ObjectShortName">counter_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/countedTrigger" type="logic">
+      <obj_property name="ElementShortName">countedTrigger</obj_property>
+      <obj_property name="ObjectShortName">countedTrigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/SC_register" type="array">
+      <obj_property name="ElementShortName">SC_register[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SC_register[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/pretriggercount_register" type="array">
+      <obj_property name="ElementShortName">pretriggercount_register[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pretriggercount_register[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AXITrigger_v1_0_tb/UUT/AXITrigger_v1_0_S00_AXI_inst/posttriggercount_register" type="array">
+      <obj_property name="ElementShortName">posttriggercount_register[31:0]</obj_property>
+      <obj_property name="ObjectShortName">posttriggercount_register[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

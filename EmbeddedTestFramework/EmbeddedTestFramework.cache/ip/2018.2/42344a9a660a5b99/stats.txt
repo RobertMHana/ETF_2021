@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Jan 31 04:32:52 UTC 2019
+VLNV: xilinx.com:user:AXITrigger:1.0
+SynthRuntime: 47

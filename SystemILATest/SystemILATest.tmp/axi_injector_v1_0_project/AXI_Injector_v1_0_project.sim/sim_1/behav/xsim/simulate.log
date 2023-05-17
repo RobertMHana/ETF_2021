@@ -1,0 +1,14 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. tb_AXIInjector.uut.TestMultiReg_v1_0_S00_AXI_inst.fifo_inst.xpm_fifo_async_inst.gnuram_async_fifo.xpm_fifo_base_inst.gen_sdpram.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial270_36  File: /wrk/2018.2/continuous/2018_06_14_2258646/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Note: Reset is asserted for 17 clock cycles.
+Time: 845 ns  Iteration: 1  Process: /tb_AXIInjector/test_this  File: c:/users/robert/xilinx_projects/ip_repo/TestMultiReg_1.0/src/tb_AXIInjector.vhd
+Note: writes value on burst length are always (writes + 1.) so if length is 0, then 1 read is implied.
+Time: 162135 ns  Iteration: 1  Process: /tb_AXIInjector/test_this  File: c:/users/robert/xilinx_projects/ip_repo/TestMultiReg_1.0/src/tb_AXIInjector.vhd
+Note: Reset must be asserted for an N = 16 number of write clock cycles or read clocks, here its done with a counter internally for the register reset.
+Time: 162135 ns  Iteration: 1  Process: /tb_AXIInjector/test_this  File: c:/users/robert/xilinx_projects/ip_repo/TestMultiReg_1.0/src/tb_AXIInjector.vhd
+Note: writes value on burst length are always (writes + 1.) so if length is 0, then 1 read is implied.
+Time: 162135 ns  Iteration: 1  Process: /tb_AXIInjector/test_this  File: c:/users/robert/xilinx_projects/ip_repo/TestMultiReg_1.0/src/tb_AXIInjector.vhd
+Note: Reset must be asserted for an N = 16 number of write clock cycles or read clocks, here its done with a counter internally for the register reset.
+Time: 162135 ns  Iteration: 1  Process: /tb_AXIInjector/test_this  File: c:/users/robert/xilinx_projects/ip_repo/TestMultiReg_1.0/src/tb_AXIInjector.vhd

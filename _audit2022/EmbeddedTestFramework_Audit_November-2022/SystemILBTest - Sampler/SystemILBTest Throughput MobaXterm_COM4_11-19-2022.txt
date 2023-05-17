@@ -1,0 +1,434 @@
+
+ Platform initialized...
+ Starting test now...
+ Setting up Timer
+ Timer Setup Completed.Successfully ran XDMaPs_Example_W_Intr
+
+ resetting both sampler and sampler.
+ sampler SCREGISTER value is currently at 0x7AA00004 is 0
+ Enabling sampler.
+ sampler SCREGISTER value is currently at 0x7AA00004 is 10
+ ********************* Throughput Measurements *********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 214207
+ Size of each burst: 4
+ Total AXI data transaction length: 1 32 bit words
+ Time: 1 second
+ Bytes Transferred: 856828
+ Throughput: 0.856828 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 214212
+ Size of each burst: 8
+ Total AXI data transaction length: 1 32 bit words
+ Time: 1 second
+ Bytes Transferred: 856848
+ Throughput: 0.856848 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 214207
+ Size of each burst: 16
+ Total AXI data transaction length: 1 32 bit words
+ Time: 1 second
+ Bytes Transferred: 856828
+ Throughput: 0.856828 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 206686
+ Size of each burst: 4
+ Total AXI data transaction length: 2 32 bit words
+ Time: 1 second
+ Bytes Transferred: 1653488
+ Throughput: 1.653488 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 206687
+ Size of each burst: 8
+ Total AXI data transaction length: 2 32 bit words
+ Time: 1 second
+ Bytes Transferred: 1653496
+ Throughput: 1.653496 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 206682
+ Size of each burst: 16
+ Total AXI data transaction length: 2 32 bit words
+ Time: 1 second
+ Bytes Transferred: 1653456
+ Throughput: 1.653456 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 214227
+ Size of each burst: 4
+ Total AXI data transaction length: 4 32 bit words
+ Time: 1 second
+ Bytes Transferred: 3427632
+ Throughput: 3.427632 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 206368
+ Size of each burst: 8
+ Total AXI data transaction length: 4 32 bit words
+ Time: 1 second
+ Bytes Transferred: 3301888
+ Throughput: 3.301888 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 206370
+ Size of each burst: 16
+ Total AXI data transaction length: 4 32 bit words
+ Time: 1 second
+ Bytes Transferred: 3301920
+ Throughput: 3.301920 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 214578
+ Size of each burst: 4
+ Total AXI data transaction length: 8 32 bit words
+ Time: 1 second
+ Bytes Transferred: 6866496
+ Throughput: 6.866496 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 214229
+ Size of each burst: 8
+ Total AXI data transaction length: 8 32 bit words
+ Time: 1 second
+ Bytes Transferred: 6855328
+ Throughput: 6.855328 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 206332
+ Size of each burst: 16
+ Total AXI data transaction length: 8 32 bit words
+ Time: 1 second
+ Bytes Transferred: 6602624
+ Throughput: 6.602624 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 212744
+ Size of each burst: 4
+ Total AXI data transaction length: 16 32 bit words
+ Time: 1 second
+ Bytes Transferred: 13615616
+ Throughput: 13.615616 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 212869
+ Size of each burst: 8
+ Total AXI data transaction length: 16 32 bit words
+ Time: 1 second
+ Bytes Transferred: 13623616
+ Throughput: 13.623616 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 212552
+ Size of each burst: 16
+ Total AXI data transaction length: 16 32 bit words
+ Time: 1 second
+ Bytes Transferred: 13603328
+ Throughput: 13.603328 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 209829
+ Size of each burst: 4
+ Total AXI data transaction length: 32 32 bit words
+ Time: 1 second
+ Bytes Transferred: 26858112
+ Throughput: 26.858112 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 210029
+ Size of each burst: 8
+ Total AXI data transaction length: 32 32 bit words
+ Time: 1 second
+ Bytes Transferred: 26883712
+ Throughput: 26.883713 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 210171
+ Size of each burst: 16
+ Total AXI data transaction length: 32 32 bit words
+ Time: 1 second
+ Bytes Transferred: 26901888
+ Throughput: 26.901888 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+
+Error: XDMaPs_Example_W_IntrAlt on sampler DMA Fill, failed
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 152549
+ Size of each burst: 4
+ Total AXI data transaction length: 64 32 bit words
+ Time: 1 second
+ start problemrred: 39052544
+ Throughput: 39.052544 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 161181
+ Size of each burst: 8
+ Total AXI data transaction length: 64 32 bit words
+ Time: 1 second
+ Bytes Transferred: 41262336
+ Throughput: 41.262337 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 165642
+ Size of each burst: 16
+ Total AXI data transaction length: 64 32 bit words
+ Time: 1 second
+ Bytes Transferred: 42404352
+ Throughput: 42.404350 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 132496
+ Size of each burst: 4
+ Total AXI data transaction length: 128 32 bit words
+ Time: 1 second
+ Bytes Transferred: 67837952
+ Throughput: 67.837952 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 146236
+ Size of each burst: 8
+ Total AXI data transaction length: 128 32 bit words
+ Time: 1 second
+ Bytes Transferred: 74872832
+ Throughput: 74.872833 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 153053
+ Size of each burst: 16
+ Total AXI data transaction length: 128 32 bit words
+ Time: 1 second
+ Bytes Transferred: 78363136
+ Throughput: 78.363136 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 99914
+ Size of each burst: 4
+ Total AXI data transaction length: 256 32 bit words
+ Time: 1 second
+ Bytes Transferred: 102311936
+ Throughput: 102.311935 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 112313
+ Size of each burst: 8
+ Total AXI data transaction length: 256 32 bit words
+ Time: 1 second
+ Bytes Transferred: 115008512
+ Throughput: 115.008514 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 134768
+ Size of each burst: 16
+ Total AXI data transaction length: 256 32 bit words
+ Time: 1 second
+ Bytes Transferred: 138002432
+ Throughput: 138.002426 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 67278
+ Size of each burst: 4
+ Total AXI data transaction length: 512 32 bit words
+ Time: 1 second
+ Bytes Transferred: 137785344
+ Throughput: 137.785339 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 73243
+ Size of each burst: 8
+ Total AXI data transaction length: 512 32 bit words
+ Time: 1 second
+ Bytes Transferred: 150001664
+ Throughput: 150.001663 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 84103
+ Size of each burst: 16
+ Total AXI data transaction length: 512 32 bit words
+ Time: 1 second
+ Bytes Transferred: 172242944
+ Throughput: 172.242950 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 40370
+ Size of each burst: 4
+ Total AXI data transaction length: 1024 32 bit words
+ Time: 1 second
+ Bytes Transferred: 165355520
+ Throughput: 165.355515 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 43205
+ Size of each burst: 8
+ Total AXI data transaction length: 1024 32 bit words
+ Time: 1 second
+ Bytes Transferred: 176967680
+ Throughput: 176.967682 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 47159
+ Size of each burst: 16
+ Total AXI data transaction length: 1024 32 bit words
+ Time: 1 second
+ Bytes Transferred: 193163264
+ Throughput: 193.163269 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 22414
+ Size of each burst: 4
+ Total AXI data transaction length: 2048 32 bit words
+ Time: 1 second
+ Bytes Transferred: 183615488
+ Throughput: 183.615494 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 23734
+ Size of each burst: 8
+ Total AXI data transaction length: 2048 32 bit words
+ Time: 1 second
+ Bytes Transferred: 194428928
+ Throughput: 194.428925 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 25173
+ Size of each burst: 16
+ Total AXI data transaction length: 2048 32 bit words
+ Time: 1 second
+ Bytes Transferred: 206217216
+ Throughput: 206.217209 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 11861
+ Size of each burst: 4
+ Total AXI data transaction length: 4096 32 bit words
+ Time: 1 second
+ Bytes Transferred: 194330624
+ Throughput: 194.330627 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 12477
+ Size of each burst: 8
+ Total AXI data transaction length: 4096 32 bit words
+ Time: 1 second
+ Bytes Transferred: 204423168
+ Throughput: 204.423172 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 13001
+ Size of each burst: 16
+ Total AXI data transaction length: 4096 32 bit words
+ Time: 1 second
+ Bytes Transferred: 213008384
+ Throughput: 213.008377 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 6109
+ Size of each burst: 4
+ Total AXI data transaction length: 8192 32 bit words
+ Time: 1 second
+ Bytes Transferred: 200179712
+ Throughput: 200.179718 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 6401
+ Size of each burst: 8
+ Total AXI data transaction length: 8192 32 bit words
+ Time: 1 second
+ Bytes Transferred: 209747968
+ Throughput: 209.747971 MBytes / second
+
+***********************
+ initial timerValue = 250000000
+ final timerValue = 0
+ DMA Done Handler finished this number of times; DmaDoneCounts = 6605
+ Size of each burst: 16
+ Total AXI data transaction length: 8192 32 bit words
+ Time: 1 second
+ Bytes Transferred: 216432640
+ Throughput: 216.432632 MBytes / second
+
+***********************
+ END OF TESTS

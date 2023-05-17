@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="SystemILBTest_processing_system7_0_0_synth_1" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/SystemILBTest_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="SystemILBTest_rst_ps7_0_100M_0_synth_1" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/SystemILBTest_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="SystemILBTest_system_ila_0_0_synth_1" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/SystemILBTest_system_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="SystemILBTest_AXI_Sampler_0_0_synth_1" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/SystemILBTest_AXI_Sampler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="SystemILBTest_auto_pc_0_synth_1" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/SystemILBTest_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_2" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="SystemILBTest_processing_system7_0_0_synth_1"/>
+		<Parent Id="SystemILBTest_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="SystemILBTest_system_ila_0_0_synth_1"/>
+		<Parent Id="SystemILBTest_AXI_Sampler_0_0_synth_1"/>
+		<Parent Id="SystemILBTest_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_2" LaunchDir="C:/Users/Robert/xilinx_projects/SystemILBTest/SystemILBTest.runs/impl_2" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_2"/>
+		<Parent Id="SystemILBTest_processing_system7_0_0_synth_1"/>
+		<Parent Id="SystemILBTest_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="SystemILBTest_system_ila_0_0_synth_1"/>
+		<Parent Id="SystemILBTest_AXI_Sampler_0_0_synth_1"/>
+		<Parent Id="SystemILBTest_auto_pc_0_synth_1"/>
+	</Run>
+</Runs>
+

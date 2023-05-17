@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1551414962">
+  <File Type="PA-TCL" Name="SystemILBTest_wrapper.tcl"/>
+  <File Type="BITSTR-BMM" Name="SystemILBTest_wrapper_bd.bmm"/>
+  <File Type="REPORTS-TCL" Name="SystemILBTest_wrapper_reports.tcl"/>
+  <File Type="OPT-DCP" Name="SystemILBTest_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="SystemILBTest_wrapper_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SystemILBTest_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="SystemILBTest_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SystemILBTest_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="SystemILBTest_wrapper_placed.dcp"/>
+  <File Type="BG-BGN" Name="SystemILBTest_wrapper.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SystemILBTest_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="SystemILBTest_wrapper.bin"/>
+  <File Type="PHYSOPT-DCP" Name="SystemILBTest_wrapper_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="SystemILBTest_wrapper.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SystemILBTest_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="SystemILBTest_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SystemILBTest_wrapper_routed_bb.dcp"/>
+  <File Type="BITSTR-LTX" Name="SystemILBTest_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="SystemILBTest_wrapper.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="SystemILBTest_wrapper.sysdef"/>
+  <File Type="ROUTE-TIMING-PB" Name="SystemILBTest_wrapper_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SystemILBTest_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SystemILBTest_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="SystemILBTest_wrapper.bit"/>
+  <File Type="BITSTR-RBT" Name="SystemILBTest_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="SystemILBTest_wrapper.nky"/>
+  <File Type="BG-DRC" Name="SystemILBTest_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="SystemILBTest_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/SystemILBTest/SystemILBTest.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/SystemILBTest/hdl/SystemILBTest_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SystemILBTest_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/constraints.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SystemILATest/SystemILATest.srcs/constrs_1/new/constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1551243959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_axi_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_AXI_Sampler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_c_counter_binary_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="SystemILBTest_processing_system7_0_0"/>
+</GenRun>

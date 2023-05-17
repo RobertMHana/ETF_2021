@@ -1,0 +1,1 @@
+Synth design error for ila because too many block rams required and device doesn't have that many.

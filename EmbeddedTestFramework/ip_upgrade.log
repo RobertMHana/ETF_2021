@@ -1,0 +1,1744 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:21:16 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_InterruptGenerator_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_InterruptGenerator_1_0 (xilinx.com:user:InterruptGenerator:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:21:16 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_InterruptGenerator_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_InterruptGenerator_0_2 (xilinx.com:user:InterruptGenerator:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:21:16 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_InterruptGenerator_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_InterruptGenerator_0_1 (xilinx.com:user:InterruptGenerator:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:21:16 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_InterruptGenerator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_InterruptGenerator_0_0 (xilinx.com:user:InterruptGenerator:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:19:01 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:15:56 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXITrigger_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 21:09:33 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_v_tc_0_0 from xilinx.com:ip:v_tc:6.1 (Rev. 12) to xilinx.com:ip:v_tc:6.2 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_v_tc_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'sof_state'
+
+
+3. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value '640x480p' on parameter 'Generator Video Format' due to the following failure - 
+Value '640x480p' is out of the range for parameter 'Generator Video Format(VIDEO_MODE)' for BD Cell 'EmbeddedTestFramework_v_tc_0_0' . Valid values are - 720p, 480p, 1080p, Custom
+. Restoring to an old valid value of '720p'
+
+An attempt to modify the value of disabled parameter 'GEN_VACTIVE_SIZE' from '720' to '480' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_HSYNC_START' from '1390' to '656' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_HSYNC_END' from '1430' to '752' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_HFRAME_SIZE' from '1650' to '800' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_HACTIVE_SIZE' from '1280' to '640' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F0_VSYNC_VSTART' from '724' to '489' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F0_VSYNC_VEND' from '729' to '491' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F0_VSYNC_HSTART' from '695' to '640' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F0_VSYNC_HEND' from '695' to '640' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F0_VFRAME_SIZE' from '750' to '525' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F1_VSYNC_VSTART' from '724' to '489' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F1_VSYNC_VEND' from '729' to '491' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F1_VSYNC_HSTART' from '695' to '640' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F1_VSYNC_HEND' from '695' to '640' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+An attempt to modify the value of disabled parameter 'GEN_F1_VFRAME_SIZE' from '750' to '525' has been ignored for IP 'EmbeddedTestFramework_v_tc_0_0'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:v_tc:6.2 -user_name EmbeddedTestFramework_v_tc_0_0
+set_property -dict "\
+  CONFIG.C_FAMILY {virtex7} \
+  CONFIG.Component_Name {EmbeddedTestFramework_v_tc_0_0} \
+  CONFIG.DET_FIELDID_EN {false} \
+  CONFIG.FSYNC_HSTART0 {640} \
+  CONFIG.FSYNC_HSTART1 {0} \
+  CONFIG.FSYNC_HSTART10 {0} \
+  CONFIG.FSYNC_HSTART11 {0} \
+  CONFIG.FSYNC_HSTART12 {0} \
+  CONFIG.FSYNC_HSTART13 {0} \
+  CONFIG.FSYNC_HSTART14 {0} \
+  CONFIG.FSYNC_HSTART15 {0} \
+  CONFIG.FSYNC_HSTART2 {0} \
+  CONFIG.FSYNC_HSTART3 {0} \
+  CONFIG.FSYNC_HSTART4 {0} \
+  CONFIG.FSYNC_HSTART5 {0} \
+  CONFIG.FSYNC_HSTART6 {0} \
+  CONFIG.FSYNC_HSTART7 {0} \
+  CONFIG.FSYNC_HSTART8 {0} \
+  CONFIG.FSYNC_HSTART9 {0} \
+  CONFIG.FSYNC_VSTART0 {480} \
+  CONFIG.FSYNC_VSTART1 {0} \
+  CONFIG.FSYNC_VSTART10 {0} \
+  CONFIG.FSYNC_VSTART11 {0} \
+  CONFIG.FSYNC_VSTART12 {0} \
+  CONFIG.FSYNC_VSTART13 {0} \
+  CONFIG.FSYNC_VSTART14 {0} \
+  CONFIG.FSYNC_VSTART15 {0} \
+  CONFIG.FSYNC_VSTART2 {0} \
+  CONFIG.FSYNC_VSTART3 {0} \
+  CONFIG.FSYNC_VSTART4 {0} \
+  CONFIG.FSYNC_VSTART5 {0} \
+  CONFIG.FSYNC_VSTART6 {0} \
+  CONFIG.FSYNC_VSTART7 {0} \
+  CONFIG.FSYNC_VSTART8 {0} \
+  CONFIG.FSYNC_VSTART9 {0} \
+  CONFIG.GEN_ACHROMA_POLARITY {High} \
+  CONFIG.GEN_AVIDEO_POLARITY {High} \
+  CONFIG.GEN_CPARITY {0} \
+  CONFIG.GEN_F0_VBLANK_HEND {640} \
+  CONFIG.GEN_F0_VBLANK_HSTART {640} \
+  CONFIG.GEN_F0_VFRAME_SIZE {525} \
+  CONFIG.GEN_F0_VSYNC_HEND {640} \
+  CONFIG.GEN_F0_VSYNC_HSTART {640} \
+  CONFIG.GEN_F0_VSYNC_VEND {491} \
+  CONFIG.GEN_F0_VSYNC_VSTART {489} \
+  CONFIG.GEN_F1_VBLANK_HEND {640} \
+  CONFIG.GEN_F1_VBLANK_HSTART {640} \
+  CONFIG.GEN_F1_VFRAME_SIZE {525} \
+  CONFIG.GEN_F1_VSYNC_HEND {640} \
+  CONFIG.GEN_F1_VSYNC_HSTART {640} \
+  CONFIG.GEN_F1_VSYNC_VEND {491} \
+  CONFIG.GEN_F1_VSYNC_VSTART {489} \
+  CONFIG.GEN_FIELDID_EN {false} \
+  CONFIG.GEN_FIELDID_POLARITY {High} \
+  CONFIG.GEN_HACTIVE_SIZE {640} \
+  CONFIG.GEN_HBLANK_POLARITY {Low} \
+  CONFIG.GEN_HFRAME_SIZE {800} \
+  CONFIG.GEN_HSYNC_END {752} \
+  CONFIG.GEN_HSYNC_POLARITY {Low} \
+  CONFIG.GEN_HSYNC_START {656} \
+  CONFIG.GEN_INTERLACED {false} \
+  CONFIG.GEN_VACTIVE_SIZE {480} \
+  CONFIG.GEN_VBLANK_POLARITY {Low} \
+  CONFIG.GEN_VIDEO_FORMAT {RGB} \
+  CONFIG.GEN_VSYNC_POLARITY {Low} \
+  CONFIG.HAS_AXI4_LITE {false} \
+  CONFIG.HAS_INTC_IF {false} \
+  CONFIG.INTERLACE_EN {false} \
+  CONFIG.SYNC_EN {false} \
+  CONFIG.VIDEO_MODE {640x480p} \
+  CONFIG.active_chroma_detection {false} \
+  CONFIG.active_chroma_generation {false} \
+  CONFIG.active_video_detection {true} \
+  CONFIG.active_video_generation {true} \
+  CONFIG.auto_generation_mode {false} \
+  CONFIG.clk_intf.ASSOCIATED_BUSIF {vtiming_in:vtiming_out} \
+  CONFIG.clk_intf.ASSOCIATED_CLKEN {clken} \
+  CONFIG.clk_intf.ASSOCIATED_RESET {resetn} \
+  CONFIG.clk_intf.CLK_DOMAIN {/VGASubsection/ClockingWizard_clk_out1} \
+  CONFIG.clk_intf.FREQ_HZ {25173966} \
+  CONFIG.clk_intf.PHASE {0.0} \
+  CONFIG.clken_intf.POLARITY {ACTIVE_LOW} \
+  CONFIG.enable_detection {false} \
+  CONFIG.enable_generation {true} \
+  CONFIG.frame_syncs {1} \
+  CONFIG.horizontal_blank_detection {true} \
+  CONFIG.horizontal_blank_generation {true} \
+  CONFIG.horizontal_sync_detection {true} \
+  CONFIG.horizontal_sync_generation {true} \
+  CONFIG.max_clocks_per_line {4096} \
+  CONFIG.max_lines_per_frame {4096} \
+  CONFIG.resetn_intf.POLARITY {ACTIVE_LOW} \
+  CONFIG.vertical_blank_detection {true} \
+  CONFIG.vertical_blank_generation {true} \
+  CONFIG.vertical_sync_detection {true} \
+  CONFIG.vertical_sync_generation {true} " [get_ips EmbeddedTestFramework_v_tc_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_util_vector_logic_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_util_vector_logic_0_0 (xilinx.com:ip:util_vector_logic:2.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_tie_low_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_tie_low_0_0 (xilinx.com:module_ref:tie_low:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_rst_ps7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_rst_ps7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_ps7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_ps7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 18) to (Rev. 23)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_clk_wiz_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 1) to (Rev. 6)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Customization errors found on 'EmbeddedTestFramework_clk_wiz_0_0'. Restoring to previous valid configuration.
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:6.0 -user_name EmbeddedTestFramework_clk_wiz_0_0
+set_property -dict "\
+  CONFIG.AUTO_PRIMITIVE {MMCM} \
+  CONFIG.AXI_DRP {false} \
+  CONFIG.CALC_DONE {empty} \
+  CONFIG.CDDCDONE_PORT {cddcdone} \
+  CONFIG.CDDCREQ_PORT {cddcreq} \
+  CONFIG.CLKFB_IN_N_PORT {clkfb_in_n} \
+  CONFIG.CLKFB_IN_PORT {clkfb_in} \
+  CONFIG.CLKFB_IN_P_PORT {clkfb_in_p} \
+  CONFIG.CLKFB_IN_SIGNALING {SINGLE} \
+  CONFIG.CLKFB_OUT_N_PORT {clkfb_out_n} \
+  CONFIG.CLKFB_OUT_PORT {clkfb_out} \
+  CONFIG.CLKFB_OUT_P_PORT {clkfb_out_p} \
+  CONFIG.CLKFB_STOPPED_PORT {clkfb_stopped} \
+  CONFIG.CLKIN1_JITTER_PS {80.0} \
+  CONFIG.CLKIN1_UI_JITTER {0.010} \
+  CONFIG.CLKIN2_JITTER_PS {100.0} \
+  CONFIG.CLKIN2_UI_JITTER {0.010} \
+  CONFIG.CLKOUT1_DRIVES {BUFG} \
+  CONFIG.CLKOUT1_JITTER {281.423} \
+  CONFIG.CLKOUT1_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT1_PHASE_ERROR {365.405} \
+  CONFIG.CLKOUT1_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.175} \
+  CONFIG.CLKOUT1_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT1_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT1_USED {true} \
+  CONFIG.CLKOUT2_DRIVES {BUFG} \
+  CONFIG.CLKOUT2_JITTER {0.0} \
+  CONFIG.CLKOUT2_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT2_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT2_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT2_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT2_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT2_USED {false} \
+  CONFIG.CLKOUT3_DRIVES {BUFG} \
+  CONFIG.CLKOUT3_JITTER {0.0} \
+  CONFIG.CLKOUT3_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT3_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT3_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT3_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT3_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT3_USED {false} \
+  CONFIG.CLKOUT4_DRIVES {BUFG} \
+  CONFIG.CLKOUT4_JITTER {0.0} \
+  CONFIG.CLKOUT4_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT4_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT4_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT4_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT4_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT4_USED {false} \
+  CONFIG.CLKOUT5_DRIVES {BUFG} \
+  CONFIG.CLKOUT5_JITTER {0.0} \
+  CONFIG.CLKOUT5_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT5_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT5_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT5_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT5_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT5_USED {false} \
+  CONFIG.CLKOUT6_DRIVES {BUFG} \
+  CONFIG.CLKOUT6_JITTER {0.0} \
+  CONFIG.CLKOUT6_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT6_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT6_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT6_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT6_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT6_USED {false} \
+  CONFIG.CLKOUT7_DRIVES {BUFG} \
+  CONFIG.CLKOUT7_JITTER {0.0} \
+  CONFIG.CLKOUT7_MATCHED_ROUTING {false} \
+  CONFIG.CLKOUT7_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT7_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT7_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT7_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT7_USED {false} \
+  CONFIG.CLKOUTPHY_REQUESTED_FREQ {600.000} \
+  CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
+  CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN_SEL_PORT {clk_in_sel} \
+  CONFIG.CLK_OUT1_PORT {clk_out1} \
+  CONFIG.CLK_OUT1_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT2_PORT {clk_out2} \
+  CONFIG.CLK_OUT2_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT3_PORT {clk_out3} \
+  CONFIG.CLK_OUT3_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT4_PORT {clk_out4} \
+  CONFIG.CLK_OUT4_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT5_PORT {clk_out5} \
+  CONFIG.CLK_OUT5_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT6_PORT {clk_out6} \
+  CONFIG.CLK_OUT6_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT7_PORT {clk_out7} \
+  CONFIG.CLK_OUT7_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_VALID_PORT {CLK_VALID} \
+  CONFIG.CLOCK_MGR_TYPE {auto} \
+  CONFIG.Component_Name {EmbeddedTestFramework_clk_wiz_0_0} \
+  CONFIG.DADDR_PORT {daddr} \
+  CONFIG.DCLK_PORT {dclk} \
+  CONFIG.DEN_PORT {den} \
+  CONFIG.DIFF_CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.DIFF_CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.DIN_PORT {din} \
+  CONFIG.DOUT_PORT {dout} \
+  CONFIG.DRDY_PORT {drdy} \
+  CONFIG.DWE_PORT {dwe} \
+  CONFIG.ENABLE_CDDC {false} \
+  CONFIG.ENABLE_CLKOUTPHY {false} \
+  CONFIG.ENABLE_CLOCK_MONITOR {false} \
+  CONFIG.ENABLE_USER_CLOCK0 {false} \
+  CONFIG.ENABLE_USER_CLOCK1 {false} \
+  CONFIG.ENABLE_USER_CLOCK2 {false} \
+  CONFIG.ENABLE_USER_CLOCK3 {false} \
+  CONFIG.Enable_PLL0 {false} \
+  CONFIG.Enable_PLL1 {false} \
+  CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
+  CONFIG.INPUT_CLK_STOPPED_PORT {input_clk_stopped} \
+  CONFIG.INPUT_MODE {frequency} \
+  CONFIG.INTERFACE_SELECTION {Enable_AXI} \
+  CONFIG.IN_FREQ_UNITS {Units_MHz} \
+  CONFIG.IN_JITTER_UNITS {Units_UI} \
+  CONFIG.JITTER_OPTIONS {UI} \
+  CONFIG.JITTER_SEL {No_Jitter} \
+  CONFIG.LOCKED_PORT {locked} \
+  CONFIG.MMCM_BANDWIDTH {OPTIMIZED} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {61.500} \
+  CONFIG.MMCM_CLKFBOUT_PHASE {0.000} \
+  CONFIG.MMCM_CLKFBOUT_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKIN1_PERIOD {8.000} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {43.625} \
+  CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT0_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT0_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT1_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT1_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT2_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT2_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT2_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT3_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT3_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT3_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT4_CASCADE {false} \
+  CONFIG.MMCM_CLKOUT4_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT4_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT4_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT5_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT5_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT5_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT6_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT6_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT6_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT6_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLOCK_HOLD {false} \
+  CONFIG.MMCM_COMPENSATION {ZHOLD} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {7} \
+  CONFIG.MMCM_NOTES {None} \
+  CONFIG.MMCM_REF_JITTER1 {0.010} \
+  CONFIG.MMCM_REF_JITTER2 {0.010} \
+  CONFIG.MMCM_STARTUP_WAIT {false} \
+  CONFIG.NUM_OUT_CLKS {1} \
+  CONFIG.OVERRIDE_MMCM {false} \
+  CONFIG.OVERRIDE_PLL {false} \
+  CONFIG.PHASESHIFT_MODE {WAVEFORM} \
+  CONFIG.PHASE_DUTY_CONFIG {false} \
+  CONFIG.PLATFORM {UNKNOWN} \
+  CONFIG.PLL_BANDWIDTH {OPTIMIZED} \
+  CONFIG.PLL_CLKFBOUT_MULT {4} \
+  CONFIG.PLL_CLKFBOUT_PHASE {0.000} \
+  CONFIG.PLL_CLKIN_PERIOD {10.000} \
+  CONFIG.PLL_CLKOUT0_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT0_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT1_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT1_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT2_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT2_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT3_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT3_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT4_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT4_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT5_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT5_PHASE {0.000} \
+  CONFIG.PLL_CLK_FEEDBACK {CLKFBOUT} \
+  CONFIG.PLL_COMPENSATION {SYSTEM_SYNCHRONOUS} \
+  CONFIG.PLL_DIVCLK_DIVIDE {1} \
+  CONFIG.PLL_NOTES {None} \
+  CONFIG.PLL_REF_JITTER {0.010} \
+  CONFIG.POWER_DOWN_PORT {power_down} \
+  CONFIG.PRECISION {1} \
+  CONFIG.PRIMARY_PORT {clk_in1} \
+  CONFIG.PRIMITIVE {MMCM} \
+  CONFIG.PRIMTYPE_SEL {mmcm_adv} \
+  CONFIG.PRIM_IN_FREQ {125.000} \
+  CONFIG.PRIM_IN_JITTER {0.010} \
+  CONFIG.PRIM_IN_TIMEPERIOD {10.000} \
+  CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.PSCLK_PORT {psclk} \
+  CONFIG.PSDONE_PORT {psdone} \
+  CONFIG.PSEN_PORT {psen} \
+  CONFIG.PSINCDEC_PORT {psincdec} \
+  CONFIG.REF_CLK_FREQ {100.0} \
+  CONFIG.RELATIVE_INCLK {REL_PRIMARY} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RESET_PORT {reset} \
+  CONFIG.RESET_TYPE {ACTIVE_HIGH} \
+  CONFIG.SECONDARY_IN_FREQ {100.000} \
+  CONFIG.SECONDARY_IN_JITTER {0.010} \
+  CONFIG.SECONDARY_IN_TIMEPERIOD {10.000} \
+  CONFIG.SECONDARY_PORT {clk_in2} \
+  CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.SS_MODE {CENTER_HIGH} \
+  CONFIG.SS_MOD_FREQ {250} \
+  CONFIG.SS_MOD_TIME {0.004} \
+  CONFIG.STATUS_PORT {STATUS} \
+  CONFIG.SUMMARY_STRINGS {empty} \
+  CONFIG.USER_CLK_FREQ0 {100.0} \
+  CONFIG.USER_CLK_FREQ1 {100.0} \
+  CONFIG.USER_CLK_FREQ2 {100.0} \
+  CONFIG.USER_CLK_FREQ3 {100.0} \
+  CONFIG.USE_BOARD_FLOW {true} \
+  CONFIG.USE_CLKFB_STOPPED {false} \
+  CONFIG.USE_CLK_VALID {false} \
+  CONFIG.USE_CLOCK_SEQUENCING {false} \
+  CONFIG.USE_DYN_PHASE_SHIFT {false} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+  CONFIG.USE_FREEZE {false} \
+  CONFIG.USE_FREQ_SYNTH {true} \
+  CONFIG.USE_INCLK_STOPPED {false} \
+  CONFIG.USE_INCLK_SWITCHOVER {false} \
+  CONFIG.USE_LOCKED {true} \
+  CONFIG.USE_MAX_I_JITTER {false} \
+  CONFIG.USE_MIN_O_JITTER {false} \
+  CONFIG.USE_MIN_POWER {false} \
+  CONFIG.USE_PHASE_ALIGNMENT {true} \
+  CONFIG.USE_POWER_DOWN {false} \
+  CONFIG.USE_RESET {true} \
+  CONFIG.USE_SAFE_CLOCK_STARTUP {false} \
+  CONFIG.USE_SPREAD_SPECTRUM {false} \
+  CONFIG.USE_STATUS {false} \
+  CONFIG.reset.BOARD.ASSOCIATED_PARAM {RESET_BOARD_INTERFACE} \
+  CONFIG.reset.POLARITY {ACTIVE_HIGH} " [get_ips EmbeddedTestFramework_clk_wiz_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_c_counter_binary_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_c_counter_binary_0_0 (xilinx.com:ip:c_counter_binary:12.0) from (Rev. 12) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_blk_mem_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_blk_mem_gen_0_0 (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_axi_gpio_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 19) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 19) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_axi_bram_ctrl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_axi_bram_ctrl_0_0 from xilinx.com:ip:axi_bram_ctrl:4.0 (Rev. 14) to xilinx.com:ip:axi_bram_ctrl:4.1 (Rev. 4)
+
+2. Upgrade messages
+-------------------
+
+Removed parameter C_SELECT_XPM
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_Reducer32to16_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_Reducer32to16_0_0 (xilinx.com:module_ref:Reducer32to16:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_GatedClockEnable_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_GatedClockEnable_0_0 (xilinx.com:module_ref:GatedClockEnable:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_FallingEdgeDetect_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_FallingEdgeDetect_1_0 (xilinx.com:module_ref:FallingEdgeDetect:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_FallingEdgeDetect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_FallingEdgeDetect_0_0 (xilinx.com:module_ref:FallingEdgeDetect:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_DUT_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_DUT_0_0 (xilinx.com:module_ref:DUT:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_ClockDivider_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_ClockDivider_0_0 (xilinx.com:user:ClockDivider:1.0) from (Rev. 4) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 19 20:57:57 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_Blanker_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_Blanker_0_0 (xilinx.com:module_ref:Blanker:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 18 17:27:37 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_rst_ps7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_rst_ps7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 18 17:27:37 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 18 17:27:37 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of EmbeddedTestFramework_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 18 17:27:37 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_axi_gpio_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of EmbeddedTestFramework_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 19)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Warnings
+-----------
+
+WARNING: The upgraded user parameter set contained parameters that could not be mapped on to the upgraded IP. When checking the upgrade script, note that parameter names are case sensitive.
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_axi_gpio_1_0'. These changes may impact your design.
+
+
+-Upgraded port 'gpio_io_i' width 32 differs from original width 4
+
+-Upgrade has added port 'gpio_io_o'
+
+-Upgrade has added port 'gpio_io_t'
+
+
+4. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'sws_4bits' on parameter 'GPIO BOARD INTERFACE' due to the following failure - 
+Value 'sws_4bits' is out of the range for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' for BD Cell 'EmbeddedTestFramework_axi_gpio_1_0' . Valid values are - Custom
+. Restoring to an old valid value of 'Custom'
+
+Update of parameter 'PARAM_VALUE.C_ALL_OUTPUTS' failed for IP 'EmbeddedTestFramework_axi_gpio_1_0'. ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+
+
+Customization errors found on 'EmbeddedTestFramework_axi_gpio_1_0'. Restoring to previous valid configuration.
+
+Failed to restore IP 'EmbeddedTestFramework_axi_gpio_1_0' customization to its previous valid configuration.
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_gpio:2.0 -user_name EmbeddedTestFramework_axi_gpio_1_0
+set_property -dict "\
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_ALL_INPUTS_2 {0} \
+  CONFIG.C_ALL_OUTPUTS {0} \
+  CONFIG.C_ALL_OUTPUTS_2 {0} \
+  CONFIG.C_DOUT_DEFAULT {0x00000000} \
+  CONFIG.C_DOUT_DEFAULT_2 {0x00000000} \
+  CONFIG.C_GPIO2_WIDTH {32} \
+  CONFIG.C_GPIO_WIDTH {4} \
+  CONFIG.C_INTERRUPT_PRESENT {0} \
+  CONFIG.C_IS_DUAL {0} \
+  CONFIG.C_TRI_DEFAULT {0xFFFFFFFF} \
+  CONFIG.C_TRI_DEFAULT_2 {0xFFFFFFFF} \
+  CONFIG.Component_Name {EmbeddedTestFramework_axi_gpio_1_0} \
+  CONFIG.GPIO.BOARD.ASSOCIATED_PARAM {GPIO_BOARD_INTERFACE} \
+  CONFIG.GPIO2_BOARD_INTERFACE {Custom} \
+  CONFIG.GPIO_BOARD_INTERFACE {sws_4bits} \
+  CONFIG.S_AXI.ADDR_WIDTH {9} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {2e+08} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {0} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S_AXI.PHASE {0.000} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.S_AXI_ACLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.S_AXI_ACLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.S_AXI_ACLK.CLK_DOMAIN {EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.S_AXI_ACLK.FREQ_HZ {2e+08} \
+  CONFIG.S_AXI_ACLK.PHASE {0.000} \
+  CONFIG.S_AXI_ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.USE_BOARD_FLOW {true} " [get_ips EmbeddedTestFramework_axi_gpio_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Apr 18 17:27:37 2021
+| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_axi_gpio_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of EmbeddedTestFramework_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 19)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'leds_4bits' on parameter 'GPIO BOARD INTERFACE' due to the following failure - 
+Value 'leds_4bits' is out of the range for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' for BD Cell 'EmbeddedTestFramework_axi_gpio_0_0' . Valid values are - Custom
+. Restoring to an old valid value of 'Custom'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_gpio:2.0 -user_name EmbeddedTestFramework_axi_gpio_0_0
+set_property -dict "\
+  CONFIG.C_ALL_INPUTS {0} \
+  CONFIG.C_ALL_INPUTS_2 {0} \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {0} \
+  CONFIG.C_DOUT_DEFAULT {0x00000000} \
+  CONFIG.C_DOUT_DEFAULT_2 {0x00000000} \
+  CONFIG.C_GPIO2_WIDTH {32} \
+  CONFIG.C_GPIO_WIDTH {4} \
+  CONFIG.C_INTERRUPT_PRESENT {0} \
+  CONFIG.C_IS_DUAL {0} \
+  CONFIG.C_TRI_DEFAULT {0xFFFFFFFF} \
+  CONFIG.C_TRI_DEFAULT_2 {0xFFFFFFFF} \
+  CONFIG.Component_Name {EmbeddedTestFramework_axi_gpio_0_0} \
+  CONFIG.GPIO.BOARD.ASSOCIATED_PARAM {GPIO_BOARD_INTERFACE} \
+  CONFIG.GPIO2_BOARD_INTERFACE {Custom} \
+  CONFIG.GPIO_BOARD_INTERFACE {leds_4bits} \
+  CONFIG.S_AXI.ADDR_WIDTH {9} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {2e+08} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {0} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {8} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S_AXI.PHASE {0.000} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.S_AXI_ACLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.S_AXI_ACLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.S_AXI_ACLK.CLK_DOMAIN {EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0} \
+  CONFIG.S_AXI_ACLK.FREQ_HZ {2e+08} \
+  CONFIG.S_AXI_ACLK.PHASE {0.000} \
+  CONFIG.S_AXI_ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.USE_BOARD_FLOW {true} " [get_ips EmbeddedTestFramework_axi_gpio_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Apr  3 22:11:33 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Apr  3 22:07:08 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Apr  1 21:25:59 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Mar 30 10:27:31 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 8) to (Rev. 11)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_AXI_Sampler_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'sync_in'
+
+-Upgrade has added port 'trigger'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Mar 30 10:27:31 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 14) to (Rev. 17)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_AXI_Injector_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'sync_out'
+
+-Upgrade has added port 'trigger_out'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Mar  9 21:20:43 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXITrigger_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 9) to (Rev. 10)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'EmbeddedTestFramework_AXITrigger_0_0'.
+
+
+-Upgrade has added interface 'clock' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 'clock_en' (xilinx.com:signal:clock:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_AXITrigger_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'clock'
+
+-Upgrade has added port 'clock_en'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar  3 20:53:18 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar  3 18:22:10 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_AXI_Sampler_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'sync_in_alt'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar  3 13:59:05 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar  3 12:55:41 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Mar  3 12:55:41 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Mar  2 19:16:44 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Mar  2 18:02:37 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 27 00:12:39 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_1_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 27 00:12:39 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Jan 26 17:45:25 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_1_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Jan 26 17:45:25 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of EmbeddedTestFramework_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Jan 26 13:42:43 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'EmbeddedTestFramework_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of EmbeddedTestFramework_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'EmbeddedTestFramework_AXI_Sampler_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'sync_in_alt'
+
+

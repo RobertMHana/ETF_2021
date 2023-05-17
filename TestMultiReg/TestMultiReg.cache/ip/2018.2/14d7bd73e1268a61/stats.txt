@@ -1,0 +1,4 @@
+NumberHits:1
+Timestamp: Mon Dec 24 22:20:13 UTC 2018
+VLNV: xilinx.com:user:ClockDivider:1.0
+SynthRuntime: 44

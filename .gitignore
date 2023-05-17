@@ -1,0 +1,18 @@
+# Ignore directories and files
+
+# Ignore submission documents, submission receipts, and document drafts (please see the submission)
+_docs/finalProjectDocument/
+_docs/Journal Submission 2022-2023/
+
+# Ignore documents related issues concerning to bringup struggles, A clean solution file is sufficient
+_docs/gettingProjectUp/
+
+# Ignore e-mail correspondence 
+_docs/*.png
+
+# Ignore transfer manifest of original Seagate Hard Disk files to P4 depot
+# Many of these files were unrelated and not imported.
+_audit2022/EmbeddedTestFramework_Audit_November-2022/ProjectsWhatIsWhatSeaGate.png
+
+# Ignore Notes on importing projects to SDK
+_audit2022/EmbeddedTestFramework_Audit_November-2022/NotesImportingProjectsToSDK_11-19-2022.png

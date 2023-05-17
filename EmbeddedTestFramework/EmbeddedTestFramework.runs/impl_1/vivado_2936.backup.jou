@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jun  4 13:46:45 2021
+# Process ID: 2936
+# Current directory: D:/depot/Projects/ETF/EmbeddedTestFramework/EmbeddedTestFramework.runs/impl_1
+# Command line: vivado.exe -log EmbeddedTestFramework_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source EmbeddedTestFramework_wrapper.tcl -notrace
+# Log file: D:/depot/Projects/ETF/EmbeddedTestFramework/EmbeddedTestFramework.runs/impl_1/EmbeddedTestFramework_wrapper.vdi
+# Journal file: D:/depot/Projects/ETF/EmbeddedTestFramework/EmbeddedTestFramework.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source EmbeddedTestFramework_wrapper.tcl -notrace

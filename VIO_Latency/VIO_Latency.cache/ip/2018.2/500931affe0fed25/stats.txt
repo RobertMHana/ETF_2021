@@ -1,0 +1,4 @@
+NumberHits:1
+Timestamp: Mon Mar 18 04:37:29 UTC 2019
+VLNV: xilinx.com:ip:ila:6.2
+SynthRuntime: 156

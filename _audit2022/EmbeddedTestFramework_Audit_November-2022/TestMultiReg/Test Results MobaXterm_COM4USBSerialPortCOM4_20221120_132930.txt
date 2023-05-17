@@ -1,0 +1,1523 @@
+
+ Platform initialized...
+ Starting test now...
+ resetting both sampler and injector.
+ Injector SCREGISTER value is currently at 0x7AA00004 is 0
+ Sampler  SCREGISTER value is currently at 0x7AA10004 is 0
+ ---------------------------------------------------------------------------------
+ -------------------------- INJECTOR TEST COUNTER REGS   ---------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 0
+ Injector  counter_awready value is currently at 0x7AA00010 is 0
+ Injector  counter_wlast value is currently at 0x7AA00014 is 417972358
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 0
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 2
+ Injector  counter_awready value is currently at 0x7AA00010 is 1
+ Injector  counter_wlast value is currently at 0x7AA00014 is 559550964
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 2
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 4
+ Injector  counter_awready value is currently at 0x7AA00010 is 2
+ Injector  counter_wlast value is currently at 0x7AA00014 is 701129574
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 4
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 6
+ Injector  counter_awready value is currently at 0x7AA00010 is 3
+ Injector  counter_wlast value is currently at 0x7AA00014 is 842708184
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 6
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 8
+ Injector  counter_awready value is currently at 0x7AA00010 is 4
+ Injector  counter_wlast value is currently at 0x7AA00014 is 984286794
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 8
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 10
+ Injector  counter_awready value is currently at 0x7AA00010 is 5
+ Injector  counter_wlast value is currently at 0x7AA00014 is 1125874087
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 10
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 12
+ Injector  counter_awready value is currently at 0x7AA00010 is 6
+ Injector  counter_wlast value is currently at 0x7AA00014 is 1267478738
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 12
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 14
+ Injector  counter_awready value is currently at 0x7AA00010 is 7
+ Injector  counter_wlast value is currently at 0x7AA00014 is 1409083392
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 14
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 16
+ Injector  counter_awready value is currently at 0x7AA00010 is 8
+ Injector  counter_wlast value is currently at 0x7AA00014 is 1550688046
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 16
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ Injector  counter_awvalid value is currently at 0x7AA0000C is 18
+ Injector  counter_awready value is currently at 0x7AA00010 is 9
+ Injector  counter_wlast value is currently at 0x7AA00014 is 1692292696
+ Injector  counter_wvalid value is currently at 0x7AA00018 is 18
+ Injector  counter_wready value is currently at 0x7AA0001C is 0
+ ---------------------------------------------------------------------------------
+ -----------------------------  SAMPLER TEST COUNTER REGS -------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 5
+ Sampler  counter_awready value is currently at 0x7AA10010 is 3
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 4
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 5
+ Sampler  counter_wready value is currently at 0x7AA1001C is 1874422501
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 17
+ Sampler  counter_awready value is currently at 0x7AA10010 is 9
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 10
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 11
+ Sampler  counter_wready value is currently at 0x7AA1001C is 2015992437
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 29
+ Sampler  counter_awready value is currently at 0x7AA10010 is 15
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 16
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 17
+ Sampler  counter_wready value is currently at 0x7AA1001C is -2137396245
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 41
+ Sampler  counter_awready value is currently at 0x7AA10010 is 21
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 22
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 23
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1995808955
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 53
+ Sampler  counter_awready value is currently at 0x7AA10010 is 27
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 28
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 29
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1854221665
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 65
+ Sampler  counter_awready value is currently at 0x7AA10010 is 33
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 34
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 35
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1712634369
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 77
+ Sampler  counter_awready value is currently at 0x7AA10010 is 39
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 40
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 41
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1571047078
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 89
+ Sampler  counter_awready value is currently at 0x7AA10010 is 45
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 46
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 47
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1429459788
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 101
+ Sampler  counter_awready value is currently at 0x7AA10010 is 51
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 52
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 53
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1287863817
+ ---------------------------------------------------------------------------------
+ Sampler  counter_awvalid value is currently at 0x7AA1000C is 113
+ Sampler  counter_awready value is currently at 0x7AA10010 is 57
+ Sampler  counter_wlast value is currently at 0x7AA10014 is 58
+ Sampler  counter_wvalid value is currently at 0x7AA10018 is 59
+ Sampler  counter_wready value is currently at 0x7AA1001C is -1146267843
+ --------------------------------------------------------------------------------- SCU Timer Polled Mode Example Test
+Timer ticks are: 22
+Elapsed clock cycles are: 44
+Latency between reads is:  ns
+-----------------------------------------------
+Timer ticks are: 19
+Elapsed clock cycles are: 38
+Latency between reads is:  ns
+-----------------------------------------------
+Timer ticks are: 19
+Elapsed clock cycles are: 38
+Latency between reads is:  ns
+-----------------------------------------------
+Successfully ran SCU Timer Polled Mode Example Test
+Thats it.
+
+ resetting both sampler and injector.
+ Injector SCREGISTER value is currently at 0x7AA00004 is 0
+ Sampler  SCREGISTER value is currently at 0x7AA10004 is 0
+ Filling up injector with values
+fifo is preloaded now ...
+ Configuring sampler and injector interrupts...
+ disabling interrupts before touching anything
+ structure initial values
+ Configuring Global Interrupt Controller
+ Connecting Injector axi device to Global Interrupt Controller
+ Connecting Sampler axi device to Global Interrupt Controller
+ Initializing injector AXI Device driver
+ Initializing Sampler AXI Device driver
+ interrupts configured and enabled
+ Enabling sync_in bit of sampler
+ Sampler SCREGISTER value is currently at 0x7AA10004 is 64
+
+ Injector SCREGISTER value is currently at 0x7AA00004 is 2
+ Increasing clock speed to 100x
+ .. Loop. Wait for interrupts... periodically read the status registers..Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255519
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 511038
+ Enabling only the injectorInjector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786180.875000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255465
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510930
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786014.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255462
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510924
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786005.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255470
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510940
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786030.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255478
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510956
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786054.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258387
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516774
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795005.125000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255464
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510928
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786011.625000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255472
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510944
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786036.250000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258388
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516776
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795008.187500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255464
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510928
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786011.625000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258383
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516766
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794992.812500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255472
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510944
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786036.250000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258390
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516780
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795014.375000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255469
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510938
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786027.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255463
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510926
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786008.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255474
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510948
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786042.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258381
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516762
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794986.687500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255496
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510992
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786110.062500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255474
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510948
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786042.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258384
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516768
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794995.875000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255468
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510936
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786023.937500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255469
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510938
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786027.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258384
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516768
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794995.875000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255486
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510972
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786079.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258388
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516776
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795008.187500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255472
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510944
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786036.250000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258386
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516772
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795002.062500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255476
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510952
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786048.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255463
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510926
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786008.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258387
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516774
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795005.125000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255470
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510940
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786030.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255476
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510952
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786048.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258379
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516758
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794980.500000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255476
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510952
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786048.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255494
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510988
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786103.937500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255483
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510966
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786070.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258388
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516776
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795008.187500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255472
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510944
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786036.250000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255477
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510954
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786051.625000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258381
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516762
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794986.687500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255457
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510914
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785990.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255470
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510940
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786030.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258384
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516768
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794995.875000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255482
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510964
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786067.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255482
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510964
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786067.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258385
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516770
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794998.937500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255465
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510930
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786014.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258379
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516758
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794980.500000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255479
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510958
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786057.812500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255478
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510956
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786054.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258383
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516766
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794992.812500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255457
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510914
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 785990.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255473
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510946
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786039.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255469
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510938
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786027.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255457
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510914
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785990.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255473
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510946
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786039.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255463
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510926
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786008.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258384
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516768
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794995.875000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255470
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510940
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786030.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255468
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510936
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786023.937500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258391
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516782
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795017.437500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255463
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510926
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786008.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258387
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516774
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795005.125000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255474
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510948
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786042.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255475
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510950
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786045.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258386
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516772
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795002.062500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255468
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510936
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786023.937500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255471
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510942
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786033.187500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258385
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516770
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794998.937500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255472
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510944
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786036.250000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255477
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510954
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786051.625000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258385
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516770
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794998.937500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255469
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510938
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786027.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255473
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510946
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786039.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258383
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516766
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794992.812500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255478
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510956
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786054.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255478
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510956
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786054.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258385
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516770
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794998.937500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255470
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510940
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786030.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255465
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510930
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786014.687500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258381
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516762
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794986.687500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255473
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510946
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786039.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255471
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510942
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786033.187500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258385
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516770
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794998.937500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255477
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510954
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786051.625000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255488
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510976
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786085.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258387
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516774
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795005.125000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255466
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510932
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786017.812500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255467
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510934
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786020.875000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255477
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510954
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786051.625000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255467
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510934
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786020.875000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258383
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516766
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794992.812500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255473
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510946
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786039.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255462
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510924
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786005.500000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258378
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516756
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794977.437500 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255473
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510946
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786039.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255457
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510914
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785990.125000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258391
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516782
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795017.437500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255469
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510938
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786027.000000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255466
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510932
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786017.812500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258389
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516778
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 795011.250000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255481
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510962
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786063.937500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255471
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510942
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 786033.187500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258387
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516774
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 795005.125000 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255463
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510926
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786008.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255489
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510978
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786088.562500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258383
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516766
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794992.812500 ns
+Sampler  Latency between reads is: 786002.375000 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258382
+Sampler Timer ticks are: 255460
+Injector Elapsed clock cycles are: 516764
+Sampler  Elapsed clock cycles are: 510920
+Injector Latency between reads is: 794989.750000 ns
+Sampler  Latency between reads is: 785999.312500 ns
+...Sampler  Read value at 0x7AA00004 is 64
+Injector Read value at 0x7AA10004 is 2
+Injector Timer ticks are: 258380
+Sampler Timer ticks are: 255461
+Injector Elapsed clock cycles are: 516760
+Sampler  Elapsed clock cycles are: 510922
+Injector Latency between reads is: 794983.562500 ns
+Sampler  Latency between reads is: 786002.375000 ns

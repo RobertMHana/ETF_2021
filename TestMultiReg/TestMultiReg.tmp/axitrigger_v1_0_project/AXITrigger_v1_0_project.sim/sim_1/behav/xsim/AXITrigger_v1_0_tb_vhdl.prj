@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/AXITrigger_1.0/hdl/AXITrigger_v1_0.vhd" \
+"../../../../../../../ip_repo/AXITrigger_1.0/hdl/AXITrigger_v1_0_S00_AXI.vhd" \
+"../../../../../../../ip_repo/AXITrigger_1.0/hdl/AXITrigger_v1_0_tb.vhd" \
+
+# Do not sort compile order
+nosort

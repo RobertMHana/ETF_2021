@@ -1,0 +1,38 @@
+01:12:56 **** Auto Build of configuration Debug for project TestMultiReg ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/InjectorDriver.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/InjectorDriver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TestMultiReg_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/InjectorDriver.d" -MT"src/InjectorDriver.o" -o "src/InjectorDriver.o" "../src/InjectorDriver.c"
+'Finished building: ../src/InjectorDriver.c'
+' '
+'Building file: ../src/SamplerDriver.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SamplerDriver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TestMultiReg_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/SamplerDriver.d" -MT"src/SamplerDriver.o" -o "src/SamplerDriver.o" "../src/SamplerDriver.c"
+'Finished building: ../src/SamplerDriver.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TestMultiReg_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TestMultiReg_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: TestMultiReg.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TestMultiReg_bsp/ps7_cortexa9_0/lib -o "TestMultiReg.elf"  ./src/InjectorDriver.o ./src/SamplerDriver.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TestMultiReg.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TestMultiReg.elf  |tee "TestMultiReg.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  84112	   4168	  23488	 111768	  1b498	TestMultiReg.elf
+'Finished building: TestMultiReg.elf.size'
+' '
+
+01:12:57 Build Finished (took 1s.658ms)
+

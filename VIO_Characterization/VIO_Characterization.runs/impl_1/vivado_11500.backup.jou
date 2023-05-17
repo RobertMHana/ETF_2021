@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jun 19 13:57:23 2021
+# Process ID: 11500
+# Current directory: D:/depot/Projects/ETF_2021/VIO_Characterization/VIO_Characterization.runs/impl_1
+# Command line: vivado.exe -log Injector_Characterization_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Injector_Characterization_wrapper.tcl -notrace
+# Log file: D:/depot/Projects/ETF_2021/VIO_Characterization/VIO_Characterization.runs/impl_1/Injector_Characterization_wrapper.vdi
+# Journal file: D:/depot/Projects/ETF_2021/VIO_Characterization/VIO_Characterization.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Injector_Characterization_wrapper.tcl -notrace

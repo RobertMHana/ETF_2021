@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_AXIInjector_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axisampler_fifo_elegant_pkg" />
+            <top_module name="glbl" />
+            <top_module name="tb_AXIInjector" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="153102600000fs"></ZoomStartTime>
+      <ZoomEndTime time="153209800001fs"></ZoomEndTime>
+      <Cursor1Time time="153256000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="256"></NameColumnWidth>
+      <ValueColumnWidth column_width="187"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/tb_AXIInjector/rd_clk" type="logic">
+      <obj_property name="ElementShortName">rd_clk</obj_property>
+      <obj_property name="ObjectShortName">rd_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/rd_clk_en" type="logic">
+      <obj_property name="ElementShortName">rd_clk_en</obj_property>
+      <obj_property name="ObjectShortName">rd_clk_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="group57" type="group">
+      <obj_property name="label">Address - Write</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_aclk" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_aclk</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_aclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_aresetn" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_aresetn</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_aresetn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awid" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awaddr" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awaddr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awaddr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awlen" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awlen[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awsize" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awburst" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awlock" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awlock</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awlock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awcache" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awprot" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awqos" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awregion" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awuser" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awuser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awuser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_awready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_awready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_awready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group58" type="group">
+      <obj_property name="label">Data - Write</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_wdata" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_wdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_wstrb" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_wstrb[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_wstrb[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_wlast" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_wlast</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_wlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_wuser" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_wuser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_wuser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_wvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_wvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_wvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_wready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_wready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_wready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_bid" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_bid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_bid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_bresp" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_bresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_bresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_buser" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_buser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_buser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_bvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_bvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_bvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_bready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_bready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_bready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">Address - Read</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arid" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_araddr" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_araddr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_araddr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arlen" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arlen[7:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arlen[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arsize" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arsize[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arsize[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arburst" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arburst[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arburst[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arlock" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arlock</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arlock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arcache" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arcache[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arcache[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arprot" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arprot[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arprot[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arqos" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arqos[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arqos[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arregion" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arregion[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arregion[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_aruser" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_aruser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_aruser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_arready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_arready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_arready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group60" type="group">
+      <obj_property name="label">Data - Read</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_rid" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_rid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_rid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_rdata" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_rdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_rdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_rresp" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_rresp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_rresp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_rlast" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_rlast</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_rlast</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_ruser" type="array">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_ruser[-1:0]</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_ruser[-1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_rvalid" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_rvalid</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_rvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_AXIInjector/s00_axi_samplerfifo_rready" type="logic">
+         <obj_property name="ElementShortName">s00_axi_samplerfifo_rready</obj_property>
+         <obj_property name="ObjectShortName">s00_axi_samplerfifo_rready</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/sync_out" type="logic">
+      <obj_property name="ElementShortName">sync_out</obj_property>
+      <obj_property name="ObjectShortName">sync_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/test" type="other">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/testSub" type="other">
+      <obj_property name="ElementShortName">testSub</obj_property>
+      <obj_property name="ObjectShortName">testSub</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/EndOfTests" type="logic">
+      <obj_property name="ElementShortName">EndOfTests</obj_property>
+      <obj_property name="ObjectShortName">EndOfTests</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/data" type="other">
+      <obj_property name="ElementShortName">data</obj_property>
+      <obj_property name="ObjectShortName">data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/overflow" type="logic">
+      <obj_property name="ElementShortName">overflow</obj_property>
+      <obj_property name="ObjectShortName">overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/underflow" type="logic">
+      <obj_property name="ElementShortName">underflow</obj_property>
+      <obj_property name="ObjectShortName">underflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/full" type="logic">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/wr_rst_busy" type="logic">
+      <obj_property name="ElementShortName">wr_rst_busy</obj_property>
+      <obj_property name="ObjectShortName">wr_rst_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_AXIInjector/uut/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/rd_rst_busy" type="logic">
+      <obj_property name="ElementShortName">rd_rst_busy</obj_property>
+      <obj_property name="ObjectShortName">rd_rst_busy</obj_property>
+   </wvobject>
+</wave_config>

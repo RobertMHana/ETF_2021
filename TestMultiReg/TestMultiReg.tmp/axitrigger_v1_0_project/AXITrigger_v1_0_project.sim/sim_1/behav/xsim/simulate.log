@@ -1,0 +1,4 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Note: Reset is asserted for 17 clock cycles.
+Time: 1690 ns  Iteration: 1  Process: /AXITrigger_v1_0_tb/test_this  File: c:/users/robert/xilinx_projects/ip_repo/AXITrigger_1.0/hdl/AXITrigger_v1_0_tb.vhd

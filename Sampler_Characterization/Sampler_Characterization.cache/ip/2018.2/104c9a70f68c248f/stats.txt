@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Sun Mar 17 03:13:08 UTC 2019
+VLNV: xilinx.com:user:AXI_Sampler:1.0
+SynthRuntime: 229

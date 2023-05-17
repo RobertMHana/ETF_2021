@@ -1,0 +1,344 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 20 18:15:27 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXITrigger_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 20 12:59:19 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXITrigger_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 20 12:37:00 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXITrigger_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 20 12:20:28 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXITrigger_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 20 11:45:45 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXITrigger_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Jan 20 11:38:22 2019
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXITrigger_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of TestMultiReg_AXITrigger_0_0 (xilinx.com:user:AXITrigger:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'TestMultiReg_AXITrigger_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'trigger_input'
+
+-Upgrade has added port 'trigger_output'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 21:46:16 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 21:18:02 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 20:31:49 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Sampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Sampler_0_0 (xilinx.com:user:AXI_Sampler:1.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 19:55:22 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 7) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 19:35:57 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 19:25:46 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Dec 27 19:23:21 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_AXI_Injector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_AXI_Injector_0_0 (xilinx.com:user:AXI_Injector:1.0) from (Rev. 1) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Dec 26 18:00:43 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_TestSampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of TestMultiReg_TestSampler_0_0 (xilinx.com:user:TestSampler:1.0 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Dec 26 17:55:33 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_TestSampler_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_TestSampler_0_0 (xilinx.com:user:TestSampler:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Dec 26 17:49:44 2018
+| Host         : Robert-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'TestMultiReg_TestMultiReg_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of TestMultiReg_TestMultiReg_0_1 (xilinx.com:user:TestMultiReg:1.0) from (Rev. 33) to (Rev. 34)
+

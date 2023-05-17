@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Sampler_Characterization_processing_system7_0_0_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sampler_Characterization_clk_wiz_0_0_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sampler_Characterization_AXI_Sampler_0_0_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_AXI_Sampler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sampler_Characterization_rst_ps7_0_100M_0_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sampler_Characterization_auto_pc_0_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sampler_Characterization_auto_pc_1_synth_1" LaunchDir="D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

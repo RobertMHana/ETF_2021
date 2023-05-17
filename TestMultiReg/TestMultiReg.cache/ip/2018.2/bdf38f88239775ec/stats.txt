@@ -1,0 +1,4 @@
+NumberHits:1
+Timestamp: Thu Dec 27 01:05:35 UTC 2018
+VLNV: xilinx.com:user:TestSampler:1.0
+SynthRuntime: 41

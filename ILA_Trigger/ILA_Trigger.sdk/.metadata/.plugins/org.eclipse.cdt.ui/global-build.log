@@ -1,0 +1,357 @@
+13:01:22 **** Clean-only build of configuration Debug for project ILA_Trigger ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  ILA_Trigger.elf.size  ILA_Trigger.elf
+' '
+13:01:22 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/genericInterrupt.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/genericInterrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/genericInterrupt.d" -MT"src/genericInterrupt.o" -o "src/genericInterrupt.o" "../src/genericInterrupt.c"
+'Finished building: ../src/genericInterrupt.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ILA_Trigger.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ILA_Trigger_bsp/ps7_cortexa9_0/lib -o "ILA_Trigger.elf"  ./src/genericInterrupt.o ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ILA_Trigger.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ILA_Trigger.elf  |tee "ILA_Trigger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23576	   1144	  22616	  47336	   b8e8	ILA_Trigger.elf
+'Finished building: ILA_Trigger.elf.size'
+' '
+13:01:59 **** Clean-only build of configuration Debug for project ILA_Trigger ****
+make clean 
+rm -rf  ./src/genericInterrupt.o ./src/helloworld.o ./src/platform.o  ./src/genericInterrupt.d ./src/helloworld.d ./src/platform.d  ILA_Trigger.elf.size  ILA_Trigger.elf
+' '
+13:01:59 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/genericInterrupt.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/genericInterrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/genericInterrupt.d" -MT"src/genericInterrupt.o" -o "src/genericInterrupt.o" "../src/genericInterrupt.c"
+../src/genericInterrupt.c:10:10: fatal error: genericInterrupt.h: No such file or directory
+ #include "genericInterrupt.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/genericInterrupt.o] Error 1
+13:02:02 **** Clean-only build of configuration Debug for project ILA_Trigger ****
+make clean 
+rm -rf  ./src/genericInterrupt.o ./src/helloworld.o ./src/platform.o  ./src/genericInterrupt.d ./src/helloworld.d ./src/platform.d  ILA_Trigger.elf.size  ILA_Trigger.elf
+' '
+13:02:02 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:53:10: fatal error: genericInterrupt.h: No such file or directory
+ #include "genericInterrupt.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+13:06:38 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:61:1: error: unknown type name 'generic'; did you mean '__generic'?
+ generic interruptIP;
+ ^~~~~~~
+ __generic
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:5: error: 'triggerReg' undeclared (first use in this function); did you mean 'triggertReg'?
+     triggerReg = Xil_In32(0x7AA00000);
+     ^~~~~~~~~~
+     triggertReg
+../src/helloworld.c:72:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:73:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:76:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:78:2: warning: implicit declaration of function 'generic_EnableInterrupt' [-Wimplicit-function-declaration]
+  generic_EnableInterrupt(&interruptIP, 0x1);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:79:2: warning: implicit declaration of function 'generic_GlobalEnableInterrupt' [-Wimplicit-function-declaration]
+  generic_GlobalEnableInterrupt(&interruptIP, 0x1);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:97:6: warning: implicit declaration of function 'generic_DisableInterrupt' [-Wimplicit-function-declaration]
+      generic_DisableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:98:6: warning: implicit declaration of function 'generic_ACKInterrupt' [-Wimplicit-function-declaration]
+      generic_ACKInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+13:06:57 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:5: error: 'triggerReg' undeclared (first use in this function); did you mean 'triggertReg'?
+     triggerReg = Xil_In32(0x7AA00000);
+     ^~~~~~~~~~
+     triggertReg
+../src/helloworld.c:72:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:73:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:76:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:78:2: warning: implicit declaration of function 'generic_EnableInterrupt' [-Wimplicit-function-declaration]
+  generic_EnableInterrupt(&interruptIP, 0x1);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:78:27: error: 'interruptIP' undeclared (first use in this function)
+  generic_EnableInterrupt(&interruptIP, 0x1);
+                           ^~~~~~~~~~~
+../src/helloworld.c:79:2: warning: implicit declaration of function 'generic_GlobalEnableInterrupt' [-Wimplicit-function-declaration]
+  generic_GlobalEnableInterrupt(&interruptIP, 0x1);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:99:6: warning: implicit declaration of function 'generic_DisableInterrupt' [-Wimplicit-function-declaration]
+      generic_DisableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:100:6: warning: implicit declaration of function 'generic_ACKInterrupt' [-Wimplicit-function-declaration]
+      generic_ACKInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+13:07:04 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:76:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:78:2: warning: implicit declaration of function 'generic_EnableInterrupt' [-Wimplicit-function-declaration]
+  generic_EnableInterrupt(&interruptIP, 0x1);
+  ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:78:27: error: 'interruptIP' undeclared (first use in this function)
+  generic_EnableInterrupt(&interruptIP, 0x1);
+                           ^~~~~~~~~~~
+../src/helloworld.c:78:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:2: warning: implicit declaration of function 'generic_GlobalEnableInterrupt' [-Wimplicit-function-declaration]
+  generic_GlobalEnableInterrupt(&interruptIP, 0x1);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:99:6: warning: implicit declaration of function 'generic_DisableInterrupt' [-Wimplicit-function-declaration]
+      generic_DisableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:100:6: warning: implicit declaration of function 'generic_ACKInterrupt' [-Wimplicit-function-declaration]
+      generic_ACKInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+13:07:21 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:76:5: error: too many arguments to function 'print'
+     print("\n\r Trigger SCRegister: %i",triggerReg );
+     ^~~~~
+In file included from ../src/helloworld.c:51:0:
+../../ILA_Trigger_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:97:6: warning: implicit declaration of function 'generic_DisableInterrupt' [-Wimplicit-function-declaration]
+      generic_DisableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:97:32: error: 'interruptIP' undeclared (first use in this function)
+      generic_DisableInterrupt(&interruptIP, 0x1);
+                                ^~~~~~~~~~~
+../src/helloworld.c:97:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:98:6: warning: implicit declaration of function 'generic_ACKInterrupt' [-Wimplicit-function-declaration]
+      generic_ACKInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:99:6: warning: implicit declaration of function 'generic_EnableInterrupt' [-Wimplicit-function-declaration]
+      generic_EnableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+13:07:35 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:97:6: warning: implicit declaration of function 'generic_DisableInterrupt' [-Wimplicit-function-declaration]
+      generic_DisableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:97:32: error: 'interruptIP' undeclared (first use in this function)
+      generic_DisableInterrupt(&interruptIP, 0x1);
+                                ^~~~~~~~~~~
+../src/helloworld.c:97:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:98:6: warning: implicit declaration of function 'generic_ACKInterrupt' [-Wimplicit-function-declaration]
+      generic_ACKInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:99:6: warning: implicit declaration of function 'generic_EnableInterrupt' [-Wimplicit-function-declaration]
+      generic_EnableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+13:10:22 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:6: warning: implicit declaration of function 'generic_DisableInterrupt' [-Wimplicit-function-declaration]
+      generic_DisableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:109:32: error: 'interruptIP' undeclared (first use in this function)
+      generic_DisableInterrupt(&interruptIP, 0x1);
+                                ^~~~~~~~~~~
+../src/helloworld.c:109:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:6: warning: implicit declaration of function 'generic_ACKInterrupt' [-Wimplicit-function-declaration]
+      generic_ACKInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:111:6: warning: implicit declaration of function 'generic_EnableInterrupt' [-Wimplicit-function-declaration]
+      generic_EnableInterrupt(&interruptIP, 0x1);
+      ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+13:12:32 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ILA_Trigger.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ILA_Trigger_bsp/ps7_cortexa9_0/lib -o "ILA_Trigger.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ILA_Trigger.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ILA_Trigger.elf  |tee "ILA_Trigger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23472	   1144	  22600	  47216	   b870	ILA_Trigger.elf
+'Finished building: ILA_Trigger.elf.size'
+' '
+13:13:09 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ILA_Trigger.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ILA_Trigger_bsp/ps7_cortexa9_0/lib -o "ILA_Trigger.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ILA_Trigger.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ILA_Trigger.elf  |tee "ILA_Trigger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23564	   1144	  22600	  47308	   b8cc	ILA_Trigger.elf
+'Finished building: ILA_Trigger.elf.size'
+' '
+13:13:59 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ILA_Trigger.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ILA_Trigger_bsp/ps7_cortexa9_0/lib -o "ILA_Trigger.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ILA_Trigger.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ILA_Trigger.elf  |tee "ILA_Trigger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23568	   1144	  22600	  47312	   b8d0	ILA_Trigger.elf
+'Finished building: ILA_Trigger.elf.size'
+' '
+13:16:25 **** Auto Build of configuration Debug for project ILA_Trigger ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ILA_Trigger_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: ILA_Trigger.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ILA_Trigger_bsp/ps7_cortexa9_0/lib -o "ILA_Trigger.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ILA_Trigger.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ILA_Trigger.elf  |tee "ILA_Trigger.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23780	   1144	  22600	  47524	   b9a4	ILA_Trigger.elf
+'Finished building: ILA_Trigger.elf.size'
+' '

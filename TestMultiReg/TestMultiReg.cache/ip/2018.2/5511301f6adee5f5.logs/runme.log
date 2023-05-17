@@ -1,0 +1,460 @@
+
+*** Running vivado
+    with args -log TestMultiReg_AXITrigger_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TestMultiReg_AXITrigger_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source TestMultiReg_AXITrigger_0_0.tcl -notrace
+Command: synth_design -top TestMultiReg_AXITrigger_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 375.629 ; gain = 100.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TestMultiReg_AXITrigger_0_0' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ip/TestMultiReg_AXITrigger_0_0/synth/TestMultiReg_AXITrigger_0_0.vhd:100]
+	Parameter C_S00_AXI_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S00_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'AXITrigger_v1_0' declared at 'c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:5' bound to instance 'U0' of component 'AXITrigger_v1_0' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ip/TestMultiReg_AXITrigger_0_0/synth/TestMultiReg_AXITrigger_0_0.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'AXITrigger_v1_0' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:81]
+	Parameter C_S00_AXI_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S00_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S00_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 's00_axi_awid' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:34]
+WARNING: [Synth 8-506] null port 's00_axi_awuser' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:44]
+WARNING: [Synth 8-506] null port 's00_axi_wuser' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:50]
+WARNING: [Synth 8-506] null port 's00_axi_bid' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:53]
+WARNING: [Synth 8-506] null port 's00_axi_buser' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:55]
+WARNING: [Synth 8-506] null port 's00_axi_arid' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:58]
+WARNING: [Synth 8-506] null port 's00_axi_aruser' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:68]
+WARNING: [Synth 8-506] null port 's00_axi_rid' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:71]
+WARNING: [Synth 8-506] null port 's00_axi_ruser' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:75]
+	Parameter C_S_AXI_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 'S_AXI_AWID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:100]
+WARNING: [Synth 8-506] null port 'S_AXI_AWUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:110]
+WARNING: [Synth 8-506] null port 'S_AXI_WUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:116]
+WARNING: [Synth 8-506] null port 'S_AXI_BID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:119]
+WARNING: [Synth 8-506] null port 'S_AXI_BUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:121]
+WARNING: [Synth 8-506] null port 'S_AXI_ARID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:124]
+WARNING: [Synth 8-506] null port 'S_AXI_ARUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:134]
+WARNING: [Synth 8-506] null port 'S_AXI_RID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:137]
+WARNING: [Synth 8-506] null port 'S_AXI_RUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:141]
+INFO: [Synth 8-3491] module 'AXITrigger_v1_0_S00_AXI' declared at 'c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:6' bound to instance 'AXITrigger_v1_0_S00_AXI_inst' of component 'AXITrigger_v1_0_S00_AXI' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'AXITrigger_v1_0_S00_AXI' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:176]
+	Parameter C_S_AXI_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_AWUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_ARUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_WUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_RUSER_WIDTH bound to: 0 - type: integer 
+	Parameter C_S_AXI_BUSER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-506] null port 'S_AXI_AWID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:48]
+WARNING: [Synth 8-506] null port 'S_AXI_AWUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:75]
+WARNING: [Synth 8-506] null port 'S_AXI_WUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:94]
+WARNING: [Synth 8-506] null port 'S_AXI_BID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:103]
+WARNING: [Synth 8-506] null port 'S_AXI_BUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:108]
+WARNING: [Synth 8-506] null port 'S_AXI_ARID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:117]
+WARNING: [Synth 8-506] null port 'S_AXI_ARUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:145]
+WARNING: [Synth 8-506] null port 'S_AXI_RID' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:156]
+WARNING: [Synth 8-506] null port 'S_AXI_RUSER' ignored [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'AXITrigger_v1_0_S00_AXI' (1#1) [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'AXITrigger_v1_0' (2#1) [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'TestMultiReg_AXITrigger_0_0' (3#1) [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ip/TestMultiReg_AXITrigger_0_0/synth/TestMultiReg_AXITrigger_0_0.vhd:100]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWSIZE[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWLOCK
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[3]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWCACHE[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[3]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWQOS[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[3]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_AWREGION[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARSIZE[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARLOCK
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[3]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARCACHE[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[3]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARQOS[0]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[3]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[2]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[1]
+WARNING: [Synth 8-3331] design AXITrigger_v1_0_S00_AXI has unconnected port S_AXI_ARREGION[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 430.660 ; gain = 155.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 430.660 ; gain = 155.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 430.660 ; gain = 155.320
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 754.047 ; gain = 2.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "aw_wrap_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ar_wrap_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "reg0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      6 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXITrigger_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      6 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 4     
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_awlen_reg[7:0]' into 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_awlen_reg[7:0]' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:262]
+INFO: [Synth 8-4471] merging register 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_arlen_reg[7:0]' into 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_arlen_reg[7:0]' [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:263]
+WARNING: [Synth 8-6014] Unused sequential element U0/AXITrigger_v1_0_S00_AXI_inst/axi_awlen_reg was removed.  [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:262]
+WARNING: [Synth 8-6014] Unused sequential element U0/AXITrigger_v1_0_S00_AXI_inst/axi_arlen_reg was removed.  [c:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ipshared/3c4d/hdl/AXITrigger_v1_0_S00_AXI.vhd:263]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awsize[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awsize[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awsize[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awlock
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awcache[3]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awcache[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awcache[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awcache[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awregion[3]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awregion[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awregion[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awregion[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awqos[3]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awqos[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awqos[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_awqos[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arsize[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arsize[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arsize[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arlock
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arcache[3]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arcache[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arcache[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arcache[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arprot[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arregion[3]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arregion[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arregion[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arregion[0]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arqos[3]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arqos[2]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arqos[1]
+WARNING: [Synth 8-3331] design TestMultiReg_AXITrigger_0_0 has unconnected port s00_axi_arqos[0]
+INFO: [Synth 8-3886] merging instance 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXITrigger_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/AXITrigger_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/AXITrigger_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/AXITrigger_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module TestMultiReg_AXITrigger_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXITrigger_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module TestMultiReg_AXITrigger_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXITrigger_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module TestMultiReg_AXITrigger_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXITrigger_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module TestMultiReg_AXITrigger_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXITrigger_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module TestMultiReg_AXITrigger_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/AXITrigger_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module TestMultiReg_AXITrigger_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 754.047 ; gain = 478.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     2|
+|2     |LUT1   |     3|
+|3     |LUT2   |    69|
+|4     |LUT3   |     9|
+|5     |LUT4   |    38|
+|6     |LUT5   |    51|
+|7     |LUT6   |    20|
+|8     |FDRE   |   167|
+|9     |FDSE   |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |   372|
+|2     |  U0                             |AXITrigger_v1_0         |   372|
+|3     |    AXITrigger_v1_0_S00_AXI_inst |AXITrigger_v1_0_S00_AXI |   372|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 774.258 ; gain = 498.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 40 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 774.258 ; gain = 175.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 774.258 ; gain = 498.918
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 774.258 ; gain = 505.773
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.runs/TestMultiReg_AXITrigger_0_0_synth_1/TestMultiReg_AXITrigger_0_0.dcp' has been generated.

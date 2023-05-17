@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER AXISamplerWithFifo
+	OPTION supported_peripherals = (AXISamplerWithFifo);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = AXISamplerWithFifo;
+END DRIVER

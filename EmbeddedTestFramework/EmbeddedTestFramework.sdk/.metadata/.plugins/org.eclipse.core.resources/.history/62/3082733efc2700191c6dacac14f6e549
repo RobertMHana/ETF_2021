@@ -1,0 +1,975 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "sleep.h"
+#include "xparameters.h"
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xil_io.h"
+#include "xil_exception.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
+#include "xscugic.h"
+#include "xdmaps.h"
+
+
+//************************* LEDs Driver *******************************************/
+#define LEDS_BASE_ADDR					XPAR_AXI_GPIO_0_BASEADDR
+
+//************************* Interrupt Controller Driver ***************************/
+#include "xscugic.h"
+#define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+XScuGic INTCInst;
+//************************* VGA Drivers and support ************************************/
+#include "xil_io.h"
+#include "genericInterrupt.h"
+#include "xbram.h"
+#define VGA_INJECTOR_BASE_ADDR      XPAR_VGA_INJECTOR_S00_AXI_BASEADDR                              //1. The base address of the Peripheral 0x7AA4000
+#define VGAHorizontal_BASE_INT      XPAR_VGASUBSECTION_VGAHORIZONTAL_INT_S_AXI_INTR_BASEADDR        //2. The base address of the interrupt
+#define VGAVertical_BASE_INT        XPAR_VGASUBSECTION_VGAVERTICAL_INT_S_AXI_INTR_BASEADDR        //2. The base address of the interrupt
+#define VGAHorizontal_INT_ID        XPAR_FABRIC_VGASUBSECTION_VGAHORIZONTAL_INT_IRQ_INTR            //3. The base address of the interrupt
+#define VGAVertical_INT_ID          XPAR_FABRIC_VGASUBSECTION_VGAVERTICAL_INT_IRQ_INTR              //3. The base address of the interrupt
+
+
+#define BRAM_DEVICE_ID			   XPAR_BRAM_0_DEVICE_ID
+XBram_Config *ConfigPtr;
+generic VGAHorizontal;
+generic VGAVertical;
+XBram BRAMInst;						//an instance of our Bram
+XDmaPs_Config *DmaCfg;
+
+/************************** DMA Constant Definitions *****************************/
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define DMA_DEVICE_ID 			XPAR_XDMAPS_1_DEVICE_ID
+
+#define DMA_DONE_INTR_0			XPAR_XDMAPS_0_DONE_INTR_0
+#define DMA_DONE_INTR_1			XPAR_XDMAPS_0_DONE_INTR_1
+#define DMA_DONE_INTR_2			XPAR_XDMAPS_0_DONE_INTR_2
+#define DMA_DONE_INTR_3			XPAR_XDMAPS_0_DONE_INTR_3
+#define DMA_DONE_INTR_4			XPAR_XDMAPS_0_DONE_INTR_4
+#define DMA_DONE_INTR_5			XPAR_XDMAPS_0_DONE_INTR_5
+#define DMA_DONE_INTR_6			XPAR_XDMAPS_0_DONE_INTR_6
+#define DMA_DONE_INTR_7			XPAR_XDMAPS_0_DONE_INTR_7
+#define DMA_FAULT_INTR			XPAR_XDMAPS_0_FAULT_INTR
+
+XDmaPs_Cmd DmaCmd;
+XDmaPs DmaInstance;
+XDmaPs *DmaInst;
+
+#define TEST_ROUNDS	1	/* Number of loops that the Dma transfers run.*/
+#define DMA_LENGTH	700	/* Length of the Dma Transfers */
+#define TIMEOUT_LIMIT 	0x2000	/* Loop count for timeout */
+
+/**************************** Type Definitions *******************************/
+
+
+/***************** Macros (Inline Functions) Definitions *********************/
+
+
+/************************** Function Prototypes ******************************/
+
+
+int SetupInterruptSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+void DmaDoneHandler(unsigned int Channel, XDmaPs_Cmd *DmaCmd,
+			void *CallbackRef);
+
+/************************** Macro Definitions *****************************/
+
+
+/************************** Variable Definitions *****************************/
+#ifdef __ICCARM__
+#pragma data_alignment=32
+static int Src[DMA_LENGTH];
+static int Dst[DMA_LENGTH];
+#pragma data_alignment=4
+#else
+static int Src[DMA_LENGTH] __attribute__ ((aligned (32)));
+static int Dst[DMA_LENGTH] __attribute__ ((aligned (32)));
+#endif
+
+XDmaPs DmaInstance;
+#ifndef TESTAPP_GEN
+XScuGic GicInstance;
+#endif
+
+//****************** TO BE ORGANIZED SOON ***************************//
+int LineNumber = 0;
+int buffer[500000]; //pointer to the buffer array 640 x 524 (must be bigger than this!)
+int bufferAlt[500000]; //pointer to the buffer array 640 x 524 (must be bigger than this!)
+volatile int i = 0;
+volatile int j = 0;
+volatile int k = 0;
+volatile int m = 0;
+int valueA = 0;
+int valueB = 0;
+volatile int s = 0;
+volatile int q = 0;
+int a = 0;
+int b = 0;
+
+int Status = 0;
+int status = 0;
+int xg = 0;
+int yg = 0;
+int x = 0;
+int y = 0;
+
+int vertCount = 0;
+int horzCount = 0;
+int buffer[500000]; //pointer to the buffer array 640 x 524 (must be bigger than this!)
+//------ DMA Prototypes ----------//
+int SetupInterruptSystem(XScuGic *GicPtr, XDmaPs *DmaPtr);
+void DmaDoneHandler(unsigned int Channel, XDmaPs_Cmd *DmaCmd, void *CallbackRef);
+
+int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress);
+int XDmaPs_Example_W_IntrAlt(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress);
+
+
+
+//******************** VGA GRAPHICS LIBRARY STUFF **************************************//
+#include "ezdib.h"
+#include "./draw/bar_grah.h"
+
+#define PI		( (double)3.141592654 )
+#define PI2		( (double)2 * PI )
+
+int pie_graph( HEZDIMAGE x_hDib, int x, int y, int rad,
+			   int nDataType, void *pData, int nDataSize, int *pCols, int nCols )
+{
+	int i, c;
+	double v, pos, dMin, dMax, dTotal;
+
+	// Sanity checks
+	if ( !pData || 0 >= nDataSize || !pCols || !nCols )
+		return 0;
+
+	// Draw chart outline
+	ezd_circle( x_hDib, x, y, rad, *pCols );
+
+	// Get the range of the data set
+	ezd_calc_range( nDataType, pData, nDataSize, &dMin, &dMax, &dTotal );
+
+	// Draw the pie slices
+	pos = 0; c = 0;
+	ezd_line( x_hDib, x, y, x + rad, y, *pCols );
+	for ( i = 0; i < nDataSize; i++ )
+	{
+		if ( ++c >= nCols )
+			c = 1;
+
+		// Get the value for this element
+		v = ezd_scale_value( i, nDataType, pData, 0, dTotal, 0, PI2 );
+
+		ezd_line( x_hDib, x, y,
+						  x + (int)( (double)rad * cos( pos + v ) ),
+						  y + (int)( (double)rad * sin( pos + v ) ),
+						  *pCols );
+
+		ezd_flood_fill( x_hDib, x + (int)( (double)rad / (double)2 * cos( pos + v / 2 ) ),
+								y + (int)( (double)rad / (double)2 * sin( pos + v / 2 ) ),
+								*pCols, pCols[ c ] );
+
+		pos += v;
+
+	} // end for
+
+	return 1;
+}
+
+typedef struct _SAsciiData
+{
+	int sw;
+	unsigned char *buf;
+} SAsciiData;
+
+int ascii_writer( void *pUser, int x, int y, int c, int f )
+{
+	SAsciiData *p = (SAsciiData*)pUser;
+	unsigned char ch = (unsigned char)( f & 0xff );
+
+	if ( !p )
+		return 0;
+
+	if ( ( '0' <= ch && '9' >= ch )
+		 || ( 'A' <= ch && 'Z' >= ch )
+		 || ( 'a' <= ch && 'z' >= ch ) )
+
+		// Write the character
+		p->buf[ y * p->sw + x ] = (unsigned char)f;
+
+	else
+
+		// Write the color
+		p->buf[ y * p->sw + x ] = (unsigned char)c;
+
+	return 1;
+}
+
+typedef struct _SDotMatrixData
+{
+	int w;
+	int h;
+	HEZDIMAGE pDib;
+} SDotMatrixData;
+
+int dotmatrix_writer( void *pUser, int x, int y, int c, int f )
+{
+	int cc, r, dw = 3;
+	HEZDIMAGE hDib = (HEZDIMAGE)pUser;
+
+	if ( !hDib )
+		return 0;
+
+	cc = c & 0xff;
+	for ( r = 0; r < dw; r++ )
+	{	ezd_circle( hDib, x * dw * 2 , y * dw * 2, r, cc );
+		if ( r ) cc >>= 1;
+	} // end for
+
+	cc = ( c >> 8 ) & 0xff;
+	for ( r = 0; r < dw; r++ )
+	{	ezd_circle( hDib, x * dw * 2 + dw, y * dw * 2, r, cc << 8 );
+		if ( r ) cc >>= 1;
+	} // end for
+
+	cc = c & 0xff;
+	for ( r = 0; r < dw; r++ )
+	{	ezd_circle( hDib, x * dw * 2 + dw, y * dw * 2 + dw, r, cc );
+		if ( r ) cc >>= 1;
+	} // end for
+
+	cc = ( c >> 16 ) & 0xff;
+	for ( r = 0; r < dw; r++ )
+	{	ezd_circle( hDib, x * dw * 2, y * dw * 2 + dw, r, cc << 16 );
+		if ( r ) cc >>= 1;
+	} // end for
+
+	return 1;
+}
+
+
+
+//******************** DmaDoneHandler.  *************************************
+void DmaDoneHandler(unsigned int Channel, XDmaPs_Cmd *DmaCmd, void *CallbackRef)
+{
+
+}
+
+void VGAHorizontal_Handler()
+{
+
+	//  Step #1 Disable the interrupt ---------
+	generic_DisableInterrupt(&VGAHorizontal, 0x1);
+
+   //Do some work...(maybe VGA stuff.)
+	horzCount++;
+
+	//In sampling mode...draw to the screen using main()
+ 	status = XDmaPs_Example_W_IntrAlt(&GicInstance, DMA_DEVICE_ID, &buffer, LineNumber, ConfigPtr->MemBaseAddress);
+ 				if (status != XST_SUCCESS) {
+ 					xil_printf("Error: XDMaPs_Example_W_IntrAlt failed\r\n");
+ 					return XST_FAILURE;
+ 	}
+	LineNumber = LineNumber + 1;
+	//  Step #3 ACK the interrupt ---------
+	generic_ACKInterrupt(&VGAHorizontal, 0x1);
+
+	//  Step #4 Enable the interrupt ---------
+	generic_EnableInterrupt(&VGAHorizontal, 0x1);
+
+
+
+}
+
+void VGAVertical_Handler()
+{
+	vertCount++;
+	//  Step #1 Disable the interrupt ---------
+	generic_DisableInterrupt(&VGAVertical, 0x1);
+
+   //Do some work...(maybe VGA stuff.)
+	LineNumber = 0;
+	//In sampling mode...draw to the screen using main()
+	// when not in sampling mode.. there is enough time to do that here in the interrupt and do processing in main();
+
+	//  Step #3 ACK the interrupt ---------
+	generic_ACKInterrupt(&VGAVertical, 0x1);
+
+	//  Step #4 Enable the interrupt ---------
+	generic_EnableInterrupt(&VGAVertical, 0x1);
+
+
+
+}
+
+/****************************************************************************/
+/**
+*
+* This is the main function for the DmaPs interrupt example.
+*
+* @param	None.
+*
+* @return	XST_SUCCESS to indicate success, otherwise XST_FAILURE.
+*
+* @note		None.
+*
+****************************************************************************/
+#ifndef TESTAPP_GEN
+int main(void)
+{
+	init_platform();
+
+	int Status;
+	int status;
+    print("\n\r Platform initialized...");
+    print("\n\r Starting test now...");
+
+
+
+//-----------------------------------  Configure Interrupts ----------------------------------------//
+
+	//--- Initialize our custom AXI Line Counter Structure (Base Address, IsReady, Present, IsDual?)
+    VGAHorizontal.BaseAddress = VGAHorizontal_BASE_INT;
+    VGAHorizontal.IsReady = 0x11111111;
+    VGAHorizontal.InterruptPresent = 1;
+    VGAHorizontal.IsDual = 0;
+    print("\n\r VGAHorizontal configured...");
+    VGAVertical.BaseAddress = VGAVertical_BASE_INT;
+    VGAVertical.IsReady = 0x11111111;
+    VGAVertical.InterruptPresent = 1;
+    VGAVertical.IsDual = 0;
+    print("\n\r VGAVertical configured...");
+
+	generic_DisableInterrupt(&VGAHorizontal, 0x1);
+	 print("\n\r A");
+	generic_ACKInterrupt(&VGAHorizontal, 0x1);
+	 print("\n\r B");
+	generic_DisableInterrupt(&VGAVertical, 0x1);
+	 print("\n\r C");
+	generic_ACKInterrupt(&VGAVertical, 0x1);
+	 print("\n\r D");
+	print("\n\r configured and disabled interrupts.");
+
+	  //************* BRAM CONFIGURATION ****************************//
+	//--- Initialize the BRAM Controller ---//
+	// Abstraction that Performs the heavy lifting of configuring the BRAM Controller
+	 print("\n\r Looking for BRAM_DEVICE_ID");
+	ConfigPtr = XBram_LookupConfig(BRAM_DEVICE_ID);
+	if (ConfigPtr == (XBram_Config *) NULL) {
+	    print("\n\r BRAM not found, exiting...");
+		return XST_FAILURE;
+	}
+	printf("\n\r XBram was found!");
+
+	status = XBram_CfgInitialize(&BRAMInst, ConfigPtr, ConfigPtr->CtrlBaseAddress);
+	if (status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	printf("\n\r XBram configuration completed.");
+	u32 Addr;
+	volatile u32 Data;
+	if (ConfigPtr->EccPresent &&
+     ConfigPtr->EccOnOffRegister &&
+		ConfigPtr->EccOnOffResetValue == 0 &&
+		ConfigPtr->WriteAccess != 0) {
+		for (Addr = ConfigPtr->MemBaseAddress;
+			 Addr < ConfigPtr->MemHighAddress; Addr+=4) {
+			Data = XBram_In32(Addr);
+			XBram_Out32(Addr, Data);
+		}
+		XBram_WriteReg(ConfigPtr->CtrlBaseAddress, XBRAM_ECC_ON_OFF_OFFSET, 1);
+	}
+
+	status = XDmaPs_Example_W_Intr(&GicInstance, DMA_DEVICE_ID, &buffer, ConfigPtr->MemBaseAddress);
+		if (status != XST_SUCCESS) {
+			xil_printf("Error: XDMaPs_Example_W_Intr failed\r\n");
+			return XST_FAILURE;
+	}
+	xil_printf("Successfully ran XDMaPs_Example_W_Intr\r\n");
+
+
+
+
+
+
+		//****************** GLOBAL INTERRUPT CONTROLLER CONFIGURE AND CONNECT *********************//
+		// ----  Initialize the Global Interrupt Controller Itself------//
+
+
+
+
+		xil_printf("\n\r Configuring Global Interrupt Controller");
+		XScuGic_Config *IntcConfig;
+		IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+		status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+		if(status != XST_SUCCESS) return XST_FAILURE;
+		xil_printf("\n\r GIC connected!");
+
+		// --- Configure Exception Handling -----//
+		Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+									(Xil_ExceptionHandler)XScuGic_InterruptHandler,
+									&INTCInst);
+		Xil_ExceptionEnable();
+		xil_printf("\n\r Exception Handlers enabled...!");
+
+		xil_printf("\n\r Connecting VGA Interrupts to device to Global Interrupt Controller");
+
+		// --- Horizontal Interrupt Configuration --//
+		status = XScuGic_Connect(	&INTCInst,
+									VGAHorizontal_INT_ID,				//- Connect the line counter interrupt
+									(Xil_ExceptionHandler)VGAHorizontal_Handler,
+									(void *)&VGAHorizontal);
+		if(status != XST_SUCCESS) return XST_FAILURE;
+		xil_printf("\n\r VGAHorizontal connected!");
+
+		// --- Vertical Interrupt Configuration --//
+		status = XScuGic_Connect(	&INTCInst,
+									VGAVertical_INT_ID,				//- Connect the line counter interrupt
+									(Xil_ExceptionHandler)VGAVertical_Handler,
+									(void *)&VGAVertical);
+		if(status != XST_SUCCESS) return XST_FAILURE;
+		xil_printf("\n\r VGAVertical connected!");
+		//-------------  /* Setup the interrupt system. */ ------------
+		// *************** connects the interrupt system to the DMA *************
+
+
+		xil_printf("\n\r Enabling Interrupts!");
+		//--- Enable custom interrupt again! Enable each interrupt---//
+		generic_EnableInterrupt(&VGAHorizontal, 0x1);
+		generic_GlobalEnableInterrupt(&VGAHorizontal, 0x1);
+
+		generic_EnableInterrupt(&VGAVertical, 0x1);
+		generic_GlobalEnableInterrupt(&VGAVertical, 0x1);
+
+		XScuGic_Enable(&INTCInst, VGAHorizontal_INT_ID);
+		XScuGic_Enable(&INTCInst, VGAVertical_INT_ID);
+
+		xil_printf("\n\r All the interrupts are enabled!");
+
+
+
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+		//**********************   Box Test *************************************
+		/* Draw a white box to a black background to the video buffer in memory
+		   This is a simple test as a proof that the buffer has been drawn to, and  is
+	       then drawn (or not drawn) by the dma later.*/
+
+		xil_printf("\n\r Box test drawing...");
+		for(y = 0; y < 480; y++){
+			for(x = 0; x < 640; x++){
+
+				if(x > 100 && x < 300 && y > 100 && y < 300){
+					buffer[640*y + x] = 0xFFFF;
+				}
+				else{
+					buffer[640*y + x] = 0xF83F;
+
+				}
+			}
+		}
+
+		//********** VGA GRARPHICS DRAW STUFF ***************//
+		// *** Example with user supplied static buffers
+		//--------------------------------------------------------------
+		int b, x, y;
+		HEZDIMAGE hDib;
+		HEZDFONT hFont;
+		int bpp[] = { 1, 24, 32, 0 };
+
+
+		//Graph Data is here
+		// Graph data
+		int data[] = { 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, \
+					   11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, \
+					   11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, \
+					   11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64, 11, 54, 23, 87, 34, 54, 75, 44, 66, 65, 64 };
+
+		// Graph colors
+		int cols[] = { 0xffffff, 0x000408, 0x00965B, 0x00718A };
+
+
+
+
+
+		 int leds = 0xA;
+	     while(1){
+
+	     leds = ~leds;
+         Xil_Out32(LEDS_BASE_ADDR, (u32)leds);
+         xil_printf("\n\r Horizontal Count is: %i", horzCount) ;
+         xil_printf("\n\r Vertical   Count is: %i", vertCount) ;
+         xil_printf("\n\r -----------------------");
+         for(s = 0; s < 20000000; s++){ q = q + 1;}
+
+
+        //********* VGA GRAPHICS DRAW STUFF **********//
+         // For each supported pixel depth
+         				for ( b = 0; bpp[ b ]; b++ )
+         				{
+         					const int w = 640, h = 480;
+         					const int r = ( ( w > h ) ? ( h >> 1 ) : ( w >> 1 ) ) - 10;
+
+         					// User buffer
+         					char user_header[ EZD_HEADER_SIZE ];
+         					//char user_buffer[ 640 * 480 * 4 ];
+
+         					// Create output file name
+         					char fname[ 256 ] = { 0 };
+         					sprintf( fname, "user-%d.bmp", bpp[ b ] );
+         					printf( "Creating %s\n", fname );
+
+         					// Create image
+         					hDib = ezd_initialize( user_header, sizeof( user_header ), w, -h, bpp[ b ], EZD_FLAG_USER_IMAGE_BUFFER );
+         					if ( !hDib )
+         						continue;
+
+         					// Set user buffer
+         					if ( !ezd_set_image_buffer( hDib, buffer, sizeof( buffer ) ) )
+         						continue;
+
+         					// Fill in the background
+         					ezd_fill( hDib, 0x000000 );
+
+         					// Draw circles
+         					for ( x = 0; x < r; x += 4 )
+         						ezd_circle( hDib, w >> 1, h >> 1, x, x * 5 );
+
+         					// Save the test image
+         					//ezd_save( hDib, fname );
+
+         					// Free resources
+         					//if ( hDib )
+         					//	ezd_destroy( hDib );
+
+         				} // end for
+
+         				for(s = 0; s < 2000000; s++){ q = q + 1;};
+
+         				// For each supported pixel depth
+         				for ( b = 0; bpp[ b ]; b++ )
+         				{
+         					const int w = 640, h = 480;
+         					const int r = ( ( w > h ) ? ( h >> 1 ) : ( w >> 1 ) ) - 10;
+
+         					// User buffer
+         					char user_header[ EZD_HEADER_SIZE ];
+         					//char user_buffer[ 640 * 480 * 4 ];
+
+         					// Create output file name
+         					char fname[ 256 ] = { 0 };
+         					sprintf( fname, "user-%d.bmp", bpp[ b ] );
+         					printf( "Creating %s\n", fname );
+
+         					// Create image
+         					hDib = ezd_initialize( user_header, sizeof( user_header ), w, -h, bpp[ b ], EZD_FLAG_USER_IMAGE_BUFFER );
+         					if ( !hDib )
+         						continue;
+
+         					// Set user buffer
+         					if ( !ezd_set_image_buffer( hDib, buffer, sizeof( buffer ) ) )
+         						continue;
+
+         					// Fill in the background
+         					ezd_fill( hDib, 0x000000 );
+
+         					// Draw circles
+         					for ( x = 0; x < r; x += 1 )
+         						ezd_circle( hDib, w >> 1, h >> 1, x, x * 10 );
+
+         					// Save the test image
+         					//ezd_save( hDib, fname );
+
+         					// Free resources
+         					//if ( hDib )
+         					//	ezd_destroy( hDib );
+
+         				} // end for
+         				for(s = 0; s < 20000000; s++){ q = q + 1;};
+
+
+
+         				// Set color threshold for mono chrome images
+         						if ( 1 == bpp[ b ] )
+         						{	ezd_set_color_threshold( hDib, 0x80 );
+         							ezd_set_palette_color( hDib, 0, 0x806000 );
+         							ezd_set_palette_color( hDib, 1, 0x000000 );
+         						} // end if
+
+         						// Fill in the background
+         						ezd_fill( hDib, 0x404040 );
+
+
+         						// Draw random lines
+         						for ( x = 20; x < 300; x += 10 )
+         							ezd_line( hDib, x, ( x & 1 ) ? 50 : 100, x + 10, !( x & 1 ) ? 50 : 100, 0x00ff00 ),
+         							ezd_line( hDib, x + 10, ( x & 1 ) ? 50 : 100, x, !( x & 1 ) ? 50 : 100, 0x0000ff );
+
+         						// Random red box
+         						ezd_fill_rect( hDib, 200, 150, 400, 250, 0x900000 );
+
+         						// Random yellow box
+         						ezd_fill_rect( hDib, 300, 200, 350, 280, 0xffff00 );
+
+         						// Dark outline for yellow box
+         						ezd_rect( hDib, 300, 200, 350, 280, 0x000000 );
+
+         						// Draw random dots
+         						for ( y = 150; y < 250; y += 4 )
+         							for ( x = 50; x < 150; x += 4 )
+         								ezd_set_pixel( hDib, x, y, 0xffffff );
+
+         						// Circles
+         						for ( x = 0; x < 40; x++ )
+         							ezd_circle( hDib, 400, 60, x, x * 5 );
+
+         						// Draw graphs
+         						{
+
+
+         							// Draw bar graph
+         							ezd_rect( hDib, 35, 295, 605, 445, cols[ 0 ] );
+         							bar_graph( hDib, hFont, 40, 300, 600, 440, EZD_TYPE_INT,
+         									   data, sizeof( data ) / sizeof( data[ 0 ] ),
+         									   cols, sizeof( cols ) / sizeof( cols[ 0 ] ) );
+
+         							// Draw pie graph
+         							ezd_circle( hDib, 525, 150, 84, cols[ 0 ] );
+         							pie_graph( hDib, 525, 150, 80, EZD_TYPE_INT,
+         									   data, sizeof( data ) / sizeof( data[ 0 ] ),
+         									   cols, sizeof( cols ) / sizeof( cols[ 0 ] ) );
+
+         						}
+
+         					    // Test fonts
+         						hFont = ezd_load_font( EZD_FONT_TYPE_MEDIUM, 5, 0 );
+         						if ( hFont )
+         							ezd_text( hDib, hFont, "THIS IS just a test of the FONTS TO SEE HOW THEY WORK", -1, 10, 10, 0xffffff );
+
+         						for(s = 0; s < 20000000; s++){ q = q + 1;};
+         						for(s = 0; s < 20000000; s++){ q = q + 1;};
+         						for(s = 0; s < 20000000; s++){ q = q + 1;};
+         						for(s = 0; s < 20000000; s++){ q = q + 1;};
+
+	  }
+
+		xil_printf("\n\r interrupts configured and enabled");
+
+
+	return XST_SUCCESS;
+
+}
+
+
+/******************************************************************************/
+/**
+ *
+ * This function connects the interrupt handler of the interrupt controller to
+ * the processor.  This function is seperate to allow it to be customized for
+ * each application. Each processor or RTOS may require unique processing to
+ * connect the interrupt handler.
+ *
+ * @param	GicPtr is the GIC instance pointer.
+ * @param	DmaPtr is the DMA instance pointer.
+ *
+ * @return	None.
+ *
+ * @note	None.
+ *
+ ****************************************************************************/
+int SetupInterruptSystem(XScuGic *GicPtr, XDmaPs *DmaPtr)
+{
+	int Status;
+	XScuGic_Config *GicConfig;
+
+
+	Xil_ExceptionInit();
+
+	/*
+	 * Initialize the interrupt controller driver so that it is ready to
+	 * use.
+	 */
+	GicConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == GicConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(GicPtr, GicConfig,
+				       GicConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect the interrupt controller interrupt handler to the hardware
+	 * interrupt handling logic in the processor.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_IRQ_INT,
+			     (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+			     GicPtr);
+
+	/*
+	 * Connect the device driver handlers that will be called when an interrupt
+	 * for the device occurs, the device driver handler performs the specific
+	 * interrupt processing for the device
+	 */
+
+	/*
+	 * Connect the Fault ISR
+	 */
+	Status = XScuGic_Connect(GicPtr,
+				 DMA_FAULT_INTR,
+				 (Xil_InterruptHandler)XDmaPs_FaultISR,
+				 (void *)DmaPtr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect the Done ISR for all 8 channels of DMA 0
+	 */
+	Status = XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_0,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_0,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_1,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_1,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_2,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_2,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_3,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_3,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_4,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_4,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_5,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_5,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_6,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_6,
+				 (void *)DmaPtr);
+	Status |= XScuGic_Connect(GicPtr,
+				 DMA_DONE_INTR_7,
+				 (Xil_InterruptHandler)XDmaPs_DoneISR_7,
+				 (void *)DmaPtr);
+
+	if (Status != XST_SUCCESS)
+		return XST_FAILURE;
+
+	/*
+	 * Enable the interrupts for the device
+	 */
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_0);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_1);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_2);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_3);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_4);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_5);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_6);
+	XScuGic_Enable(GicPtr, DMA_DONE_INTR_7);
+	XScuGic_Enable(GicPtr, DMA_FAULT_INTR);
+
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+
+}
+
+
+int XDmaPs_Example_W_Intr(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int  *DestinationAddress)
+{
+	unsigned int Channel = 0;
+	int Status;
+	int TestStatus;
+	volatile int Checked[XDMAPS_CHANNELS_PER_DEV];
+	XDmaPs_Config *DmaCfg;
+	//XDmaPs *DmaInst = &DmaInstance;
+
+	DmaInst = &DmaInstance; //  <-- so.. this is a silly thing here?
+
+
+	memset(&DmaCmd, 0, sizeof(XDmaPs_Cmd));
+
+	DmaCmd.ChanCtrl.SrcBurstSize = 4;
+	DmaCmd.ChanCtrl.SrcBurstLen = 4;
+	DmaCmd.ChanCtrl.SrcInc = 1;
+	DmaCmd.ChanCtrl.DstBurstSize = 4;
+	DmaCmd.ChanCtrl.DstBurstLen = 4;
+	DmaCmd.ChanCtrl.DstInc = 1;
+	DmaCmd.BD.SrcAddr = (u32 *) SourceAddress;
+	DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+	DmaCmd.BD.Length = DMA_LENGTH * sizeof(int);
+
+
+
+	DmaCfg = XDmaPs_LookupConfig(DeviceId);
+	if (DmaCfg == NULL) {
+		return XST_FAILURE;
+	}
+
+	Status = XDmaPs_CfgInitialize(DmaInst, DmaCfg,DmaCfg->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	// Setup the interrupt system.
+	Status = SetupInterruptSystem(GicPtr, DmaInst);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	TestStatus = XST_SUCCESS;
+
+	/* Set the Done interrupt handler */
+	XDmaPs_SetDoneHandler(DmaInst, Channel, DmaDoneHandler, (void *)Checked);
+
+
+
+	Status = XDmaPs_Start(DmaInst, Channel, &DmaCmd, 0);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	return TestStatus;
+
+}
+
+//---- Adding an offset to the source Address (frame buffer) so we go line by line and load them into the BRAM ---//
+int XDmaPs_Example_W_IntrAlt(XScuGic *GicPtr, u16 DeviceId, int *SourceAddress, int offset, int  *DestinationAddress)
+{
+	//unsigned int Channel = 0;
+
+	//7 instructions
+	int Status;
+	int TestStatus;
+	int internalOffset = 0;
+	internalOffset = offset*640;
+	int *newSource;
+	newSource = SourceAddress + internalOffset ;
+	TestStatus = XST_SUCCESS;
+
+	//9 instructions
+	DmaCmd.ChanCtrl.SrcBurstSize = 4;
+	DmaCmd.ChanCtrl.SrcBurstLen = 4;
+	DmaCmd.ChanCtrl.SrcInc = 1;
+	DmaCmd.ChanCtrl.DstBurstSize = 4;
+	DmaCmd.ChanCtrl.DstBurstLen = 4;
+	DmaCmd.ChanCtrl.DstInc = 1;
+	DmaCmd.BD.SrcAddr = (u32 *) newSource;
+	DmaCmd.BD.DstAddr = (u32 *) DestinationAddress;
+	DmaCmd.BD.Length = DMA_LENGTH * sizeof(int);
+
+	//6 instructions
+		Status = XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_0,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_0,
+					 (void *)DmaInst);
+
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_1,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_1,
+					 (void *)DmaInst);
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_2,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_2,
+					 (void *)DmaInst);
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_3,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_3,
+					 (void *)DmaInst);
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_4,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_4,
+					 (void *)DmaInst);
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_5,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_5,
+					 (void *)DmaInst);
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_6,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_6,
+					 (void *)DmaInst);
+		Status |= XScuGic_Connect(GicPtr,
+					 DMA_DONE_INTR_7,
+					 (Xil_InterruptHandler)XDmaPs_DoneISR_7,
+					 (void *)DmaInst);
+
+
+		//1 instruction
+		if (Status != XST_SUCCESS){
+			printf("\n\r status problem in connect");
+			return XST_FAILURE;
+		}
+		//-----
+		/* Set the Done interrupt handler */
+		//	XDmaPs_SetDoneHandler(DmaInst, 0, DmaDoneHandler, 0);
+
+		//------
+
+		// Enable the interrupts for the device
+
+		//12 instructions
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_0);
+
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_1);
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_2);
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_3);
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_4);
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_5);
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_6);
+		XScuGic_Enable(GicPtr, DMA_DONE_INTR_7);
+
+		XScuGic_Enable(GicPtr, DMA_FAULT_INTR);
+
+
+
+	//17 + DMAGO (18) including waits... hmm is 35 instructions.
+	// --- we can set up the DMA in the rest of the program.. then
+	// execute it and get it going when the interrupt hits
+	//	Status = XDmaPs_Exec_DMAGO(InstPtr->Config.BaseAddress,
+	//				    Channel, DmaProg);
+	// So that would be a better strategy, otherwise it lags behind the pixel clock a bit
+	// causing a screen distortion.
+	// Perhaps some way to configure the DMA to run by itself would be ideal, or on just 1 processor.
+
+
+	Status = XDmaPs_Start(DmaInst, 0, &DmaCmd, 0);
+	if (Status != XST_SUCCESS) {
+		printf("\n\r start problem");
+		return XST_FAILURE;
+	}
+
+	return TestStatus;
+
+	//Totals ~69 instructions.. so ~100, quite a few cycles maybe 400?
+
+}
+
+
+
+
+
+
+
+
+
+#endif
+

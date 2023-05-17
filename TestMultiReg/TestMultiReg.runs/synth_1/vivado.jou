@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Dec 27 21:51:28 2018
+# Process ID: 7184
+# Current directory: C:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.runs/synth_1
+# Command line: vivado.exe -log TestMultiReg_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TestMultiReg_wrapper.tcl
+# Log file: C:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.runs/synth_1/TestMultiReg_wrapper.vds
+# Journal file: C:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TestMultiReg_wrapper.tcl -notrace

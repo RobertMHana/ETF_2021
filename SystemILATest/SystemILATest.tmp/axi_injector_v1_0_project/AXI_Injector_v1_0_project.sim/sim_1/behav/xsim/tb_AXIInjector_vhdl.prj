@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/TestMultiReg_1.0/hdl/TestMultiReg_v1_0.vhd" \
+"../../../../../../../ip_repo/TestMultiReg_1.0/hdl/TestMultiReg_v1_0_S00_AXI.vhd" \
+"../../../../../../../ip_repo/TestMultiReg_1.0/src/axisampler_fifo_elegant_pkg.vhd" \
+"../../../../../../../ip_repo/TestMultiReg_1.0/src/fifo_injector.vhd" \
+"../../../../../../../ip_repo/TestMultiReg_1.0/src/tb_AXIInjector.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu May 27 04:32:33 UTC 2021
+VLNV: xilinx.com:user:AXI_Sampler:1.0
+SynthRuntime: 27
