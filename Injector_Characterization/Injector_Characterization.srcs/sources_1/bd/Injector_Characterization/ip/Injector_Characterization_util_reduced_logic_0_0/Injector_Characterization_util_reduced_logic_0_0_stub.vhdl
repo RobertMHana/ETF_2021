@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 -- Date        : Sat Mar 16 21:20:51 2019
 -- Host        : Robert-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Robert/xilinx_projects/Injector_Characterization/Injector_Characterization.srcs/sources_1/bd/Injector_Characterization/ip/Injector_Characterization_util_reduced_logic_0_0/Injector_Characterization_util_reduced_logic_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top Injector_Characterization_util_reduced_logic_0_0 -prefix
+--               Injector_Characterization_util_reduced_logic_0_0_ Injector_Characterization_util_reduced_logic_0_0_stub.vhdl
 -- Design      : Injector_Characterization_util_reduced_logic_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

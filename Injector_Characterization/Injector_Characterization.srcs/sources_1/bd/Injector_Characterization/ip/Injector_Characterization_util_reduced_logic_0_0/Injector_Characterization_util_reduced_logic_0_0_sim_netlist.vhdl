@@ -3,8 +3,9 @@
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 -- Date        : Sat Mar 16 21:20:51 2019
 -- Host        : Robert-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Robert/xilinx_projects/Injector_Characterization/Injector_Characterization.srcs/sources_1/bd/Injector_Characterization/ip/Injector_Characterization_util_reduced_logic_0_0/Injector_Characterization_util_reduced_logic_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top Injector_Characterization_util_reduced_logic_0_0 -prefix
+--               Injector_Characterization_util_reduced_logic_0_0_
+--               Injector_Characterization_util_reduced_logic_0_0_sim_netlist.vhdl
 -- Design      : Injector_Characterization_util_reduced_logic_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -19,8 +20,6 @@ entity Injector_Characterization_util_reduced_logic_0_0_util_reduced_logic_v2_0_
     Res : out STD_LOGIC;
     Op1 : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Injector_Characterization_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_logic : entity is "util_reduced_logic_v2_0_4_util_reduced_logic";
 end Injector_Characterization_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_logic;
 
 architecture STRUCTURE of Injector_Characterization_util_reduced_logic_0_0_util_reduced_logic_v2_0_4_util_reduced_logic is

@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Wed May 26 21:32:33 2021
-// Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.srcs/sources_1/bd/Sampler_Characterization/ip/Sampler_Characterization_AXI_Sampler_0_0/Sampler_Characterization_AXI_Sampler_0_0_sim_netlist.v
+// Date        : Tue May 30 20:29:29 2023
+// Host        : robertPC running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim -rename_top Sampler_Characterization_AXI_Sampler_0_0 -prefix
+//               Sampler_Characterization_AXI_Sampler_0_0_ Sampler_Characterization_AXI_Sampler_0_0_sim_netlist.v
 // Design      : Sampler_Characterization_AXI_Sampler_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -179,7 +179,6 @@ module Sampler_Characterization_AXI_Sampler_0_0
         .wr_clk_en(wr_clk_en));
 endmodule
 
-(* ORIG_REF_NAME = "TestSampler_v1_0" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0
    (s00_axi_awready,
     s00_axi_arready,
@@ -298,7 +297,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0
         .wr_clk_en(wr_clk_en));
 endmodule
 
-(* ORIG_REF_NAME = "TestSampler_v1_0_S00_AXI" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0_S00_AXI
    (s00_axi_awready,
     s00_axi_arready,
@@ -3175,7 +3173,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0_S00_AXI
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_sampler" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_fifo_sampler
    (prog_full,
     D,
@@ -3274,10 +3271,9 @@ module Sampler_Characterization_AXI_Sampler_0_0_fifo_sampler
         .wr_en_reg(wr_en_reg));
 endmodule
 
-(* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_gray" *) 
-(* REG_OUTPUT = "0" *) (* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) 
-(* VERSION = "0" *) (* WIDTH = "14" *) (* XPM_MODULE = "TRUE" *) 
-(* xpm_cdc = "GRAY" *) 
+(* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "1" *) (* REG_OUTPUT = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) (* VERSION = "0" *) 
+(* WIDTH = "14" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "GRAY" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray
    (src_clk,
     src_in_bin,
@@ -5573,8 +5569,8 @@ module Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray__parameterized0__1
 endmodule
 
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "2" *) (* INIT = "0" *) 
-(* INIT_SYNC_FF = "1" *) (* ORIG_REF_NAME = "xpm_cdc_sync_rst" *) (* SIM_ASSERT_CHK = "0" *) 
-(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SYNC_RST" *) 
+(* INIT_SYNC_FF = "1" *) (* SIM_ASSERT_CHK = "0" *) (* VERSION = "0" *) 
+(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SYNC_RST" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst
    (src_rst,
     dest_clk,
@@ -5652,7 +5648,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst__1
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_counter_updn" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_counter_updn
    (Q,
     S,
@@ -7055,7 +7050,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_xpm_counter_updn__parameterized1
         .R(wrst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_async" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_async
    (prog_full,
     D,
@@ -7544,16 +7538,16 @@ endmodule
 (* EN_WDC = "1'b1" *) (* FG_EQ_ASYM_DOUT = "1'b0" *) (* FIFO_MEMORY_TYPE = "2" *) 
 (* FIFO_MEM_TYPE = "2" *) (* FIFO_READ_DEPTH = "16384" *) (* FIFO_READ_LATENCY = "1" *) 
 (* FIFO_SIZE = "524288" *) (* FIFO_WRITE_DEPTH = "16384" *) (* FULL_RESET_VALUE = "0" *) 
-(* FULL_RST_VAL = "1'b0" *) (* ORIG_REF_NAME = "xpm_fifo_base" *) (* PE_THRESH_ADJ = "100" *) 
-(* PE_THRESH_MAX = "16381" *) (* PE_THRESH_MIN = "3" *) (* PF_THRESH_ADJ = "16381" *) 
-(* PF_THRESH_MAX = "16381" *) (* PF_THRESH_MIN = "5" *) (* PROG_EMPTY_THRESH = "100" *) 
-(* PROG_FULL_THRESH = "16381" *) (* RD_DATA_COUNT_WIDTH = "1" *) (* RD_DC_WIDTH_EXT = "15" *) 
-(* RD_LATENCY = "1" *) (* RD_MODE = "0" *) (* RD_PNTR_WIDTH = "14" *) 
-(* READ_DATA_WIDTH = "32" *) (* READ_MODE = "0" *) (* RELATED_CLOCKS = "0" *) 
-(* REMOVE_WR_RD_PROT_LOGIC = "0" *) (* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "0707" *) 
-(* VERSION = "0" *) (* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH = "32" *) 
-(* WR_DATA_COUNT_WIDTH = "1" *) (* WR_DC_WIDTH_EXT = "15" *) (* WR_PNTR_WIDTH = "14" *) 
-(* WR_RD_RATIO = "0" *) (* XPM_MODULE = "TRUE" *) 
+(* FULL_RST_VAL = "1'b0" *) (* PE_THRESH_ADJ = "100" *) (* PE_THRESH_MAX = "16381" *) 
+(* PE_THRESH_MIN = "3" *) (* PF_THRESH_ADJ = "16381" *) (* PF_THRESH_MAX = "16381" *) 
+(* PF_THRESH_MIN = "5" *) (* PROG_EMPTY_THRESH = "100" *) (* PROG_FULL_THRESH = "16381" *) 
+(* RD_DATA_COUNT_WIDTH = "1" *) (* RD_DC_WIDTH_EXT = "15" *) (* RD_LATENCY = "1" *) 
+(* RD_MODE = "0" *) (* RD_PNTR_WIDTH = "14" *) (* READ_DATA_WIDTH = "32" *) 
+(* READ_MODE = "0" *) (* RELATED_CLOCKS = "0" *) (* REMOVE_WR_RD_PROT_LOGIC = "0" *) 
+(* SIM_ASSERT_CHK = "0" *) (* USE_ADV_FEATURES = "0707" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH = "32" *) (* WR_DATA_COUNT_WIDTH = "1" *) 
+(* WR_DC_WIDTH_EXT = "15" *) (* WR_PNTR_WIDTH = "14" *) (* WR_RD_RATIO = "0" *) 
+(* XPM_MODULE = "TRUE" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base
    (sleep,
     rst,
@@ -8390,7 +8384,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base
         .wrst_busy(wrst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_reg_bit" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_bit
    (rst_d1,
     \gen_pf_ic_rc.gpf_ic.prog_full_i_reg ,
@@ -8515,7 +8508,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_bit
         .O(overflow_i0));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_reg_vec" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_vec
    (ram_full_i0,
     CO,
@@ -9645,7 +9637,6 @@ module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_vec__parameterized0
         .R(\gen_rst_ic.fifo_rd_rst_ic_reg ));
 endmodule
 
-(* ORIG_REF_NAME = "xpm_fifo_rst" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_rst
    (\syncstages_ff_reg[0] ,
     wrst_busy,
@@ -9987,22 +9978,21 @@ endmodule
 (* ECC_MODE = "0" *) (* MAX_NUM_CHAR = "0" *) (* MEMORY_INIT_FILE = "none" *) 
 (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) (* MEMORY_PRIMITIVE = "2" *) 
 (* MEMORY_SIZE = "524288" *) (* MEMORY_TYPE = "1" *) (* MESSAGE_CONTROL = "0" *) 
-(* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) (* P_ECC_MODE = "no_ecc" *) 
-(* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) (* P_MAX_DEPTH_DATA = "16384" *) 
-(* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "block" *) (* P_MIN_WIDTH_DATA = "32" *) 
-(* P_MIN_WIDTH_DATA_A = "32" *) (* P_MIN_WIDTH_DATA_B = "32" *) (* P_MIN_WIDTH_DATA_ECC = "32" *) 
-(* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "32" *) (* P_NUM_COLS_WRITE_A = "1" *) 
-(* P_NUM_COLS_WRITE_B = "1" *) (* P_NUM_ROWS_READ_A = "1" *) (* P_NUM_ROWS_READ_B = "1" *) 
-(* P_NUM_ROWS_WRITE_A = "1" *) (* P_NUM_ROWS_WRITE_B = "1" *) (* P_SDP_WRITE_MODE = "no" *) 
-(* P_WIDTH_ADDR_LSB_READ_A = "0" *) (* P_WIDTH_ADDR_LSB_READ_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
-(* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) (* P_WIDTH_ADDR_READ_A = "14" *) (* P_WIDTH_ADDR_READ_B = "14" *) 
-(* P_WIDTH_ADDR_WRITE_A = "14" *) (* P_WIDTH_ADDR_WRITE_B = "14" *) (* P_WIDTH_COL_WRITE_A = "32" *) 
-(* P_WIDTH_COL_WRITE_B = "32" *) (* READ_DATA_WIDTH_A = "32" *) (* READ_DATA_WIDTH_B = "32" *) 
-(* READ_LATENCY_A = "2" *) (* READ_LATENCY_B = "1" *) (* READ_RESET_VALUE_A = "0" *) 
-(* READ_RESET_VALUE_B = "0" *) (* USE_EMBEDDED_CONSTRAINT = "0" *) (* USE_MEM_INIT = "1" *) 
-(* VERSION = "0" *) (* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "32" *) 
-(* WRITE_DATA_WIDTH_B = "32" *) (* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "2" *) 
-(* XPM_MODULE = "TRUE" *) 
+(* NUM_CHAR_LOC = "0" *) (* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) 
+(* P_ENABLE_BYTE_WRITE_B = "0" *) (* P_MAX_DEPTH_DATA = "16384" *) (* P_MEMORY_OPT = "yes" *) 
+(* P_MEMORY_PRIMITIVE = "block" *) (* P_MIN_WIDTH_DATA = "32" *) (* P_MIN_WIDTH_DATA_A = "32" *) 
+(* P_MIN_WIDTH_DATA_B = "32" *) (* P_MIN_WIDTH_DATA_ECC = "32" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) 
+(* P_MIN_WIDTH_DATA_SHFT = "32" *) (* P_NUM_COLS_WRITE_A = "1" *) (* P_NUM_COLS_WRITE_B = "1" *) 
+(* P_NUM_ROWS_READ_A = "1" *) (* P_NUM_ROWS_READ_B = "1" *) (* P_NUM_ROWS_WRITE_A = "1" *) 
+(* P_NUM_ROWS_WRITE_B = "1" *) (* P_SDP_WRITE_MODE = "no" *) (* P_WIDTH_ADDR_LSB_READ_A = "0" *) 
+(* P_WIDTH_ADDR_LSB_READ_B = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) 
+(* P_WIDTH_ADDR_READ_A = "14" *) (* P_WIDTH_ADDR_READ_B = "14" *) (* P_WIDTH_ADDR_WRITE_A = "14" *) 
+(* P_WIDTH_ADDR_WRITE_B = "14" *) (* P_WIDTH_COL_WRITE_A = "32" *) (* P_WIDTH_COL_WRITE_B = "32" *) 
+(* READ_DATA_WIDTH_A = "32" *) (* READ_DATA_WIDTH_B = "32" *) (* READ_LATENCY_A = "2" *) 
+(* READ_LATENCY_B = "1" *) (* READ_RESET_VALUE_A = "0" *) (* READ_RESET_VALUE_B = "0" *) 
+(* USE_EMBEDDED_CONSTRAINT = "0" *) (* USE_MEM_INIT = "1" *) (* VERSION = "0" *) 
+(* WAKEUP_TIME = "0" *) (* WRITE_DATA_WIDTH_A = "32" *) (* WRITE_DATA_WIDTH_B = "32" *) 
+(* WRITE_MODE_A = "2" *) (* WRITE_MODE_B = "2" *) (* XPM_MODULE = "TRUE" *) 
 module Sampler_Characterization_AXI_Sampler_0_0_xpm_memory_base
    (sleep,
     clka,

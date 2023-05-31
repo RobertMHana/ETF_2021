@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Sat Mar 16 18:21:13 2019
--- Host        : Robert-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Robert/xilinx_projects/Sampler_Characterization/Sampler_Characterization.srcs/sources_1/bd/Sampler_Characterization/ip/Sampler_Characterization_AXITrigger_0_0/Sampler_Characterization_AXITrigger_0_0_stub.vhdl
+-- Date        : Tue May 30 20:29:27 2023
+-- Host        : robertPC running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top Sampler_Characterization_AXITrigger_0_0 -prefix
+--               Sampler_Characterization_AXITrigger_0_0_ Sampler_Characterization_AXITrigger_0_0_stub.vhdl
 -- Design      : Sampler_Characterization_AXITrigger_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

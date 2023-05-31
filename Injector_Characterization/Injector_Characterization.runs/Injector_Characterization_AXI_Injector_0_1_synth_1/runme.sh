@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/SeaGateTransferTemp/Injector_Characterization/Injector_Characterization.runs/Injector_Characterization_AXI_Injector_0_1_synth_1'
+HD_PWD='D:/depot/Projects/ETF_2021/Injector_Characterization/Injector_Characterization.runs/Injector_Characterization_AXI_Injector_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

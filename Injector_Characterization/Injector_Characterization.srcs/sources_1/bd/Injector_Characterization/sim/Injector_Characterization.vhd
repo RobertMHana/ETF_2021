@@ -1,8 +1,8 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Wed May 26 21:05:11 2021
---Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+--Date        : Tue May 30 20:45:08 2023
+--Host        : robertPC running 64-bit major release  (build 9200)
 --Command     : generate_target Injector_Characterization.bd
 --Design      : Injector_Characterization
 --Purpose     : IP block netlist
@@ -1863,89 +1863,12 @@ entity Injector_Characterization is
 end Injector_Characterization;
 
 architecture STRUCTURE of Injector_Characterization is
-  component Injector_Characterization_InterruptGenerator_0_0 is
-  port (
-    interrupt_in : in STD_LOGIC;
-    s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_intr_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_awvalid : in STD_LOGIC;
-    s_axi_intr_awready : out STD_LOGIC;
-    s_axi_intr_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_intr_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_intr_wvalid : in STD_LOGIC;
-    s_axi_intr_wready : out STD_LOGIC;
-    s_axi_intr_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_intr_bvalid : out STD_LOGIC;
-    s_axi_intr_bready : in STD_LOGIC;
-    s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_intr_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_arvalid : in STD_LOGIC;
-    s_axi_intr_arready : out STD_LOGIC;
-    s_axi_intr_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_intr_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_intr_rvalid : out STD_LOGIC;
-    s_axi_intr_rready : in STD_LOGIC;
-    s_axi_intr_aclk : in STD_LOGIC;
-    s_axi_intr_aresetn : in STD_LOGIC;
-    irq : out STD_LOGIC
-  );
-  end component Injector_Characterization_InterruptGenerator_0_0;
   component Injector_Characterization_util_reduced_logic_0_0 is
   port (
     Op1 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     Res : out STD_LOGIC
   );
   end component Injector_Characterization_util_reduced_logic_0_0;
-  component Injector_Characterization_AXI_Injector_0_1 is
-  port (
-    trigger_out : out STD_LOGIC;
-    rd_clk : in STD_LOGIC;
-    rd_clk_en : in STD_LOGIC;
-    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    empty : out STD_LOGIC;
-    s00_axi_awid : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_awlock : in STD_LOGIC;
-    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wlast : in STD_LOGIC;
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bid : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_arid : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_arlock : in STD_LOGIC;
-    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rid : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rlast : out STD_LOGIC;
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component Injector_Characterization_AXI_Injector_0_1;
   component Injector_Characterization_clk_wiz_0_0 is
   port (
     reset : in STD_LOGIC;
@@ -2035,6 +1958,83 @@ architecture STRUCTURE of Injector_Characterization is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component Injector_Characterization_rst_ps7_0_100M_0;
+  component Injector_Characterization_AXI_Injector_0_1 is
+  port (
+    trigger_out : out STD_LOGIC;
+    rd_clk : in STD_LOGIC;
+    rd_clk_en : in STD_LOGIC;
+    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    empty : out STD_LOGIC;
+    s00_axi_awid : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_awlock : in STD_LOGIC;
+    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wlast : in STD_LOGIC;
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bid : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_arid : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_arlock : in STD_LOGIC;
+    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rid : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rlast : out STD_LOGIC;
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component Injector_Characterization_AXI_Injector_0_1;
+  component Injector_Characterization_InterruptGenerator_0_0 is
+  port (
+    interrupt_in : in STD_LOGIC;
+    s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_intr_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_awvalid : in STD_LOGIC;
+    s_axi_intr_awready : out STD_LOGIC;
+    s_axi_intr_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_intr_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_intr_wvalid : in STD_LOGIC;
+    s_axi_intr_wready : out STD_LOGIC;
+    s_axi_intr_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_intr_bvalid : out STD_LOGIC;
+    s_axi_intr_bready : in STD_LOGIC;
+    s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_intr_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_arvalid : in STD_LOGIC;
+    s_axi_intr_arready : out STD_LOGIC;
+    s_axi_intr_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_intr_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_intr_rvalid : out STD_LOGIC;
+    s_axi_intr_rready : in STD_LOGIC;
+    s_axi_intr_aclk : in STD_LOGIC;
+    s_axi_intr_aresetn : in STD_LOGIC;
+    irq : out STD_LOGIC
+  );
+  end component Injector_Characterization_InterruptGenerator_0_0;
   signal AXI_Injector_0_dout : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI_Injector_0_empty : STD_LOGIC;
   signal AXI_Injector_0_sync_out : STD_LOGIC;

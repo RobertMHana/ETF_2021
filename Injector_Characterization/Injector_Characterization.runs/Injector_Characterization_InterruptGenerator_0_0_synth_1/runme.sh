@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Robert/xilinx_projects/Injector_Characterization/Injector_Characterization.runs/Injector_Characterization_InterruptGenerator_0_0_synth_1'
+HD_PWD='D:/depot/Projects/ETF_2021/Injector_Characterization/Injector_Characterization.runs/Injector_Characterization_InterruptGenerator_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

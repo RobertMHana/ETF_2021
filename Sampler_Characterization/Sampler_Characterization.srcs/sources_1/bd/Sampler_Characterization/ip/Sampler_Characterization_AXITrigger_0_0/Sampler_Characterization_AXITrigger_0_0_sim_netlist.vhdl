@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Sat Mar 16 18:21:13 2019
--- Host        : Robert-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Robert/xilinx_projects/Sampler_Characterization/Sampler_Characterization.srcs/sources_1/bd/Sampler_Characterization/ip/Sampler_Characterization_AXITrigger_0_0/Sampler_Characterization_AXITrigger_0_0_sim_netlist.vhdl
+-- Date        : Tue May 30 20:29:27 2023
+-- Host        : robertPC running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top Sampler_Characterization_AXITrigger_0_0 -prefix
+--               Sampler_Characterization_AXITrigger_0_0_ Sampler_Characterization_AXITrigger_0_0_sim_netlist.vhdl
 -- Design      : Sampler_Characterization_AXITrigger_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -44,8 +44,6 @@ entity Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0_S00_AXI is
     s00_axi_wlast : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0_S00_AXI : entity is "AXITrigger_v1_0_S00_AXI";
 end Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0_S00_AXI;
 
 architecture STRUCTURE of Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0_S00_AXI is
@@ -7168,8 +7166,6 @@ entity Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0 is
     s00_axi_wlast : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0 : entity is "AXITrigger_v1_0";
 end Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0;
 
 architecture STRUCTURE of Sampler_Characterization_AXITrigger_0_0_AXITrigger_v1_0 is

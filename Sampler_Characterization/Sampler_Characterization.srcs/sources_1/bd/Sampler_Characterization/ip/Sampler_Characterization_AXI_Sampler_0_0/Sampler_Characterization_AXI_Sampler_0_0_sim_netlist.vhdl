@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Wed May 26 21:32:33 2021
--- Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               D:/SeaGateTransferTemp/Sampler_Characterization/Sampler_Characterization.srcs/sources_1/bd/Sampler_Characterization/ip/Sampler_Characterization_AXI_Sampler_0_0/Sampler_Characterization_AXI_Sampler_0_0_sim_netlist.vhdl
+-- Date        : Tue May 30 20:29:29 2023
+-- Host        : robertPC running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top Sampler_Characterization_AXI_Sampler_0_0 -prefix
+--               Sampler_Characterization_AXI_Sampler_0_0_ Sampler_Characterization_AXI_Sampler_0_0_sim_netlist.vhdl
 -- Design      : Sampler_Characterization_AXI_Sampler_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray is
   attribute DEST_SYNC_FF of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray : entity is 2;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray : entity is "xpm_cdc_gray";
   attribute REG_OUTPUT : integer;
   attribute REG_OUTPUT of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_gray : entity is 0;
   attribute SIM_ASSERT_CHK : integer;
@@ -3106,8 +3104,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst is
   attribute INIT of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst : entity is "0";
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst : entity is "xpm_cdc_sync_rst";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of Sampler_Characterization_AXI_Sampler_0_0_xpm_cdc_sync_rst : entity is 0;
   attribute VERSION : integer;
@@ -3246,8 +3242,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_counter_updn is
     \gen_rst_ic.fifo_rd_rst_ic_reg\ : in STD_LOGIC;
     rd_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_counter_updn : entity is "xpm_counter_updn";
 end Sampler_Characterization_AXI_Sampler_0_0_xpm_counter_updn;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_xpm_counter_updn is
@@ -5220,8 +5214,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_bit is
     \reg_out_i_reg[12]\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     CO : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_bit : entity is "xpm_fifo_reg_bit";
 end Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_bit;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_bit is
@@ -5331,8 +5323,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_vec is
     D : in STD_LOGIC_VECTOR ( 13 downto 0 );
     wr_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_vec : entity is "xpm_fifo_reg_vec";
 end Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_vec;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_reg_vec is
@@ -6875,8 +6865,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of Sampler_Characterization_AXI_Sampler_0_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of Sampler_Characterization_AXI_Sampler_0_0_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of Sampler_Characterization_AXI_Sampler_0_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -10914,8 +10902,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_rst is
     \gen_pf_ic_rc.ram_empty_i_reg\ : in STD_LOGIC;
     rd_en : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_rst : entity is "xpm_fifo_rst";
 end Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_rst;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_rst is
@@ -11409,8 +11395,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base is
   attribute FULL_RESET_VALUE of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base : entity is 0;
   attribute FULL_RST_VAL : string;
   attribute FULL_RST_VAL of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base : entity is "1'b0";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base : entity is "xpm_fifo_base";
   attribute PE_THRESH_ADJ : integer;
   attribute PE_THRESH_ADJ of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_base : entity is 100;
   attribute PE_THRESH_MAX : integer;
@@ -12627,8 +12611,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_async is
     \BRAM_GEN[0].scregister_reg[0]\ : in STD_LOGIC;
     overflow_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_async : entity is "xpm_fifo_async";
 end Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_async;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_xpm_fifo_async is
@@ -13239,8 +13221,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_fifo_sampler is
     \BRAM_GEN[0].scregister_reg[0]\ : in STD_LOGIC;
     overflow_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_fifo_sampler : entity is "fifo_sampler";
 end Sampler_Characterization_AXI_Sampler_0_0_fifo_sampler;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_fifo_sampler is
@@ -13307,8 +13287,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0_S00_AXI is
     s00_axi_wlast : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0_S00_AXI : entity is "TestSampler_v1_0_S00_AXI";
 end Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0_S00_AXI;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0_S00_AXI is
@@ -17029,8 +17007,6 @@ entity Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0 is
     s00_axi_wlast : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0 : entity is "TestSampler_v1_0";
 end Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0;
 
 architecture STRUCTURE of Sampler_Characterization_AXI_Sampler_0_0_TestSampler_v1_0 is

@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:AXI_Sampler:1.0
--- IP Revision: 12
+-- IP Revision: 13
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -180,7 +180,7 @@ ARCHITECTURE Sampler_Characterization_AXI_Sampler_0_0_arch OF Sampler_Characteri
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF Sampler_Characterization_AXI_Sampler_0_0_arch : ARCHITECTURE IS "Sampler_Characterization_AXI_Sampler_0_0,TestSampler_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF Sampler_Characterization_AXI_Sampler_0_0_arch: ARCHITECTURE IS "Sampler_Characterization_AXI_Sampler_0_0,TestSampler_v1_0,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_Sampler,x_ipVersion=1.0,x_ipCoreRevision=12,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_ID_WIDTH=12,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6,C_S00_AXI_AWUSER_WIDTH=0,C_S00_AXI_ARUSER_WIDTH=0,C_S00_AXI_WUSER_WIDTH=0,C_S00_AXI_RUSER_WIDTH=0,C_S00_AXI_BUSER_WIDTH=0,C_S00_FIFO_DEPTH=16384,C_S00_FIFO_PROG_FULL_THRESH=16381,C_S00_FIFO_PROG_EMPTY_THRESH" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF Sampler_Characterization_AXI_Sampler_0_0_arch: ARCHITECTURE IS "Sampler_Characterization_AXI_Sampler_0_0,TestSampler_v1_0,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_Sampler,x_ipVersion=1.0,x_ipCoreRevision=13,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_ID_WIDTH=12,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6,C_S00_AXI_AWUSER_WIDTH=0,C_S00_AXI_ARUSER_WIDTH=0,C_S00_AXI_WUSER_WIDTH=0,C_S00_AXI_RUSER_WIDTH=0,C_S00_AXI_BUSER_WIDTH=0,C_S00_FIFO_DEPTH=16384,C_S00_FIFO_PROG_FULL_THRESH=16381,C_S00_FIFO_PROG_EMPTY_THRESH" & 
 "=100}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;

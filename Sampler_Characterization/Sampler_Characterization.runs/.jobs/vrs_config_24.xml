@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Sampler_Characterization_AXI_Sampler_0_0_synth_1" LaunchDir="D:/depot/Projects/ETF_2021/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_AXI_Sampler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sampler_Characterization_AXITrigger_0_0_synth_1" LaunchDir="D:/depot/Projects/ETF_2021/Sampler_Characterization/Sampler_Characterization.runs/Sampler_Characterization_AXITrigger_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/depot/Projects/ETF_2021/Sampler_Characterization/Sampler_Characterization.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="Sampler_Characterization_AXI_Sampler_0_0_synth_1"/>
+		<Parent Id="Sampler_Characterization_AXITrigger_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/depot/Projects/ETF_2021/Sampler_Characterization/Sampler_Characterization.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="Sampler_Characterization_AXI_Sampler_0_0_synth_1"/>
+		<Parent Id="Sampler_Characterization_AXITrigger_0_0_synth_1"/>
+	</Run>
+</Runs>
+
