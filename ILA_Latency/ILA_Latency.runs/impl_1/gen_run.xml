@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1624130465">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685590297">
   <File Type="BITSTR-BMM" Name="ILA_Latency_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="ILA_Latency_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="ILA_Latency_wrapper_timing_summary_init.rpt"/>
@@ -116,6 +116,12 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
@@ -128,8 +134,9 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_ila_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_pulse_rise_fall_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_c_counter_binary_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ILA_Latency_ila_1_0"/>
 </GenRun>

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="ILA_Latency" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1622750882"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1622750882"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1622750882"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1622750882"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1685590266"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1685590266"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1685590266"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1685590266"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\ILA_Latency_clk_wiz_0_0\ILA_Latency_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -87,6 +87,11 @@
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\ILA_Latency.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
   </CompositeFile>

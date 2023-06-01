@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun  3 13:08:02 2021" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 31 20:31:06 2023" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="ILA_Latency" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -19,7 +19,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE FULLNAME="/c_counter_binary_1" HWVERSION="12.0" INSTANCE="c_counter_binary_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="c_counter_binary" VLNV="xilinx.com:ip:c_counter_binary:12.0">
+    <MODULE COREREVISION="12" FULLNAME="/c_counter_binary_1" HWVERSION="12.0" INSTANCE="c_counter_binary_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="c_counter_binary" VLNV="xilinx.com:ip:c_counter_binary:12.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=c_counter_binary;v=v12_0;d=pg121-c-counter-binary.pdf"/>
       </DOCUMENTS>
@@ -95,7 +95,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/clk_wiz_0" HWVERSION="6.0" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
+    <MODULE COREREVISION="2" FULLNAME="/clk_wiz_0" HWVERSION="6.0" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v6_0;d=pg065-clk-wiz.pdf"/>
       </DOCUMENTS>
@@ -678,9 +678,9 @@
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out1" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="c_counter_binary_1" PORT="CLK"/>
-            <CONNECTION INSTANCE="ila_1" PORT="clk"/>
-            <CONNECTION INSTANCE="ila_0" PORT="clk"/>
             <CONNECTION INSTANCE="pulse_rise_fall_0" PORT="clock"/>
+            <CONNECTION INSTANCE="ila_0" PORT="clk"/>
+            <CONNECTION INSTANCE="ila_1" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="clk_wiz_0_locked">
@@ -693,7 +693,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/ila_0" HWVERSION="6.2" INSTANCE="ila_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
+    <MODULE COREREVISION="8" FULLNAME="/ila_0" HWVERSION="6.2" INSTANCE="ila_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=ila;v=v6_2;d=pg172-ila.pdf"/>
       </DOCUMENTS>
@@ -716,7 +716,7 @@
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="1"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2018"/>
-        <PARAMETER NAME="C_MINOR_VERSION" VALUE="2"/>
+        <PARAMETER NAME="C_MINOR_VERSION" VALUE="3"/>
         <PARAMETER NAME="C_BUILD_REVISION" VALUE="0"/>
         <PARAMETER NAME="C_CORE_MAJOR_VER" VALUE="6"/>
         <PARAMETER NAME="C_CORE_MINOR_VER" VALUE="0"/>
@@ -3859,7 +3859,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/ila_1" HWVERSION="6.2" INSTANCE="ila_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
+    <MODULE COREREVISION="8" FULLNAME="/ila_1" HWVERSION="6.2" INSTANCE="ila_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ila" VLNV="xilinx.com:ip:ila:6.2">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=ila;v=v6_2;d=pg172-ila.pdf"/>
       </DOCUMENTS>
@@ -3882,7 +3882,7 @@
         <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="2"/>
         <PARAMETER NAME="C_DATA_DEPTH" VALUE="1024"/>
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2018"/>
-        <PARAMETER NAME="C_MINOR_VERSION" VALUE="2"/>
+        <PARAMETER NAME="C_MINOR_VERSION" VALUE="3"/>
         <PARAMETER NAME="C_BUILD_REVISION" VALUE="0"/>
         <PARAMETER NAME="C_CORE_MAJOR_VER" VALUE="6"/>
         <PARAMETER NAME="C_CORE_MINOR_VER" VALUE="0"/>
@@ -7017,7 +7017,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/pulse_rise_fall_0" HWVERSION="1.0" INSTANCE="pulse_rise_fall_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pulse_rise_fall" VLNV="xilinx.com:module_ref:pulse_rise_fall:1.0">
+    <MODULE COREREVISION="1" FULLNAME="/pulse_rise_fall_0" HWVERSION="1.0" INSTANCE="pulse_rise_fall_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pulse_rise_fall" VLNV="xilinx.com:module_ref:pulse_rise_fall:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="ILA_Latency_pulse_rise_fall_0_0"/>
@@ -7042,7 +7042,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/util_vector_logic_0" HWVERSION="2.0" INSTANCE="util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_0" HWVERSION="2.0" INSTANCE="util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_OPERATION" VALUE="not"/>

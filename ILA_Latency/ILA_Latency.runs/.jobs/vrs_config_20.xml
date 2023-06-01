@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ILA_Latency_clk_wiz_0_0_synth_1" LaunchDir="D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/ILA_Latency_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ILA_Latency_ila_0_0_synth_1" LaunchDir="D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/ILA_Latency_ila_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ILA_Latency_c_counter_binary_1_0_synth_1" LaunchDir="D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/ILA_Latency_c_counter_binary_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ILA_Latency_ila_1_0_synth_1" LaunchDir="D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/ILA_Latency_ila_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

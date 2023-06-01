@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Thu Jun  3 13:08:01 2021
-//Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+//Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+//Date        : Wed May 31 20:31:03 2023
+//Host        : robertPC running 64-bit major release  (build 9200)
 //Command     : generate_target ILA_Latency_wrapper.bd
 //Design      : ILA_Latency_wrapper
 //Purpose     : IP block netlist
