@@ -88,3 +88,10 @@
         \ETF_2021\Injector_Characterization\
     Informal notes on what it measures: 
         \ETF_2021\_audit2022\EmbeddedTestFramework_Audit_November-2022\InjectorUtilization\InjectorUtilizationHowItWasMeasured.png
+        
+## ILA_Characterization
+    ToDo: overview.
+## VIO_Characterization
+    ToDo: overview.
+## VIO_Latency 
+    ToDo: overview.
