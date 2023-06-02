@@ -5,6 +5,17 @@
 # Project Descriptions:
     Below is a brief description for each of the projects in ETF_2021; describing (very briefly) what the project is, what results
     the project corresponds to, and how to generate the project locally and find the results.
+    
+    These projects were built with and for the following Vivado and SDK version:
+    ****** Vivado v2018.2 (64-bit)
+    **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+    **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    Using SDK Version: 		Release Version: 2018.2
+    
+    These projects were built to run on the Digilent Zybo Board, PB200-279 Rev B.
+    Featuring a Xilinx Zynq XC7Z010 CLG400ACX1445, D5033648A 1C FPGA SoC device.
+    
+    SDK projects are Standalone baremetal; No RTOS or Linux flavor required.
                             
                             
 ## ILA_Latency:
