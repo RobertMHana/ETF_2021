@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:ClockDivider:1.0
--- IP Revision: 4
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -165,7 +165,7 @@ ARCHITECTURE TestMultiReg_ClockDivider_0_0_arch OF TestMultiReg_ClockDivider_0_0
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF TestMultiReg_ClockDivider_0_0_arch : ARCHITECTURE IS "TestMultiReg_ClockDivider_0_0,ClockDivider_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF TestMultiReg_ClockDivider_0_0_arch: ARCHITECTURE IS "TestMultiReg_ClockDivider_0_0,ClockDivider_v1_0,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ClockDivider,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_ID_WIDTH=0,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6,C_S00_AXI_AWUSER_WIDTH=0,C_S00_AXI_ARUSER_WIDTH=0,C_S00_AXI_WUSER_WIDTH=0,C_S00_AXI_RUSER_WIDTH=0,C_S00_AXI_BUSER_WIDTH=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF TestMultiReg_ClockDivider_0_0_arch: ARCHITECTURE IS "TestMultiReg_ClockDivider_0_0,ClockDivider_v1_0,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ClockDivider,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_ID_WIDTH=0,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6,C_S00_AXI_AWUSER_WIDTH=0,C_S00_AXI_ARUSER_WIDTH=0,C_S00_AXI_WUSER_WIDTH=0,C_S00_AXI_RUSER_WIDTH=0,C_S00_AXI_BUSER_WIDTH=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aresetn: SIGNAL IS "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW";

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.runs/synth_1'
+HD_PWD='D:/depot/Projects/ETF_2021/TestMultiReg/TestMultiReg.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

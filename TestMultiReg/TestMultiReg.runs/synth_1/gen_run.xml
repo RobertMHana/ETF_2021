@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1545976286">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685926825">
   <File Type="PA-TCL" Name="TestMultiReg_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="TestMultiReg_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="TestMultiReg_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="TestMultiReg_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="TestMultiReg_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="TestMultiReg_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="TestMultiReg_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="TestMultiReg_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="TestMultiReg_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/MUX.vhd">
@@ -63,12 +66,15 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_MUX_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_MUX_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_InterruptGenerator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_xlconcat_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_AXI_Sampler_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_InterruptGenerator_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_AXI_Injector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_InterruptGenerator_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_ClockDivider_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_AXITrigger_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="TestMultiReg_AXI_Sampler_0_0"/>
 </GenRun>

@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Sun Dec 23 15:03:36 2018
--- Host        : Robert-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top TestMultiReg_ClockDivider_0_0 -prefix
---               TestMultiReg_ClockDivider_0_0_ TestMultiReg_ClockDivider_0_0_sim_netlist.vhdl
+-- Date        : Sun Jun  4 18:01:03 2023
+-- Host        : robertPC running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim
+--               D:/depot/Projects/ETF_2021/TestMultiReg/TestMultiReg.srcs/sources_1/bd/TestMultiReg/ip/TestMultiReg_ClockDivider_0_0/TestMultiReg_ClockDivider_0_0_sim_netlist.vhdl
 -- Design      : TestMultiReg_ClockDivider_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -41,6 +41,8 @@ entity TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0_S00_AXI is
     s00_axi_wlast : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0_S00_AXI : entity is "ClockDivider_v1_0_S00_AXI";
 end TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0_S00_AXI;
 
 architecture STRUCTURE of TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0_S00_AXI is
@@ -3504,6 +3506,8 @@ entity TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0 is
     s00_axi_wlast : in STD_LOGIC;
     s00_axi_bready : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0 : entity is "ClockDivider_v1_0";
 end TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0;
 
 architecture STRUCTURE of TestMultiReg_ClockDivider_0_0_ClockDivider_v1_0 is

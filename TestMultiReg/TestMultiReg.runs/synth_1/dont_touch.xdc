@@ -36,4 +36,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TestMultiReg_In
 # IP: bd/TestMultiReg/ip/TestMultiReg_InterruptGenerator_1_0/TestMultiReg_InterruptGenerator_1_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TestMultiReg_InterruptGenerator_1_0 || ORIG_REF_NAME==TestMultiReg_InterruptGenerator_1_0} -quiet] -quiet
 
+# IP: bd/TestMultiReg/ip/TestMultiReg_AXITrigger_0_0/TestMultiReg_AXITrigger_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==TestMultiReg_AXITrigger_0_0 || ORIG_REF_NAME==TestMultiReg_AXITrigger_0_0} -quiet] -quiet
+
 # XDC: bd/TestMultiReg/TestMultiReg_ooc.xdc

@@ -1,8 +1,8 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Sun Jan 20 12:59:45 2019
---Host        : Robert-PC running 64-bit major release  (build 9200)
+--Date        : Sun Jun  4 17:59:55 2023
+--Host        : robertPC running 64-bit major release  (build 9200)
 --Command     : generate_target TestMultiReg.bd
 --Design      : TestMultiReg
 --Purpose     : IP block netlist
@@ -37,80 +37,260 @@ entity TestMultiReg is
     leds : out STD_LOGIC_VECTOR ( 3 downto 0 );
     sw : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of TestMultiReg : entity is "TestMultiReg,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=TestMultiReg,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=49,da_board_cnt=4,da_clkrst_cnt=5,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
-  attribute hw_handoff : string;
-  attribute hw_handoff of TestMultiReg : entity is "TestMultiReg.hwdef";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of TestMultiReg : entity is "TestMultiReg,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=TestMultiReg,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=49,da_board_cnt=4,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute HW_HANDOFF : string;
+  attribute HW_HANDOFF of TestMultiReg : entity is "TestMultiReg.hwdef";
 end TestMultiReg;
 
 architecture STRUCTURE of TestMultiReg is
-  component TestMultiReg_processing_system7_0_0 is
+  component TestMultiReg_MUX_0_0 is
   port (
-    M_AXI_GP0_ARVALID : out STD_LOGIC;
-    M_AXI_GP0_AWVALID : out STD_LOGIC;
-    M_AXI_GP0_BREADY : out STD_LOGIC;
-    M_AXI_GP0_RREADY : out STD_LOGIC;
-    M_AXI_GP0_WLAST : out STD_LOGIC;
-    M_AXI_GP0_WVALID : out STD_LOGIC;
-    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 11 downto 0 );
-    M_AXI_GP0_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_GP0_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_GP0_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M_AXI_GP0_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_GP0_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_GP0_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M_AXI_GP0_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M_AXI_GP0_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M_AXI_GP0_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_GP0_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_GP0_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M_AXI_GP0_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_ARLEN : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_AWLEN : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M_AXI_GP0_ACLK : in STD_LOGIC;
-    M_AXI_GP0_ARREADY : in STD_LOGIC;
-    M_AXI_GP0_AWREADY : in STD_LOGIC;
-    M_AXI_GP0_BVALID : in STD_LOGIC;
-    M_AXI_GP0_RLAST : in STD_LOGIC;
-    M_AXI_GP0_RVALID : in STD_LOGIC;
-    M_AXI_GP0_WREADY : in STD_LOGIC;
-    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    FCLK_CLK0 : out STD_LOGIC;
-    FCLK_RESET0_N : out STD_LOGIC;
-    MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    DDR_CAS_n : inout STD_LOGIC;
-    DDR_CKE : inout STD_LOGIC;
-    DDR_Clk_n : inout STD_LOGIC;
-    DDR_Clk : inout STD_LOGIC;
-    DDR_CS_n : inout STD_LOGIC;
-    DDR_DRSTB : inout STD_LOGIC;
-    DDR_ODT : inout STD_LOGIC;
-    DDR_RAS_n : inout STD_LOGIC;
-    DDR_WEB : inout STD_LOGIC;
-    DDR_BankAddr : inout STD_LOGIC_VECTOR ( 2 downto 0 );
-    DDR_Addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
-    DDR_VRN : inout STD_LOGIC;
-    DDR_VRP : inout STD_LOGIC;
-    DDR_DM : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_DQ : inout STD_LOGIC_VECTOR ( 31 downto 0 );
-    DDR_DQS_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_DQS : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    PS_SRSTB : inout STD_LOGIC;
-    PS_CLK : inout STD_LOGIC;
-    PS_PORB : inout STD_LOGIC
+    A : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    sw : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  end component TestMultiReg_processing_system7_0_0;
+  end component TestMultiReg_MUX_0_0;
+  component TestMultiReg_xlconcat_0_0 is
+  port (
+    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
+  );
+  end component TestMultiReg_xlconcat_0_0;
+  component TestMultiReg_AXITrigger_0_0 is
+  port (
+    trigger_input : in STD_LOGIC;
+    clock : in STD_LOGIC;
+    clock_en : in STD_LOGIC;
+    trigger_output : out STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_awlock : in STD_LOGIC;
+    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wlast : in STD_LOGIC;
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_arlock : in STD_LOGIC;
+    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rlast : out STD_LOGIC;
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component TestMultiReg_AXITrigger_0_0;
+  component TestMultiReg_AXI_Injector_0_0 is
+  port (
+    trigger_out : out STD_LOGIC;
+    rd_clk : in STD_LOGIC;
+    rd_clk_en : in STD_LOGIC;
+    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    empty : out STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_awlock : in STD_LOGIC;
+    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wlast : in STD_LOGIC;
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_arlock : in STD_LOGIC;
+    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rlast : out STD_LOGIC;
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component TestMultiReg_AXI_Injector_0_0;
+  component TestMultiReg_AXI_Sampler_0_0 is
+  port (
+    trigger : in STD_LOGIC;
+    wr_clk : in STD_LOGIC;
+    wr_clk_en : in STD_LOGIC;
+    din : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    full : out STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_awlock : in STD_LOGIC;
+    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wlast : in STD_LOGIC;
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_arlock : in STD_LOGIC;
+    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rlast : out STD_LOGIC;
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component TestMultiReg_AXI_Sampler_0_0;
+  component TestMultiReg_ClockDivider_0_0 is
+  port (
+    clk_en_out : out STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_awlock : in STD_LOGIC;
+    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wlast : in STD_LOGIC;
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_arlock : in STD_LOGIC;
+    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rlast : out STD_LOGIC;
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component TestMultiReg_ClockDivider_0_0;
+  component TestMultiReg_InterruptGenerator_0_0 is
+  port (
+    interrupt_in : in STD_LOGIC;
+    s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_intr_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_awvalid : in STD_LOGIC;
+    s_axi_intr_awready : out STD_LOGIC;
+    s_axi_intr_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_intr_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_intr_wvalid : in STD_LOGIC;
+    s_axi_intr_wready : out STD_LOGIC;
+    s_axi_intr_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_intr_bvalid : out STD_LOGIC;
+    s_axi_intr_bready : in STD_LOGIC;
+    s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_intr_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_arvalid : in STD_LOGIC;
+    s_axi_intr_arready : out STD_LOGIC;
+    s_axi_intr_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_intr_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_intr_rvalid : out STD_LOGIC;
+    s_axi_intr_rready : in STD_LOGIC;
+    s_axi_intr_aclk : in STD_LOGIC;
+    s_axi_intr_aresetn : in STD_LOGIC;
+    irq : out STD_LOGIC
+  );
+  end component TestMultiReg_InterruptGenerator_0_0;
+  component TestMultiReg_InterruptGenerator_1_0 is
+  port (
+    interrupt_in : in STD_LOGIC;
+    s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_intr_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_awvalid : in STD_LOGIC;
+    s_axi_intr_awready : out STD_LOGIC;
+    s_axi_intr_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_intr_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s_axi_intr_wvalid : in STD_LOGIC;
+    s_axi_intr_wready : out STD_LOGIC;
+    s_axi_intr_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_intr_bvalid : out STD_LOGIC;
+    s_axi_intr_bready : in STD_LOGIC;
+    s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s_axi_intr_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_arvalid : in STD_LOGIC;
+    s_axi_intr_arready : out STD_LOGIC;
+    s_axi_intr_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_intr_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axi_intr_rvalid : out STD_LOGIC;
+    s_axi_intr_rready : in STD_LOGIC;
+    s_axi_intr_aclk : in STD_LOGIC;
+    s_axi_intr_aresetn : in STD_LOGIC;
+    irq : out STD_LOGIC
+  );
+  end component TestMultiReg_InterruptGenerator_1_0;
   component TestMultiReg_axi_smc_0 is
   port (
     aclk : in STD_LOGIC;
@@ -325,6 +505,73 @@ architecture STRUCTURE of TestMultiReg is
     M05_AXI_rready : out STD_LOGIC
   );
   end component TestMultiReg_axi_smc_0;
+  component TestMultiReg_processing_system7_0_0 is
+  port (
+    M_AXI_GP0_ARVALID : out STD_LOGIC;
+    M_AXI_GP0_AWVALID : out STD_LOGIC;
+    M_AXI_GP0_BREADY : out STD_LOGIC;
+    M_AXI_GP0_RREADY : out STD_LOGIC;
+    M_AXI_GP0_WLAST : out STD_LOGIC;
+    M_AXI_GP0_WVALID : out STD_LOGIC;
+    M_AXI_GP0_ARID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_AWID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_WID : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_ARLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_AWLOCK : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M_AXI_GP0_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M_AXI_GP0_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M_AXI_GP0_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M_AXI_GP0_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_ARLEN : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_ARQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_AWLEN : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_AWQOS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M_AXI_GP0_ACLK : in STD_LOGIC;
+    M_AXI_GP0_ARREADY : in STD_LOGIC;
+    M_AXI_GP0_AWREADY : in STD_LOGIC;
+    M_AXI_GP0_BVALID : in STD_LOGIC;
+    M_AXI_GP0_RLAST : in STD_LOGIC;
+    M_AXI_GP0_RVALID : in STD_LOGIC;
+    M_AXI_GP0_WREADY : in STD_LOGIC;
+    M_AXI_GP0_BID : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_RID : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    FCLK_CLK0 : out STD_LOGIC;
+    FCLK_RESET0_N : out STD_LOGIC;
+    MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    DDR_CAS_n : inout STD_LOGIC;
+    DDR_CKE : inout STD_LOGIC;
+    DDR_Clk_n : inout STD_LOGIC;
+    DDR_Clk : inout STD_LOGIC;
+    DDR_CS_n : inout STD_LOGIC;
+    DDR_DRSTB : inout STD_LOGIC;
+    DDR_ODT : inout STD_LOGIC;
+    DDR_RAS_n : inout STD_LOGIC;
+    DDR_WEB : inout STD_LOGIC;
+    DDR_BankAddr : inout STD_LOGIC_VECTOR ( 2 downto 0 );
+    DDR_Addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
+    DDR_VRN : inout STD_LOGIC;
+    DDR_VRP : inout STD_LOGIC;
+    DDR_DM : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    DDR_DQ : inout STD_LOGIC_VECTOR ( 31 downto 0 );
+    DDR_DQS_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    DDR_DQS : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    PS_SRSTB : inout STD_LOGIC;
+    PS_CLK : inout STD_LOGIC;
+    PS_PORB : inout STD_LOGIC
+  );
+  end component TestMultiReg_processing_system7_0_0;
   component TestMultiReg_rst_ps7_0_100M_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -339,253 +586,7 @@ architecture STRUCTURE of TestMultiReg is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component TestMultiReg_rst_ps7_0_100M_0;
-  component TestMultiReg_MUX_0_0 is
-  port (
-    A : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    sw : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    Q : out STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  end component TestMultiReg_MUX_0_0;
-  component TestMultiReg_xlconcat_0_0 is
-  port (
-    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
-  );
-  end component TestMultiReg_xlconcat_0_0;
-  component TestMultiReg_ClockDivider_0_0 is
-  port (
-    clk_en_out : out STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_awlock : in STD_LOGIC;
-    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wlast : in STD_LOGIC;
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_arlock : in STD_LOGIC;
-    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rlast : out STD_LOGIC;
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component TestMultiReg_ClockDivider_0_0;
-  component TestMultiReg_InterruptGenerator_0_0 is
-  port (
-    interrupt_in : in STD_LOGIC;
-    s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_intr_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_awvalid : in STD_LOGIC;
-    s_axi_intr_awready : out STD_LOGIC;
-    s_axi_intr_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_intr_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_intr_wvalid : in STD_LOGIC;
-    s_axi_intr_wready : out STD_LOGIC;
-    s_axi_intr_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_intr_bvalid : out STD_LOGIC;
-    s_axi_intr_bready : in STD_LOGIC;
-    s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_intr_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_arvalid : in STD_LOGIC;
-    s_axi_intr_arready : out STD_LOGIC;
-    s_axi_intr_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_intr_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_intr_rvalid : out STD_LOGIC;
-    s_axi_intr_rready : in STD_LOGIC;
-    s_axi_intr_aclk : in STD_LOGIC;
-    s_axi_intr_aresetn : in STD_LOGIC;
-    irq : out STD_LOGIC
-  );
-  end component TestMultiReg_InterruptGenerator_0_0;
-  component TestMultiReg_InterruptGenerator_1_0 is
-  port (
-    interrupt_in : in STD_LOGIC;
-    s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_intr_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_awvalid : in STD_LOGIC;
-    s_axi_intr_awready : out STD_LOGIC;
-    s_axi_intr_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_intr_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s_axi_intr_wvalid : in STD_LOGIC;
-    s_axi_intr_wready : out STD_LOGIC;
-    s_axi_intr_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_intr_bvalid : out STD_LOGIC;
-    s_axi_intr_bready : in STD_LOGIC;
-    s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s_axi_intr_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_arvalid : in STD_LOGIC;
-    s_axi_intr_arready : out STD_LOGIC;
-    s_axi_intr_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_intr_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axi_intr_rvalid : out STD_LOGIC;
-    s_axi_intr_rready : in STD_LOGIC;
-    s_axi_intr_aclk : in STD_LOGIC;
-    s_axi_intr_aresetn : in STD_LOGIC;
-    irq : out STD_LOGIC
-  );
-  end component TestMultiReg_InterruptGenerator_1_0;
-  component TestMultiReg_AXI_Injector_0_0 is
-  port (
-    sync_out : out STD_LOGIC;
-    rd_clk : in STD_LOGIC;
-    rd_clk_en : in STD_LOGIC;
-    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    empty : out STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_awlock : in STD_LOGIC;
-    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wlast : in STD_LOGIC;
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_arlock : in STD_LOGIC;
-    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rlast : out STD_LOGIC;
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component TestMultiReg_AXI_Injector_0_0;
-  component TestMultiReg_AXI_Sampler_0_0 is
-  port (
-    sync_in : in STD_LOGIC;
-    wr_clk : in STD_LOGIC;
-    wr_clk_en : in STD_LOGIC;
-    din : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    full : out STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_awlock : in STD_LOGIC;
-    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wlast : in STD_LOGIC;
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_arlock : in STD_LOGIC;
-    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rlast : out STD_LOGIC;
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component TestMultiReg_AXI_Sampler_0_0;
-  component TestMultiReg_AXITrigger_0_0 is
-  port (
-    trigger_input : in STD_LOGIC;
-    trigger_output : out STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_awlock : in STD_LOGIC;
-    s00_axi_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wlast : in STD_LOGIC;
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    s00_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_arlock : in STD_LOGIC;
-    s00_axi_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arregion : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rlast : out STD_LOGIC;
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component TestMultiReg_AXITrigger_0_0;
   signal AXI_Injector_0_empty : STD_LOGIC;
-  signal AXI_Injector_0_sync_out : STD_LOGIC;
   signal AXI_Sampler_0_full : STD_LOGIC;
   signal ClockDivider_0_clk_en_out : STD_LOGIC;
   signal InterruptGenerator_0_irq : STD_LOGIC;
@@ -827,40 +828,43 @@ architecture STRUCTURE of TestMultiReg is
   signal sw_1 : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_AXITrigger_0_trigger_output_UNCONNECTED : STD_LOGIC;
+  signal NLW_AXI_Injector_0_trigger_out_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute x_interface_info : string;
-  attribute x_interface_info of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
-  attribute x_interface_info of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
-  attribute x_interface_info of DDR_ck_p : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_P";
-  attribute x_interface_info of DDR_cke : signal is "xilinx.com:interface:ddrx:1.0 DDR CKE";
-  attribute x_interface_info of DDR_cs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CS_N";
-  attribute x_interface_info of DDR_odt : signal is "xilinx.com:interface:ddrx:1.0 DDR ODT";
-  attribute x_interface_info of DDR_ras_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RAS_N";
-  attribute x_interface_info of DDR_reset_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RESET_N";
-  attribute x_interface_info of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
-  attribute x_interface_info of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of FIXED_IO_ddr_vrn : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
-  attribute x_interface_info of FIXED_IO_ddr_vrp : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
-  attribute x_interface_info of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
-  attribute x_interface_info of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
-  attribute x_interface_info of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute x_interface_info of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
-  attribute x_interface_parameter of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
-  attribute x_interface_info of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
-  attribute x_interface_info of DDR_dm : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
-  attribute x_interface_info of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
-  attribute x_interface_info of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
-  attribute x_interface_info of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
-  attribute x_interface_info of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
+  attribute X_INTERFACE_INFO of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
+  attribute X_INTERFACE_INFO of DDR_ck_p : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_P";
+  attribute X_INTERFACE_INFO of DDR_cke : signal is "xilinx.com:interface:ddrx:1.0 DDR CKE";
+  attribute X_INTERFACE_INFO of DDR_cs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CS_N";
+  attribute X_INTERFACE_INFO of DDR_odt : signal is "xilinx.com:interface:ddrx:1.0 DDR ODT";
+  attribute X_INTERFACE_INFO of DDR_ras_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RAS_N";
+  attribute X_INTERFACE_INFO of DDR_reset_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RESET_N";
+  attribute X_INTERFACE_INFO of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
+  attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of FIXED_IO_ddr_vrn : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
+  attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrp : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
+  attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
+  attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
+  attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
+  attribute X_INTERFACE_INFO of DDR_dm : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
+  attribute X_INTERFACE_INFO of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
+  attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
+  attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
+  attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
   leds(3 downto 0) <= MUX_0_Q(3 downto 0);
   sw_1(2 downto 0) <= sw(2 downto 0);
 AXITrigger_0: component TestMultiReg_AXITrigger_0_0
      port map (
+      clock => processing_system7_0_FCLK_CLK0,
+      clock_en => processing_system7_0_FCLK_CLK0,
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(5 downto 0) => axi_smc_M05_AXI_ARADDR(5 downto 0),
       s00_axi_arburst(1 downto 0) => axi_smc_M05_AXI_ARBURST(1 downto 0),
@@ -944,7 +948,7 @@ AXI_Injector_0: component TestMultiReg_AXI_Injector_0_0
       s00_axi_wready => axi_smc_M00_AXI_WREADY,
       s00_axi_wstrb(3 downto 0) => axi_smc_M00_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => axi_smc_M00_AXI_WVALID,
-      sync_out => AXI_Injector_0_sync_out
+      trigger_out => NLW_AXI_Injector_0_trigger_out_UNCONNECTED
     );
 AXI_Sampler_0: component TestMultiReg_AXI_Sampler_0_0
      port map (
@@ -987,7 +991,7 @@ AXI_Sampler_0: component TestMultiReg_AXI_Sampler_0_0
       s00_axi_wready => axi_smc_M02_AXI_WREADY,
       s00_axi_wstrb(3 downto 0) => axi_smc_M02_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => axi_smc_M02_AXI_WVALID,
-      sync_in => AXI_Injector_0_sync_out,
+      trigger => '0',
       wr_clk => processing_system7_0_FCLK_CLK0,
       wr_clk_en => ClockDivider_0_clk_en_out
     );

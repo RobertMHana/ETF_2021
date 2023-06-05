@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2018 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,18 +47,15 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:AXI_Injector:1.0
--- IP Revision: 8
+-- IP Revision: 20
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY xil_defaultlib;
-USE xil_defaultlib.TestMultiReg_v1_0;
-
 ENTITY TestMultiReg_AXI_Injector_0_0 IS
   PORT (
-    sync_out : OUT STD_LOGIC;
+    trigger_out : OUT STD_LOGIC;
     rd_clk : IN STD_LOGIC;
     rd_clk_en : IN STD_LOGIC;
     dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -115,10 +112,13 @@ ARCHITECTURE TestMultiReg_AXI_Injector_0_0_arch OF TestMultiReg_AXI_Injector_0_0
       C_S00_AXI_ARUSER_WIDTH : INTEGER; -- Width of optional user defined signal in read address channel
       C_S00_AXI_WUSER_WIDTH : INTEGER; -- Width of optional user defined signal in write data channel
       C_S00_AXI_RUSER_WIDTH : INTEGER; -- Width of optional user defined signal in read data channel
-      C_S00_AXI_BUSER_WIDTH : INTEGER -- Width of optional user defined signal in write response channel
+      C_S00_AXI_BUSER_WIDTH : INTEGER; -- Width of optional user defined signal in write response channel
+      C_S00_FIFO_FULL_THRESH : INTEGER;
+      C_S00_FIFO_EMPTY_THRESH : INTEGER;
+      C_S00_FIFO_DEPTH : INTEGER
     );
     PORT (
-      sync_out : OUT STD_LOGIC;
+      trigger_out : OUT STD_LOGIC;
       rd_clk : IN STD_LOGIC;
       rd_clk_en : IN STD_LOGIC;
       dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -226,10 +226,13 @@ BEGIN
       C_S00_AXI_ARUSER_WIDTH => 0,
       C_S00_AXI_WUSER_WIDTH => 0,
       C_S00_AXI_RUSER_WIDTH => 0,
-      C_S00_AXI_BUSER_WIDTH => 0
+      C_S00_AXI_BUSER_WIDTH => 0,
+      C_S00_FIFO_FULL_THRESH => 1948,
+      C_S00_FIFO_EMPTY_THRESH => 100,
+      C_S00_FIFO_DEPTH => 2048
     )
     PORT MAP (
-      sync_out => sync_out,
+      trigger_out => trigger_out,
       rd_clk => rd_clk,
       rd_clk_en => rd_clk_en,
       dout => dout,

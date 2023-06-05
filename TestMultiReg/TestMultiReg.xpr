@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/Robert/xilinx_projects/TestMultiReg/TestMultiReg.xpr">
+<Project Version="7" Minor="38" Path="D:/depot/Projects/ETF_2021/TestMultiReg/TestMultiReg.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="58082e3319934ed2bd9808f5249522ed"/>
@@ -18,7 +18,7 @@
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
-    <Option Name="BoardPart" Val="digilentinc.com:zybo:part0:1.0"/>
+    <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -81,29 +81,38 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_processing_system7_0_0/TestMultiReg_processing_system7_0_0.xci">
-          <Proxy FileSetName="TestMultiReg_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_axi_smc_0/TestMultiReg_axi_smc_0.xci">
           <Proxy FileSetName="TestMultiReg_axi_smc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_MUX_0_0/TestMultiReg_MUX_0_0.xci">
-          <Proxy FileSetName="TestMultiReg_MUX_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_xlconcat_0_0/TestMultiReg_xlconcat_0_0.xci">
-          <Proxy FileSetName="TestMultiReg_xlconcat_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_AXI_Injector_0_0/TestMultiReg_AXI_Injector_0_0.xci">
-          <Proxy FileSetName="TestMultiReg_AXI_Injector_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_AXI_Sampler_0_0/TestMultiReg_AXI_Sampler_0_0.xci">
-          <Proxy FileSetName="TestMultiReg_AXI_Sampler_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_InterruptGenerator_0_0/TestMultiReg_InterruptGenerator_0_0.xci">
           <Proxy FileSetName="TestMultiReg_InterruptGenerator_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_rst_ps7_0_100M_0/TestMultiReg_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="TestMultiReg_rst_ps7_0_100M_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_InterruptGenerator_1_0/TestMultiReg_InterruptGenerator_1_0.xci">
           <Proxy FileSetName="TestMultiReg_InterruptGenerator_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_processing_system7_0_0/TestMultiReg_processing_system7_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_AXI_Injector_0_0/TestMultiReg_AXI_Injector_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_AXI_Injector_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_ClockDivider_0_0/TestMultiReg_ClockDivider_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_ClockDivider_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_xlconcat_0_0/TestMultiReg_xlconcat_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_xlconcat_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_AXITrigger_0_0/TestMultiReg_AXITrigger_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_AXITrigger_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_AXI_Sampler_0_0/TestMultiReg_AXI_Sampler_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_AXI_Sampler_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TestMultiReg.bd" FileRelPathName="ip/TestMultiReg_MUX_0_0/TestMultiReg_MUX_0_0.xci">
+          <Proxy FileSetName="TestMultiReg_MUX_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/TestMultiReg/hdl/TestMultiReg_wrapper.vhd">
@@ -174,15 +183,15 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="TestMultiReg_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_processing_system7_0_0">
-      <Config>
-        <Option Name="TopModule" Val="TestMultiReg_processing_system7_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="TestMultiReg_InterruptGenerator_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_InterruptGenerator_0_0">
       <Config>
         <Option Name="TopModule" Val="TestMultiReg_InterruptGenerator_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="TestMultiReg_rst_ps7_0_100M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_rst_ps7_0_100M_0">
+      <Config>
+        <Option Name="TopModule" Val="TestMultiReg_rst_ps7_0_100M_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -192,9 +201,27 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="TestMultiReg_processing_system7_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_processing_system7_0_0">
+      <Config>
+        <Option Name="TopModule" Val="TestMultiReg_processing_system7_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="TestMultiReg_AXI_Injector_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_AXI_Injector_0_0">
       <Config>
         <Option Name="TopModule" Val="TestMultiReg_AXI_Injector_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="TestMultiReg_ClockDivider_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_ClockDivider_0_0">
+      <Config>
+        <Option Name="TopModule" Val="TestMultiReg_ClockDivider_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="TestMultiReg_AXITrigger_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/TestMultiReg_AXITrigger_0_0">
+      <Config>
+        <Option Name="TopModule" Val="TestMultiReg_AXITrigger_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -253,16 +280,9 @@
     </Run>
     <Run Id="TestMultiReg_axi_smc_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_axi_smc_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_axi_smc_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_axi_smc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="TestMultiReg_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_processing_system7_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_processing_system7_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -271,7 +291,20 @@
     </Run>
     <Run Id="TestMultiReg_InterruptGenerator_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_InterruptGenerator_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_InterruptGenerator_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_InterruptGenerator_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_rst_ps7_0_100M_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_rst_ps7_0_100M_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_rst_ps7_0_100M_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_rst_ps7_0_100M_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -280,7 +313,20 @@
     </Run>
     <Run Id="TestMultiReg_InterruptGenerator_1_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_InterruptGenerator_1_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_InterruptGenerator_1_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_InterruptGenerator_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_processing_system7_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_processing_system7_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_processing_system7_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_processing_system7_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -289,7 +335,31 @@
     </Run>
     <Run Id="TestMultiReg_AXI_Injector_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_AXI_Injector_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_AXI_Injector_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_AXI_Injector_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_ClockDivider_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_ClockDivider_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_ClockDivider_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_ClockDivider_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_AXITrigger_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_AXITrigger_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_AXITrigger_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_AXITrigger_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -298,7 +368,9 @@
     </Run>
     <Run Id="TestMultiReg_AXI_Sampler_0_0_synth_1" Type="Ft3:Synth" SrcSet="TestMultiReg_AXI_Sampler_0_0" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_AXI_Sampler_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/TestMultiReg_AXI_Sampler_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -356,23 +428,9 @@
     </Run>
     <Run Id="TestMultiReg_axi_smc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_axi_smc_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_axi_smc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="TestMultiReg_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_processing_system7_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -388,7 +446,27 @@
     </Run>
     <Run Id="TestMultiReg_InterruptGenerator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_InterruptGenerator_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_InterruptGenerator_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_rst_ps7_0_100M_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_rst_ps7_0_100M_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_rst_ps7_0_100M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -404,7 +482,27 @@
     </Run>
     <Run Id="TestMultiReg_InterruptGenerator_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_InterruptGenerator_1_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_InterruptGenerator_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_processing_system7_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_processing_system7_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_processing_system7_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -420,7 +518,45 @@
     </Run>
     <Run Id="TestMultiReg_AXI_Injector_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_AXI_Injector_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_AXI_Injector_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_ClockDivider_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_ClockDivider_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_ClockDivider_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="TestMultiReg_AXITrigger_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_AXITrigger_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_AXITrigger_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -436,7 +572,9 @@
     </Run>
     <Run Id="TestMultiReg_AXI_Sampler_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="TestMultiReg_AXI_Sampler_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="TestMultiReg_AXI_Sampler_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -451,7 +589,5 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
   </Runs>
-  <Board>
-    <Jumpers/>
-  </Board>
+  <Board/>
 </Project>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 20 13:00:03 2019" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jun  4 18:00:20 2023" VIVADOVERSION="2018.2">
 
-  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="TestMultiReg" PACKAGE="clg400" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="TestMultiReg" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="IO" NAME="DDR_cas_n" SIGIS="undef"/>
@@ -106,6 +106,16 @@
       </PARAMETERS>
       <PORTS>
         <PORT DIR="I" NAME="trigger_input" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock_en" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="trigger_output" SIGIS="undef"/>
         <PORT DIR="I" LEFT="5" NAME="s00_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="AXITrigger_0_s00_axi_awaddr">
           <CONNECTIONS>
@@ -373,17 +383,16 @@
         <PARAMETER NAME="C_S00_AXI_WUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="C_S00_AXI_RUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="C_S00_AXI_BUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_S00_FIFO_FULL_THRESH" VALUE="1948"/>
+        <PARAMETER NAME="C_S00_FIFO_EMPTY_THRESH" VALUE="100"/>
+        <PARAMETER NAME="C_S00_FIFO_DEPTH" VALUE="2048"/>
         <PARAMETER NAME="Component_Name" VALUE="TestMultiReg_AXI_Injector_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x7AA00000"/>
         <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x7AA0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" NAME="sync_out" SIGIS="undef" SIGNAME="AXI_Injector_0_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_Sampler_0" PORT="sync_in"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="trigger_out" SIGIS="undef"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="rd_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
@@ -671,17 +680,16 @@
         <PARAMETER NAME="C_S00_AXI_WUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="C_S00_AXI_RUSER_WIDTH" VALUE="0"/>
         <PARAMETER NAME="C_S00_AXI_BUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_S00_FIFO_DEPTH" VALUE="2048"/>
+        <PARAMETER NAME="C_S00_FIFO_PROG_FULL_THRESH" VALUE="1948"/>
+        <PARAMETER NAME="C_S00_FIFO_PROG_EMPTY_THRESH" VALUE="100"/>
         <PARAMETER NAME="Component_Name" VALUE="TestMultiReg_AXI_Sampler_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x7AA10000"/>
         <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x7AA1FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="sync_in" SIGIS="undef" SIGNAME="AXI_Injector_0_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="AXI_Injector_0" PORT="sync_out"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="trigger" SIGIS="undef"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="wr_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
@@ -3485,14 +3493,14 @@
         <PARAMETER NAME="PCW_USE_TRACE_DATA_EDGE_DETECTOR" VALUE="0"/>
         <PARAMETER NAME="PCW_TRACE_BUFFER_CLOCK_DELAY" VALUE="12"/>
         <PARAMETER NAME="PCW_USE_CROSS_TRIGGER" VALUE="0"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN0" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN1" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN2" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN3" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT0" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT1" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT2" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT3" VALUE="DISABLED"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN0" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN1" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN2" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN3" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT0" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT1" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT2" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT3" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PCW_USE_DEBUG" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_CR_FABRIC" VALUE="1"/>
         <PARAMETER NAME="PCW_USE_AXI_FABRIC_IDLE" VALUE="0"/>
@@ -4301,17 +4309,19 @@
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="ClockDivider_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="InterruptGenerator_0" PORT="s_axi_intr_aclk"/>
-            <CONNECTION INSTANCE="InterruptGenerator_1" PORT="s_axi_intr_aclk"/>
+            <CONNECTION INSTANCE="AXITrigger_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="AXI_Injector_0" PORT="rd_clk"/>
             <CONNECTION INSTANCE="AXI_Injector_0" PORT="s00_axi_aclk"/>
             <CONNECTION INSTANCE="AXI_Sampler_0" PORT="wr_clk"/>
             <CONNECTION INSTANCE="AXI_Sampler_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="AXITrigger_0" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="ClockDivider_0" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="InterruptGenerator_0" PORT="s_axi_intr_aclk"/>
+            <CONNECTION INSTANCE="InterruptGenerator_1" PORT="s_axi_intr_aclk"/>
+            <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
+            <CONNECTION INSTANCE="AXITrigger_0" PORT="clock"/>
+            <CONNECTION INSTANCE="AXITrigger_0" PORT="clock_en"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -4515,13 +4525,13 @@
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
+            <CONNECTION INSTANCE="AXITrigger_0" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="AXI_Injector_0" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="AXI_Sampler_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="ClockDivider_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="InterruptGenerator_0" PORT="s_axi_intr_aresetn"/>
             <CONNECTION INSTANCE="InterruptGenerator_1" PORT="s_axi_intr_aresetn"/>
-            <CONNECTION INSTANCE="AXI_Injector_0" PORT="s00_axi_aresetn"/>
-            <CONNECTION INSTANCE="AXI_Sampler_0" PORT="s00_axi_aresetn"/>
-            <CONNECTION INSTANCE="AXITrigger_0" PORT="s00_axi_aresetn"/>
+            <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
