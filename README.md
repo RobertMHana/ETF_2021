@@ -106,3 +106,9 @@
     ToDo: overview.
 ## VIO_Latency 
     ToDo: overview.
+## ILA_Trigger
+    ToDo: overview
+## ILA_Interrupt
+    ToDo: overview
+## ILA_ClockDivider
+    ToDo: overview  
