@@ -114,3 +114,26 @@
     ToDo: overview  
 ## TestMultiReg
     ToDo: overview 
+## SystemILATest
+    ToDo: overview 
+## SystemILBTest
+    ToDo: overview 
+## EmbeddedTestFramework 
+    What is this? 
+        A Vivado FPGA project with an SDK component. This is a demo (illustrative) project of the components in action.
+    What results in the paper does this correspond to?
+       There are no particular results for this project but to simply showcase functionality of the IP.
+    How to run this demo?
+       Connect a VGA monitor to the VGA port on the Zybo board and load the bitstream.
+       The dip switches correspond to different showcase functions.
+       Additional information will be available on the Wiki.
+    What you should know about this project:
+       The initial upload of this project to github was a port attempt to the ZCU104 and was built with Vivado 2020.2
+       The project has since been reverted back to an original version targeting the Zybo board, and built with Vivado 2018.2
+       A VGA capable monitor is required to see the display.
+       A C-coded display library has been included, this was written by Robert Umbehant (github user "wheresjames", ezdib@wheresjames.com)
+       This library has been included for display demo purposes in the SDK portion of this project.
+       
+    References:
+    Project: 
+       \ETF_2021\EmbeddedTestFramework\
