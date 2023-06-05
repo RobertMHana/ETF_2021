@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1555267308">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685925079">
   <File Type="PA-TCL" Name="ILA_Interrupt_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="ILA_Interrupt_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ILA_Interrupt_wrapper_reports.tcl"/>
@@ -37,15 +37,14 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_system_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_InterruptGenerator_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_system_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ILA_Interrupt_auto_pc_0"/>
 </GenRun>

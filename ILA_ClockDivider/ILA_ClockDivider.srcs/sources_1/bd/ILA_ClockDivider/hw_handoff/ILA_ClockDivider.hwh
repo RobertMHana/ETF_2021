@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr 14 14:52:17 2019" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jun  4 17:39:33 2023" VIVADOVERSION="2018.2">
 
-  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="ILA_ClockDivider" PACKAGE="clg400" SPEEDGRADE="-1"/>
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="ILA_ClockDivider" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="IO" NAME="DDR_cas_n" SIGIS="undef"/>
@@ -1202,14 +1202,14 @@
         <PARAMETER NAME="PCW_USE_TRACE_DATA_EDGE_DETECTOR" VALUE="0"/>
         <PARAMETER NAME="PCW_TRACE_BUFFER_CLOCK_DELAY" VALUE="12"/>
         <PARAMETER NAME="PCW_USE_CROSS_TRIGGER" VALUE="0"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN0" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN1" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN2" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_IN3" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT0" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT1" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT2" VALUE="DISABLED"/>
-        <PARAMETER NAME="PCW_FTM_CTI_OUT3" VALUE="DISABLED"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN0" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN1" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN2" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_IN3" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT0" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT1" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT2" VALUE="&lt;Select>"/>
+        <PARAMETER NAME="PCW_FTM_CTI_OUT3" VALUE="&lt;Select>"/>
         <PARAMETER NAME="PCW_USE_DEBUG" VALUE="0"/>
         <PARAMETER NAME="PCW_USE_CR_FABRIC" VALUE="1"/>
         <PARAMETER NAME="PCW_USE_AXI_FABRIC_IDLE" VALUE="0"/>
@@ -2013,11 +2013,11 @@
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
-            <CONNECTION INSTANCE="ClockDivider_0" PORT="s00_axi_aclk"/>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="system_ila_0" PORT="clk"/>
+            <CONNECTION INSTANCE="ClockDivider_0" PORT="s00_axi_aclk"/>
+            <CONNECTION INSTANCE="axi_smc" PORT="aclk"/>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -2211,9 +2211,9 @@
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="system_ila_0" PORT="resetn"/>
             <CONNECTION INSTANCE="ClockDivider_0" PORT="s00_axi_aresetn"/>
             <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
-            <CONNECTION INSTANCE="system_ila_0" PORT="resetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

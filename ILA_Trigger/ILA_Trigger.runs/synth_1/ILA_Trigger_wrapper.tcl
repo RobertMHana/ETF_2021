@@ -17,68 +17,65 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.cache/wt [current_project]
-set_property parent.project_path C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.xpr [current_project]
+set_property webtalk.parent_dir D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.cache/wt [current_project]
+set_property parent.project_path D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Robert/xilinx_projects/clock_enabler/clock_enabler.srcs/sources_1/imports/sources
-  c:/Users/Robert/xilinx_projects/ip_repo
+  d:/depot/Projects/ETF_2021/clock_enabler/clock_enabler.srcs/sources_1/imports/sources
+  d:/depot/Projects/ETF_2021/ip_repo
 } [current_project]
-set_property ip_output_repo c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.cache/ip [current_project]
+set_property ip_output_repo d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/hdl/ILA_Trigger_wrapper.vhd
-add_files C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ILA_Trigger.bd
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_processing_system7_0_0/ILA_Trigger_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_10/bd_f1c4_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_16/bd_f1c4_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_23/bd_f1c4_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_24/bd_f1c4_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_25/bd_f1c4_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_26/bd_f1c4_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_27/bd_f1c4_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_28/bd_f1c4_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_17/bd_f1c4_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_18/bd_f1c4_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_19/bd_f1c4_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_20/bd_f1c4_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_21/bd_f1c4_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_11/bd_f1c4_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_12/bd_f1c4_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_13/bd_f1c4_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_14/bd_f1c4_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_15/bd_f1c4_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_2/bd_f1c4_arsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_3/bd_f1c4_rsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_4/bd_f1c4_awsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_5/bd_f1c4_wsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_6/bd_f1c4_bsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_1/bd_f1c4_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_1/bd_f1c4_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_rst_ps7_0_100M_0/ILA_Trigger_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_rst_ps7_0_100M_0/ILA_Trigger_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_rst_ps7_0_100M_0/ILA_Trigger_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/ILA_Trigger_system_ila_0_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/bd_deaa_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/bd_deaa_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ILA_Trigger_ooc.xdc]
+read_vhdl -library xil_defaultlib D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/hdl/ILA_Trigger_wrapper.vhd
+add_files D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ILA_Trigger.bd
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_processing_system7_0_0/ILA_Trigger_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_10/bd_f1c4_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_16/bd_f1c4_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_23/bd_f1c4_m01s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_24/bd_f1c4_m01arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_25/bd_f1c4_m01rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_26/bd_f1c4_m01awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_27/bd_f1c4_m01wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_28/bd_f1c4_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_17/bd_f1c4_m00arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_18/bd_f1c4_m00rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_19/bd_f1c4_m00awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_20/bd_f1c4_m00wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_21/bd_f1c4_m00bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_11/bd_f1c4_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_12/bd_f1c4_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_13/bd_f1c4_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_14/bd_f1c4_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_15/bd_f1c4_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_2/bd_f1c4_arsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_3/bd_f1c4_rsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_4/bd_f1c4_awsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_5/bd_f1c4_wsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_6/bd_f1c4_bsw_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_1/bd_f1c4_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/bd_0/ip/ip_1/bd_f1c4_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_rst_ps7_0_100M_0/ILA_Trigger_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_rst_ps7_0_100M_0/ILA_Trigger_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_rst_ps7_0_100M_0/ILA_Trigger_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xdc]
+set_property used_in_synthesis false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/ip/ip_0/bd_deaa_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/bd_0/bd_deaa_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_system_ila_0_0/ILA_Trigger_system_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ILA_Trigger_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

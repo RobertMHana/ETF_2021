@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="ILA_ClockDivider_axi_smc_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1555276086">
+<GenRun Id="ILA_ClockDivider_axi_smc_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685925575">
   <File Type="PA-TCL" Name="ILA_ClockDivider_axi_smc_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ILA_ClockDivider_axi_smc_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ILA_ClockDivider_axi_smc_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="ILA_ClockDivider_axi_smc_0.vds"/>
   <File Type="RDS-UTIL" Name="ILA_ClockDivider_axi_smc_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ILA_ClockDivider_axi_smc_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ILA_ClockDivider_axi_smc_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ILA_ClockDivider_axi_smc_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ILA_ClockDivider_axi_smc_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ILA_ClockDivider_axi_smc_0">
     <File Path="$PSRCDIR/sources_1/bd/ILA_ClockDivider/ip/ILA_ClockDivider_axi_smc_0/ILA_ClockDivider_axi_smc_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -22,9 +27,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ILA_ClockDivider_axi_smc_0">
     <File Path="$PSRCDIR/sources_1/bd/ILA_ClockDivider/ip/ILA_ClockDivider_axi_smc_0/ILA_ClockDivider_axi_smc_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -33,7 +40,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

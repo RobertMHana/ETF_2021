@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Apr 14 13:37:51 2019
-# Process ID: 2568
-# Current directory: C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1
+# Start of session at: Sun Jun  4 17:16:28 2023
+# Process ID: 6692
+# Current directory: D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1
 # Command line: vivado.exe -log ILA_Trigger_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ILA_Trigger_axi_gpio_0_0.tcl
-# Log file: C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/ILA_Trigger_axi_gpio_0_0.vds
-# Journal file: C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1\vivado.jou
+# Log file: D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/ILA_Trigger_axi_gpio_0_0.vds
+# Journal file: D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source ILA_Trigger_axi_gpio_0_0.tcl -notrace
 Command: synth_design -top ILA_Trigger_axi_gpio_0_0 -part xc7z010clg400-1 -mode out_of_context
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5708 
+INFO: Helper process launched with PID 12508 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 382.766 ; gain = 102.855
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 381.527 ; gain = 103.004
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ILA_Trigger_axi_gpio_0_0' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/synth/ILA_Trigger_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'ILA_Trigger_axi_gpio_0_0' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/synth/ILA_Trigger_axi_gpio_0_0.vhd:84]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -35,8 +35,8 @@ INFO: [Synth 8-638] synthesizing module 'ILA_Trigger_axi_gpio_0_0' [c:/Users/Rob
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/synth/ILA_Trigger_axi_gpio_0_0.vhd:168]
-INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'd:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/synth/ILA_Trigger_axi_gpio_0_0.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -52,9 +52,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/Robert/xilinx_proje
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1295]
-INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1296]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1295]
+INFO: [Synth 8-5534] Detected attribute (* max_fanout = "10000" *) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1296]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 32'b00000000000000000000000111111111 
@@ -63,7 +63,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/Robert/xilinx_
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_IPIF_ABUS_WIDTH bound to: 9 - type: integer 
@@ -72,41 +72,41 @@ INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/Robert/xili
 	Parameter C_USE_WSTRB bound to: 0 - type: integer 
 	Parameter C_DPHASE_TIMEOUT bound to: 8 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
 	Parameter C_BUS_AWIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_MIN_SIZE bound to: 511 - type: integer 
 	Parameter C_ARD_ADDR_RANGE_ARRAY bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111 
 	Parameter C_ARD_NUM_CE_ARRAY bound to: 32'b00000000000000000000000000000100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b00 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b01 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b10 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 2 - type: integer 
 	Parameter C_BAR bound to: 2'b11 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 	Parameter C_DW bound to: 32 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
 	Parameter C_GPIO_WIDTH bound to: 1 - type: integer 
@@ -123,8 +123,8 @@ INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/Robert/xilinx_proj
 	Parameter C_DOUT_DEFAULT_2 bound to: 0 - type: integer 
 	Parameter C_TRI_DEFAULT_2 bound to: -1 - type: integer 
 	Parameter C_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-226] default block is never used [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-226] default block is never used [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 0 - type: integer 
@@ -132,23 +132,23 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Robert/xilinx_proje
 	Parameter C_VECTOR_WIDTH bound to: 1 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
-WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:486]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
-INFO: [Synth 8-256] done synthesizing module 'ILA_Trigger_axi_gpio_0_0' (8#1) [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/synth/ILA_Trigger_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.gpio_Data_In_reg was removed.  [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:486]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
+INFO: [Synth 8-256] done synthesizing module 'ILA_Trigger_axi_gpio_0_0' (8#1) [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/synth/ILA_Trigger_axi_gpio_0_0.vhd:84]
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_in
@@ -208,7 +208,7 @@ WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB
 WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[1]
 WARNING: [Synth 8-3331] design slave_attachment has unconnected port S_AXI_WSTRB[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.543 ; gain = 159.633
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 438.266 ; gain = 159.742
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -221,10 +221,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.543 ; gain = 159.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 438.266 ; gain = 159.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 439.543 ; gain = 159.633
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 438.266 ; gain = 159.742
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -233,37 +233,37 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_board.xdc] for cell 'U0'
-Parsing XDC File [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0_board.xdc] for cell 'U0'
+Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xdc] for cell 'U0'
+Parsing XDC File [D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   FDR => FDRE: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 764.578 ; gain = 1.391
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 764.223 ; gain = 1.281
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 764.578 ; gain = 484.668
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 764.223 ; gain = 485.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 764.578 ; gain = 484.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 764.223 ; gain = 485.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 764.578 ; gain = 484.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 764.223 ; gain = 485.699
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -284,7 +284,7 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 764.578 ; gain = 484.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 764.223 ; gain = 485.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -390,8 +390,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
-WARNING: [Synth 8-6014] Unused sequential element bus2ip_reset_reg was removed.  [c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
+WARNING: [Synth 8-6014] Unused sequential element bus2ip_reset_reg was removed.  [d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1684]
 WARNING: [Synth 8-3331] design axi_gpio has unconnected port s_axi_wstrb[3]
 WARNING: [Synth 8-3331] design axi_gpio has unconnected port s_axi_wstrb[2]
 WARNING: [Synth 8-3331] design axi_gpio has unconnected port s_axi_wstrb[1]
@@ -509,7 +509,7 @@ INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2
 INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[1]) is unused and will be removed from module axi_gpio.
 INFO: [Synth 8-3332] Sequential element (AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_reg[0]) is unused and will be removed from module axi_gpio.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 764.578 ; gain = 484.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 764.223 ; gain = 485.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -521,13 +521,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 764.578 ; gain = 484.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 764.223 ; gain = 485.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 772.039 ; gain = 492.129
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 773.121 ; gain = 494.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -539,7 +539,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -563,7 +563,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -576,7 +576,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -588,25 +588,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -646,11 +646,11 @@ Report Instance Areas:
 |8     |    gpio_core_1                                                           |GPIO_Core                 |    11|
 +------+--------------------------------------------------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 782.676 ; gain = 504.152
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 782.070 ; gain = 177.125
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 782.070 ; gain = 502.160
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 782.676 ; gain = 178.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 782.676 ; gain = 504.152
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -660,15 +660,13 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 135 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 783.547 ; gain = 513.641
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 783.020 ; gain = 514.586
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/ILA_Trigger_axi_gpio_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xci
+INFO: [Common 17-1381] The checkpoint 'D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/ILA_Trigger_axi_gpio_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.srcs/sources_1/bd/ILA_Trigger/ip/ILA_Trigger_axi_gpio_0_0/ILA_Trigger_axi_gpio_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 7 cell refs.
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Robert/xilinx_projects/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/ILA_Trigger_axi_gpio_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/depot/Projects/ETF_2021/ILA_Trigger/ILA_Trigger.runs/ILA_Trigger_axi_gpio_0_0_synth_1/ILA_Trigger_axi_gpio_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ILA_Trigger_axi_gpio_0_0_utilization_synth.rpt -pb ILA_Trigger_axi_gpio_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 783.547 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 14 13:38:38 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 783.020 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  4 17:16:57 2023...
