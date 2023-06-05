@@ -1,19 +1,19 @@
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Jun 19 21:04:33 2021
-// Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_axi_bram_ctrl_0_0/EmbeddedTestFramework_axi_bram_ctrl_0_0_stub.v
+// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+// Date        : Mon Jan 28 21:19:53 2019
+// Host        : Robert-PC running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top EmbeddedTestFramework_axi_bram_ctrl_0_0 -prefix
+//               EmbeddedTestFramework_axi_bram_ctrl_0_0_ EmbeddedTestFramework_axi_bram_ctrl_0_0_stub.v
 // Design      : EmbeddedTestFramework_axi_bram_ctrl_0_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xczu7ev-ffvc1156-2-e
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "axi_bram_ctrl,Vivado 2020.2" *)
+(* x_core_info = "axi_bram_ctrl,Vivado 2018.2" *)
 module EmbeddedTestFramework_axi_bram_ctrl_0_0(s_axi_aclk, s_axi_aresetn, s_axi_awid, 
   s_axi_awaddr, s_axi_awlen, s_axi_awsize, s_axi_awburst, s_axi_awlock, s_axi_awcache, 
   s_axi_awprot, s_axi_awvalid, s_axi_awready, s_axi_wdata, s_axi_wstrb, s_axi_wlast, 

@@ -1,18 +1,18 @@
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Jun 19 21:01:38 2021
+// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+// Date        : Sun Apr 18 17:48:23 2021
 // Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_rst_ps7_0_100M_0/EmbeddedTestFramework_rst_ps7_0_100M_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top EmbeddedTestFramework_rst_ps7_0_100M_0 -prefix
+//               EmbeddedTestFramework_rst_ps7_0_100M_0_ EmbeddedTestFramework_rst_ps7_0_100M_0_sim_netlist.v
 // Design      : EmbeddedTestFramework_rst_ps7_0_100M_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xczu7ev-ffvc1156-2-e
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "EmbeddedTestFramework_rst_ps7_0_100M_0,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2020.2" *) 
+(* CHECK_LICENSE_TYPE = "EmbeddedTestFramework_rst_ps7_0_100M_0,proc_sys_reset,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "proc_sys_reset,Vivado 2018.2" *) 
 (* NotValidForBitStream *)
 module EmbeddedTestFramework_rst_ps7_0_100M_0
    (slowest_sync_clk,
@@ -25,16 +25,16 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0
     peripheral_reset,
     interconnect_aresetn,
     peripheral_aresetn);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input slowest_sync_clk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 ext_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input ext_reset_in;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 aux_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME aux_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aux_reset_in;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 dbg_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_reset, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *) input mb_debug_sys_rst;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clock CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clock, ASSOCIATED_RESET mb_reset:bus_struct_reset:interconnect_aresetn:peripheral_aresetn:peripheral_reset, FREQ_HZ 200000000, PHASE 0.000, CLK_DOMAIN EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0" *) input slowest_sync_clk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 ext_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME ext_reset, BOARD.ASSOCIATED_PARAM RESET_BOARD_INTERFACE, POLARITY ACTIVE_LOW" *) input ext_reset_in;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 aux_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME aux_reset, POLARITY ACTIVE_LOW" *) input aux_reset_in;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 dbg_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME dbg_reset, POLARITY ACTIVE_HIGH" *) input mb_debug_sys_rst;
   input dcm_locked;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 mb_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME mb_rst, POLARITY ACTIVE_HIGH, TYPE PROCESSOR, INSERT_VIP 0" *) output mb_reset;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 bus_struct_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME bus_struct_reset, POLARITY ACTIVE_HIGH, TYPE INTERCONNECT, INSERT_VIP 0" *) output [0:0]bus_struct_reset;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 peripheral_high_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME peripheral_high_rst, POLARITY ACTIVE_HIGH, TYPE PERIPHERAL, INSERT_VIP 0" *) output [0:0]peripheral_reset;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 interconnect_low_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME interconnect_low_rst, POLARITY ACTIVE_LOW, TYPE INTERCONNECT, INSERT_VIP 0" *) output [0:0]interconnect_aresetn;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 peripheral_low_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME peripheral_low_rst, POLARITY ACTIVE_LOW, TYPE PERIPHERAL, INSERT_VIP 0" *) output [0:0]peripheral_aresetn;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 mb_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME mb_rst, POLARITY ACTIVE_HIGH, TYPE PROCESSOR" *) output mb_reset;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 bus_struct_reset RST" *) (* x_interface_parameter = "XIL_INTERFACENAME bus_struct_reset, POLARITY ACTIVE_HIGH, TYPE INTERCONNECT" *) output [0:0]bus_struct_reset;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 peripheral_high_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME peripheral_high_rst, POLARITY ACTIVE_HIGH, TYPE PERIPHERAL" *) output [0:0]peripheral_reset;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 interconnect_low_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME interconnect_low_rst, POLARITY ACTIVE_LOW, TYPE INTERCONNECT" *) output [0:0]interconnect_aresetn;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 peripheral_low_rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME peripheral_low_rst, POLARITY ACTIVE_LOW, TYPE PERIPHERAL" *) output [0:0]peripheral_aresetn;
 
   wire aux_reset_in;
   wire [0:0]bus_struct_reset;
@@ -51,7 +51,7 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0
   (* C_AUX_RST_WIDTH = "4" *) 
   (* C_EXT_RESET_HIGH = "1'b0" *) 
   (* C_EXT_RST_WIDTH = "4" *) 
-  (* C_FAMILY = "zynquplus" *) 
+  (* C_FAMILY = "zynq" *) 
   (* C_NUM_BUS_RST = "1" *) 
   (* C_NUM_INTERCONNECT_ARESETN = "1" *) 
   (* C_NUM_PERP_ARESETN = "1" *) 
@@ -69,7 +69,6 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0
         .slowest_sync_clk(slowest_sync_clk));
 endmodule
 
-(* ORIG_REF_NAME = "cdc_sync" *) 
 module EmbeddedTestFramework_rst_ps7_0_100M_0_cdc_sync
    (lpf_asr_reg,
     scndry_out,
@@ -166,30 +165,24 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_cdc_sync_0
    (lpf_exr_reg,
     scndry_out,
     lpf_exr,
-    p_1_in4_in,
-    p_2_in3_in,
-    exr_lpf,
+    p_3_out,
     mb_debug_sys_rst,
     ext_reset_in,
     slowest_sync_clk);
   output lpf_exr_reg;
   output scndry_out;
   input lpf_exr;
-  input p_1_in4_in;
-  input p_2_in3_in;
-  input [0:0]exr_lpf;
+  input [2:0]p_3_out;
   input mb_debug_sys_rst;
   input ext_reset_in;
   input slowest_sync_clk;
 
   wire exr_d1;
-  wire [0:0]exr_lpf;
   wire ext_reset_in;
   wire lpf_exr;
   wire lpf_exr_reg;
   wire mb_debug_sys_rst;
-  wire p_1_in4_in;
-  wire p_2_in3_in;
+  wire [2:0]p_3_out;
   wire s_level_out_d1_cdc_to;
   wire s_level_out_d2;
   wire s_level_out_d3;
@@ -250,14 +243,13 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_cdc_sync_0
     .INIT(32'hEAAAAAA8)) 
     lpf_exr_i_1
        (.I0(lpf_exr),
-        .I1(p_1_in4_in),
-        .I2(p_2_in3_in),
+        .I1(p_3_out[1]),
+        .I2(p_3_out[2]),
         .I3(scndry_out),
-        .I4(exr_lpf),
+        .I4(p_3_out[0]),
         .O(lpf_exr_reg));
 endmodule
 
-(* ORIG_REF_NAME = "lpf" *) 
 module EmbeddedTestFramework_rst_ps7_0_100M_0_lpf
    (lpf_int,
     slowest_sync_clk,
@@ -278,7 +270,6 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_lpf
   wire [0:0]asr_lpf;
   wire aux_reset_in;
   wire dcm_locked;
-  wire [0:0]exr_lpf;
   wire ext_reset_in;
   wire lpf_asr;
   wire lpf_exr;
@@ -286,11 +277,9 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_lpf
   wire lpf_int0__0;
   wire mb_debug_sys_rst;
   wire p_1_in;
-  wire p_1_in4_in;
   wire p_2_in;
-  wire p_2_in3_in;
   wire p_3_in1_in;
-  wire p_3_in6_in;
+  wire [3:0]p_3_out;
   wire slowest_sync_clk;
 
   EmbeddedTestFramework_rst_ps7_0_100M_0_cdc_sync \ACTIVE_LOW_AUX.ACT_LO_AUX 
@@ -303,14 +292,12 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_lpf
         .scndry_out(p_3_in1_in),
         .slowest_sync_clk(slowest_sync_clk));
   EmbeddedTestFramework_rst_ps7_0_100M_0_cdc_sync_0 \ACTIVE_LOW_EXT.ACT_LO_EXT 
-       (.exr_lpf(exr_lpf),
-        .ext_reset_in(ext_reset_in),
+       (.ext_reset_in(ext_reset_in),
         .lpf_exr(lpf_exr),
         .lpf_exr_reg(\ACTIVE_LOW_EXT.ACT_LO_EXT_n_0 ),
         .mb_debug_sys_rst(mb_debug_sys_rst),
-        .p_1_in4_in(p_1_in4_in),
-        .p_2_in3_in(p_2_in3_in),
-        .scndry_out(p_3_in6_in),
+        .p_3_out(p_3_out[2:0]),
+        .scndry_out(p_3_out[3]),
         .slowest_sync_clk(slowest_sync_clk));
   FDRE #(
     .INIT(1'b0)) 
@@ -341,24 +328,24 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_lpf
     \EXT_LPF[1].exr_lpf_reg[1] 
        (.C(slowest_sync_clk),
         .CE(1'b1),
-        .D(p_3_in6_in),
-        .Q(p_2_in3_in),
+        .D(p_3_out[3]),
+        .Q(p_3_out[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \EXT_LPF[2].exr_lpf_reg[2] 
        (.C(slowest_sync_clk),
         .CE(1'b1),
-        .D(p_2_in3_in),
-        .Q(p_1_in4_in),
+        .D(p_3_out[2]),
+        .Q(p_3_out[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \EXT_LPF[3].exr_lpf_reg[3] 
        (.C(slowest_sync_clk),
         .CE(1'b1),
-        .D(p_1_in4_in),
-        .Q(exr_lpf),
+        .D(p_3_out[1]),
+        .Q(p_3_out[0]),
         .R(1'b0));
   (* XILINX_LEGACY_PRIM = "SRL16" *) 
   (* box_type = "PRIMITIVE" *) 
@@ -409,9 +396,8 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_lpf
 endmodule
 
 (* C_AUX_RESET_HIGH = "1'b0" *) (* C_AUX_RST_WIDTH = "4" *) (* C_EXT_RESET_HIGH = "1'b0" *) 
-(* C_EXT_RST_WIDTH = "4" *) (* C_FAMILY = "zynquplus" *) (* C_NUM_BUS_RST = "1" *) 
+(* C_EXT_RST_WIDTH = "4" *) (* C_FAMILY = "zynq" *) (* C_NUM_BUS_RST = "1" *) 
 (* C_NUM_INTERCONNECT_ARESETN = "1" *) (* C_NUM_PERP_ARESETN = "1" *) (* C_NUM_PERP_RST = "1" *) 
-(* ORIG_REF_NAME = "proc_sys_reset" *) 
 module EmbeddedTestFramework_rst_ps7_0_100M_0_proc_sys_reset
    (slowest_sync_clk,
     ext_reset_in,
@@ -429,10 +415,10 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_proc_sys_reset
   input mb_debug_sys_rst;
   input dcm_locked;
   output mb_reset;
-  output [0:0]bus_struct_reset;
-  output [0:0]peripheral_reset;
-  output [0:0]interconnect_aresetn;
-  output [0:0]peripheral_aresetn;
+  (* equivalent_register_removal = "no" *) output [0:0]bus_struct_reset;
+  (* equivalent_register_removal = "no" *) output [0:0]peripheral_reset;
+  (* equivalent_register_removal = "no" *) output [0:0]interconnect_aresetn;
+  (* equivalent_register_removal = "no" *) output [0:0]peripheral_aresetn;
 
   wire Bsr_out;
   wire MB_out;
@@ -519,32 +505,33 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_proc_sys_reset
         .Q(peripheral_reset),
         .R(1'b0));
   EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr SEQ
-       (.Bsr_out(Bsr_out),
+       (.\ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N (SEQ_n_3),
+        .\ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N (SEQ_n_4),
+        .Bsr_out(Bsr_out),
         .MB_out(MB_out),
         .Pr_out(Pr_out),
-        .bsr_reg_0(SEQ_n_3),
         .lpf_int(lpf_int),
-        .pr_reg_0(SEQ_n_4),
         .slowest_sync_clk(slowest_sync_clk));
 endmodule
 
-(* ORIG_REF_NAME = "sequence_psr" *) 
 module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
    (MB_out,
     Bsr_out,
     Pr_out,
-    bsr_reg_0,
-    pr_reg_0,
+    \ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N ,
+    \ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N ,
     lpf_int,
     slowest_sync_clk);
   output MB_out;
   output Bsr_out;
   output Pr_out;
-  output bsr_reg_0;
-  output pr_reg_0;
+  output \ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N ;
+  output \ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N ;
   input lpf_int;
   input slowest_sync_clk;
 
+  wire \ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N ;
+  wire \ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N ;
   wire Bsr_out;
   wire Core_i_1_n_0;
   wire MB_out;
@@ -552,7 +539,6 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
   wire \bsr_dec_reg_n_0_[0] ;
   wire \bsr_dec_reg_n_0_[2] ;
   wire bsr_i_1_n_0;
-  wire bsr_reg_0;
   wire \core_dec[0]_i_1_n_0 ;
   wire \core_dec[2]_i_1_n_0 ;
   wire \core_dec_reg_n_0_[0] ;
@@ -566,7 +552,6 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
   wire \pr_dec_reg_n_0_[0] ;
   wire \pr_dec_reg_n_0_[2] ;
   wire pr_i_1_n_0;
-  wire pr_reg_0;
   wire seq_clr;
   wire [5:0]seq_cnt;
   wire seq_cnt_en;
@@ -577,14 +562,14 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
     .INIT(2'h1)) 
     \ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N_i_1 
        (.I0(Bsr_out),
-        .O(bsr_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+        .O(\ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_i_1 
        (.I0(Pr_out),
-        .O(pr_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+        .O(\ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h2)) 
     Core_i_1
@@ -604,7 +589,6 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .seq_clr(seq_clr),
         .seq_cnt_en(seq_cnt_en),
         .slowest_sync_clk(slowest_sync_clk));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h0090)) 
     \bsr_dec[0]_i_1 
@@ -613,7 +597,7 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .I2(seq_cnt[3]),
         .I3(seq_cnt[5]),
         .O(p_5_out[0]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \bsr_dec[2]_i_1 
@@ -660,7 +644,7 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .I2(seq_cnt[3]),
         .I3(seq_cnt[5]),
         .O(\core_dec[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \core_dec[2]_i_1 
@@ -691,7 +675,7 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .D(\core_dec[2]_i_1_n_0 ),
         .Q(p_0_in),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h8)) 
     from_sys_i_1
@@ -714,6 +698,7 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .I2(seq_cnt[2]),
         .I3(seq_cnt[1]),
         .O(pr_dec0__0));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
     .INIT(16'h0480)) 
     \pr_dec[0]_i_1 
@@ -744,7 +729,7 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .D(p_3_out[2]),
         .Q(\pr_dec_reg_n_0_[2] ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'h2)) 
     pr_i_1
@@ -769,7 +754,6 @@ module EmbeddedTestFramework_rst_ps7_0_100M_0_sequence_psr
         .R(lpf_int));
 endmodule
 
-(* ORIG_REF_NAME = "upcnt_n" *) 
 module EmbeddedTestFramework_rst_ps7_0_100M_0_upcnt_n
    (Q,
     seq_clr,
@@ -898,15 +882,12 @@ module glbl ();
 
     parameter ROC_WIDTH = 100000;
     parameter TOC_WIDTH = 0;
-    parameter GRES_WIDTH = 10000;
-    parameter GRES_START = 10000;
 
 //--------   STARTUP Globals --------------
     wire GSR;
     wire GTS;
     wire GWE;
     wire PRLD;
-    wire GRESTORE;
     tri1 p_up_tmp;
     tri (weak1, strong0) PLL_LOCKG = p_up_tmp;
 
@@ -919,7 +900,6 @@ module glbl ();
     reg GSR_int;
     reg GTS_int;
     reg PRLD_int;
-    reg GRESTORE_int;
 
 //--------   JTAG Globals --------------
     wire JTAG_TDO_GLBL;
@@ -947,7 +927,6 @@ module glbl ();
     assign (strong1, weak0) GSR = GSR_int;
     assign (strong1, weak0) GTS = GTS_int;
     assign (weak1, weak0) PRLD = PRLD_int;
-    assign (strong1, weak0) GRESTORE = GRESTORE_int;
 
     initial begin
 	GSR_int = 1'b1;
@@ -961,14 +940,6 @@ module glbl ();
 	GTS_int = 1'b1;
 	#(TOC_WIDTH)
 	GTS_int = 1'b0;
-    end
-
-    initial begin 
-	GRESTORE_int = 1'b0;
-	#(GRES_START);
-	GRESTORE_int = 1'b1;
-	#(GRES_WIDTH);
-	GRESTORE_int = 1'b0;
     end
 
 endmodule

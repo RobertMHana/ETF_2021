@@ -1,13 +1,13 @@
--- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sat Jun 19 21:22:14 2021
+-- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+-- Date        : Sun Apr 18 17:48:27 2021
 -- Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_processing_system7_0_0/EmbeddedTestFramework_processing_system7_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top EmbeddedTestFramework_processing_system7_0_0 -prefix
+--               EmbeddedTestFramework_processing_system7_0_0_ EmbeddedTestFramework_processing_system7_0_0_stub.vhdl
 -- Design      : EmbeddedTestFramework_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
--- Device      : xczu7ev-ffvc1156-2-e
+-- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

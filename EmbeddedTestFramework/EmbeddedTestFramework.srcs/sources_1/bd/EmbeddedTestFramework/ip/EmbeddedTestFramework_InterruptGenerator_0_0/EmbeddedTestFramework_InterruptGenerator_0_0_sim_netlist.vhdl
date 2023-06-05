@@ -1,14 +1,14 @@
--- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sat Jun 19 21:22:09 2021
--- Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+-- Date        : Sun Jun  4 19:03:41 2023
+-- Host        : robertPC running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_InterruptGenerator_0_0/EmbeddedTestFramework_InterruptGenerator_0_0_sim_netlist.vhdl
+--               D:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_InterruptGenerator_0_0/EmbeddedTestFramework_InterruptGenerator_0_0_sim_netlist.vhdl
 -- Design      : EmbeddedTestFramework_InterruptGenerator_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xczu7ev-ffvc1156-2-e
+-- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -26,10 +26,10 @@ entity EmbeddedTestFramework_InterruptGenerator_0_0_InterruptMultiReg_v1_0_S_AXI
     s_axi_intr_aresetn : in STD_LOGIC;
     s_axi_intr_aclk : in STD_LOGIC;
     s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_awvalid : in STD_LOGIC;
+    s_axi_intr_wvalid : in STD_LOGIC;
     interrupt_in : in STD_LOGIC;
     s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_wvalid : in STD_LOGIC;
-    s_axi_intr_awvalid : in STD_LOGIC;
     s_axi_intr_arvalid : in STD_LOGIC;
     s_axi_intr_bready : in STD_LOGIC;
     s_axi_intr_rready : in STD_LOGIC;
@@ -45,7 +45,13 @@ architecture STRUCTURE of EmbeddedTestFramework_InterruptGenerator_0_0_Interrupt
   signal \^s_axi_wready\ : STD_LOGIC;
   signal aw_en_i_1_n_0 : STD_LOGIC;
   signal aw_en_reg_n_0 : STD_LOGIC;
+  signal \axi_araddr[2]_i_1_n_0\ : STD_LOGIC;
+  signal \axi_araddr[3]_i_1_n_0\ : STD_LOGIC;
+  signal \axi_araddr[4]_i_1_n_0\ : STD_LOGIC;
   signal axi_arready0 : STD_LOGIC;
+  signal \axi_awaddr[2]_i_1_n_0\ : STD_LOGIC;
+  signal \axi_awaddr[3]_i_1_n_0\ : STD_LOGIC;
+  signal \axi_awaddr[4]_i_1_n_0\ : STD_LOGIC;
   signal axi_awready0 : STD_LOGIC;
   signal axi_bvalid_i_1_n_0 : STD_LOGIC;
   signal \axi_rdata[0]_i_1_n_0\ : STD_LOGIC;
@@ -70,28 +76,33 @@ architecture STRUCTURE of EmbeddedTestFramework_InterruptGenerator_0_0_Interrupt
   signal intr_ack_all_ff : STD_LOGIC;
   signal intr_ack_all_i_1_n_0 : STD_LOGIC;
   signal intr_all : STD_LOGIC;
+  signal intr_all_i_1_n_0 : STD_LOGIC;
   signal intr_reg_rden : STD_LOGIC;
+  signal \intr_reg_wren__2\ : STD_LOGIC;
   signal \^irq\ : STD_LOGIC;
   signal p_0_in : STD_LOGIC;
   signal p_0_in_0 : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal p_8_in : STD_LOGIC;
+  signal p_3_out : STD_LOGIC;
   signal reg_global_intr_en : STD_LOGIC;
   signal reg_intr_ack : STD_LOGIC;
   signal reg_intr_en : STD_LOGIC;
   signal reg_intr_pending : STD_LOGIC;
-  signal reg_intr_pending0 : STD_LOGIC;
   signal reg_intr_sts : STD_LOGIC;
   signal \^s_axi_intr_bvalid\ : STD_LOGIC;
   signal \^s_axi_intr_rdata\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^s_axi_intr_rvalid\ : STD_LOGIC;
   signal sel0 : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \axi_rdata[0]_i_3\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \axi_rdata[0]_i_4\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \axi_rdata[0]_i_5\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \axi_araddr[2]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \axi_araddr[4]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \axi_rdata[0]_i_3\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \axi_rdata[0]_i_5\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \gen_intr_reg[0].reg_global_intr_en[0]_i_2\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \gen_intr_reg[0].reg_global_intr_en[0]_i_2\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of intr_ack_all_i_1 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of intr_all_i_1 : label is "soft_lutpair4";
 begin
   S_AXI_ARREADY <= \^s_axi_arready\;
   S_AXI_AWREADY <= \^s_axi_awready\;
@@ -102,13 +113,13 @@ begin
   s_axi_intr_rvalid <= \^s_axi_intr_rvalid\;
 aw_en_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"DFFF8AAA8AAA8AAA"
+      INIT => X"BFFFBF00BF00BF00"
     )
         port map (
-      I0 => aw_en_reg_n_0,
-      I1 => \^s_axi_awready\,
+      I0 => \^s_axi_awready\,
+      I1 => s_axi_intr_wvalid,
       I2 => s_axi_intr_awvalid,
-      I3 => s_axi_intr_wvalid,
+      I3 => aw_en_reg_n_0,
       I4 => s_axi_intr_bready,
       I5 => \^s_axi_intr_bvalid\,
       O => aw_en_i_1_n_0
@@ -121,27 +132,60 @@ aw_en_reg: unisim.vcomponents.FDSE
       Q => aw_en_reg_n_0,
       S => p_0_in
     );
+\axi_araddr[2]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FB08"
+    )
+        port map (
+      I0 => s_axi_intr_araddr(0),
+      I1 => s_axi_intr_arvalid,
+      I2 => \^s_axi_arready\,
+      I3 => sel0(0),
+      O => \axi_araddr[2]_i_1_n_0\
+    );
+\axi_araddr[3]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FB08"
+    )
+        port map (
+      I0 => s_axi_intr_araddr(1),
+      I1 => s_axi_intr_arvalid,
+      I2 => \^s_axi_arready\,
+      I3 => sel0(1),
+      O => \axi_araddr[3]_i_1_n_0\
+    );
+\axi_araddr[4]_i_1\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FB08"
+    )
+        port map (
+      I0 => s_axi_intr_araddr(2),
+      I1 => s_axi_intr_arvalid,
+      I2 => \^s_axi_arready\,
+      I3 => sel0(2),
+      O => \axi_araddr[4]_i_1_n_0\
+    );
 \axi_araddr_reg[2]\: unisim.vcomponents.FDSE
      port map (
       C => s_axi_intr_aclk,
-      CE => axi_arready0,
-      D => s_axi_intr_araddr(0),
+      CE => '1',
+      D => \axi_araddr[2]_i_1_n_0\,
       Q => sel0(0),
       S => p_0_in
     );
 \axi_araddr_reg[3]\: unisim.vcomponents.FDSE
      port map (
       C => s_axi_intr_aclk,
-      CE => axi_arready0,
-      D => s_axi_intr_araddr(1),
+      CE => '1',
+      D => \axi_araddr[3]_i_1_n_0\,
       Q => sel0(1),
       S => p_0_in
     );
 \axi_araddr_reg[4]\: unisim.vcomponents.FDSE
      port map (
       C => s_axi_intr_aclk,
-      CE => axi_arready0,
-      D => s_axi_intr_araddr(2),
+      CE => '1',
+      D => \axi_araddr[4]_i_1_n_0\,
       Q => sel0(2),
       S => p_0_in
     );
@@ -162,27 +206,66 @@ axi_arready_reg: unisim.vcomponents.FDRE
       Q => \^s_axi_arready\,
       R => p_0_in
     );
+\axi_awaddr[2]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFBFFF00008000"
+    )
+        port map (
+      I0 => s_axi_intr_awaddr(0),
+      I1 => aw_en_reg_n_0,
+      I2 => s_axi_intr_awvalid,
+      I3 => s_axi_intr_wvalid,
+      I4 => \^s_axi_awready\,
+      I5 => p_0_in_0(0),
+      O => \axi_awaddr[2]_i_1_n_0\
+    );
+\axi_awaddr[3]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFBFFF00008000"
+    )
+        port map (
+      I0 => s_axi_intr_awaddr(1),
+      I1 => aw_en_reg_n_0,
+      I2 => s_axi_intr_awvalid,
+      I3 => s_axi_intr_wvalid,
+      I4 => \^s_axi_awready\,
+      I5 => p_0_in_0(1),
+      O => \axi_awaddr[3]_i_1_n_0\
+    );
+\axi_awaddr[4]_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFBFFF00008000"
+    )
+        port map (
+      I0 => s_axi_intr_awaddr(2),
+      I1 => aw_en_reg_n_0,
+      I2 => s_axi_intr_awvalid,
+      I3 => s_axi_intr_wvalid,
+      I4 => \^s_axi_awready\,
+      I5 => p_0_in_0(2),
+      O => \axi_awaddr[4]_i_1_n_0\
+    );
 \axi_awaddr_reg[2]\: unisim.vcomponents.FDRE
      port map (
       C => s_axi_intr_aclk,
-      CE => axi_awready0,
-      D => s_axi_intr_awaddr(0),
+      CE => '1',
+      D => \axi_awaddr[2]_i_1_n_0\,
       Q => p_0_in_0(0),
       R => p_0_in
     );
 \axi_awaddr_reg[3]\: unisim.vcomponents.FDRE
      port map (
       C => s_axi_intr_aclk,
-      CE => axi_awready0,
-      D => s_axi_intr_awaddr(1),
+      CE => '1',
+      D => \axi_awaddr[3]_i_1_n_0\,
       Q => p_0_in_0(1),
       R => p_0_in
     );
 \axi_awaddr_reg[4]\: unisim.vcomponents.FDRE
      port map (
       C => s_axi_intr_aclk,
-      CE => axi_awready0,
-      D => s_axi_intr_awaddr(2),
+      CE => '1',
+      D => \axi_awaddr[4]_i_1_n_0\,
       Q => p_0_in_0(2),
       R => p_0_in
     );
@@ -196,13 +279,13 @@ axi_awready_i_1: unisim.vcomponents.LUT1
     );
 axi_awready_i_2: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0800"
+      INIT => X"0080"
     )
         port map (
-      I0 => s_axi_intr_wvalid,
+      I0 => aw_en_reg_n_0,
       I1 => s_axi_intr_awvalid,
-      I2 => \^s_axi_awready\,
-      I3 => aw_en_reg_n_0,
+      I2 => s_axi_intr_wvalid,
+      I3 => \^s_axi_awready\,
       O => axi_awready0
     );
 axi_awready_reg: unisim.vcomponents.FDRE
@@ -219,9 +302,9 @@ axi_bvalid_i_1: unisim.vcomponents.LUT6
     )
         port map (
       I0 => s_axi_intr_wvalid,
-      I1 => s_axi_intr_awvalid,
+      I1 => \^s_axi_awready\,
       I2 => \^s_axi_wready\,
-      I3 => \^s_axi_awready\,
+      I3 => s_axi_intr_awvalid,
       I4 => s_axi_intr_bready,
       I5 => \^s_axi_intr_bvalid\,
       O => axi_bvalid_i_1_n_0
@@ -318,13 +401,13 @@ axi_rvalid_reg: unisim.vcomponents.FDRE
     );
 axi_wready_i_1: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"0800"
+      INIT => X"0080"
     )
         port map (
-      I0 => s_axi_intr_wvalid,
+      I0 => aw_en_reg_n_0,
       I1 => s_axi_intr_awvalid,
-      I2 => \^s_axi_wready\,
-      I3 => aw_en_reg_n_0,
+      I2 => s_axi_intr_wvalid,
+      I3 => \^s_axi_wready\,
       O => axi_wready0
     );
 axi_wready_reg: unisim.vcomponents.FDRE
@@ -381,7 +464,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
       I1 => p_0_in_0(2),
       I2 => p_0_in_0(0),
       I3 => p_0_in_0(1),
-      I4 => p_8_in,
+      I4 => \intr_reg_wren__2\,
       I5 => reg_global_intr_en,
       O => \gen_intr_reg[0].reg_global_intr_en[0]_i_1_n_0\
     );
@@ -390,11 +473,11 @@ axi_wready_reg: unisim.vcomponents.FDRE
       INIT => X"8000"
     )
         port map (
-      I0 => \^s_axi_awready\,
-      I1 => \^s_axi_wready\,
-      I2 => s_axi_intr_wvalid,
+      I0 => s_axi_intr_wvalid,
+      I1 => \^s_axi_awready\,
+      I2 => \^s_axi_wready\,
       I3 => s_axi_intr_awvalid,
-      O => p_8_in
+      O => \intr_reg_wren__2\
     );
 \gen_intr_reg[0].reg_global_intr_en_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -413,7 +496,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
       I1 => p_0_in_0(1),
       I2 => p_0_in_0(0),
       I3 => p_0_in_0(2),
-      I4 => p_8_in,
+      I4 => \intr_reg_wren__2\,
       O => \gen_intr_reg[0].reg_intr_ack[0]_i_1_n_0\
     );
 \gen_intr_reg[0].reg_intr_ack_reg[0]\: unisim.vcomponents.FDRE
@@ -433,7 +516,7 @@ axi_wready_reg: unisim.vcomponents.FDRE
       I1 => p_0_in_0(1),
       I2 => p_0_in_0(2),
       I3 => p_0_in_0(0),
-      I4 => p_8_in,
+      I4 => \intr_reg_wren__2\,
       I5 => reg_intr_en,
       O => \gen_intr_reg[0].reg_intr_en[0]_i_1_n_0\
     );
@@ -452,13 +535,13 @@ axi_wready_reg: unisim.vcomponents.FDRE
         port map (
       I0 => reg_intr_en,
       I1 => reg_intr_sts,
-      O => reg_intr_pending0
+      O => p_3_out
     );
 \gen_intr_reg[0].reg_intr_pending_reg[0]\: unisim.vcomponents.FDRE
      port map (
       C => s_axi_intr_aclk,
       CE => '1',
-      D => reg_intr_pending0,
+      D => p_3_out,
       Q => reg_intr_pending,
       R => \gen_intr_reg[0].reg_intr_sts[0]_i_1_n_0\
     );
@@ -520,30 +603,41 @@ intr_ack_all_ff_reg: unisim.vcomponents.FDRE
       Q => intr_ack_all_ff,
       R => p_0_in
     );
-intr_ack_all_i_1: unisim.vcomponents.LUT2
+intr_ack_all_i_1: unisim.vcomponents.LUT3
     generic map(
-      INIT => X"B"
+      INIT => X"08"
     )
         port map (
-      I0 => intr_ack_all_ff,
+      I0 => reg_intr_ack,
       I1 => s_axi_intr_aresetn,
+      I2 => intr_ack_all_ff,
       O => intr_ack_all_i_1_n_0
     );
 intr_ack_all_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_intr_aclk,
       CE => '1',
-      D => reg_intr_ack,
+      D => intr_ack_all_i_1_n_0,
       Q => intr_ack_all,
-      R => intr_ack_all_i_1_n_0
+      R => '0'
+    );
+intr_all_i_1: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"08"
+    )
+        port map (
+      I0 => reg_intr_pending,
+      I1 => s_axi_intr_aresetn,
+      I2 => intr_ack_all_ff,
+      O => intr_all_i_1_n_0
     );
 intr_all_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axi_intr_aclk,
       CE => '1',
-      D => reg_intr_pending,
+      D => intr_all_i_1_n_0,
       Q => intr_all,
-      R => intr_ack_all_i_1_n_0
+      R => '0'
     );
 \intr_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -570,10 +664,10 @@ entity EmbeddedTestFramework_InterruptGenerator_0_0_InterruptMultiReg_v1_0 is
     s_axi_intr_aresetn : in STD_LOGIC;
     s_axi_intr_aclk : in STD_LOGIC;
     s_axi_intr_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axi_intr_awvalid : in STD_LOGIC;
+    s_axi_intr_wvalid : in STD_LOGIC;
     interrupt_in : in STD_LOGIC;
     s_axi_intr_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s_axi_intr_wvalid : in STD_LOGIC;
-    s_axi_intr_awvalid : in STD_LOGIC;
     s_axi_intr_arvalid : in STD_LOGIC;
     s_axi_intr_bready : in STD_LOGIC;
     s_axi_intr_rready : in STD_LOGIC;
@@ -644,7 +738,7 @@ entity EmbeddedTestFramework_InterruptGenerator_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of EmbeddedTestFramework_InterruptGenerator_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of EmbeddedTestFramework_InterruptGenerator_0_0 : entity is "InterruptMultiReg_v1_0,Vivado 2020.2";
+  attribute x_core_info of EmbeddedTestFramework_InterruptGenerator_0_0 : entity is "InterruptMultiReg_v1_0,Vivado 2018.2";
 end EmbeddedTestFramework_InterruptGenerator_0_0;
 
 architecture STRUCTURE of EmbeddedTestFramework_InterruptGenerator_0_0 is
@@ -655,9 +749,9 @@ architecture STRUCTURE of EmbeddedTestFramework_InterruptGenerator_0_0 is
   attribute x_interface_parameter : string;
   attribute x_interface_parameter of irq : signal is "XIL_INTERFACENAME IRQ, SENSITIVITY LEVEL_HIGH, PortWidth 1";
   attribute x_interface_info of s_axi_intr_aclk : signal is "xilinx.com:signal:clock:1.0 S_AXI_INTR_CLK CLK";
-  attribute x_interface_parameter of s_axi_intr_aclk : signal is "XIL_INTERFACENAME S_AXI_INTR_CLK, ASSOCIATED_BUSIF S_AXI_INTR, ASSOCIATED_RESET s_axi_intr_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_intr_aclk : signal is "XIL_INTERFACENAME S_AXI_INTR_CLK, ASSOCIATED_BUSIF S_AXI_INTR, ASSOCIATED_RESET s_axi_intr_aresetn, FREQ_HZ 200000000, PHASE 0.000, CLK_DOMAIN EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0";
   attribute x_interface_info of s_axi_intr_aresetn : signal is "xilinx.com:signal:reset:1.0 S_AXI_INTR_RST RST";
-  attribute x_interface_parameter of s_axi_intr_aresetn : signal is "XIL_INTERFACENAME S_AXI_INTR_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_intr_aresetn : signal is "XIL_INTERFACENAME S_AXI_INTR_RST, POLARITY ACTIVE_LOW";
   attribute x_interface_info of s_axi_intr_arready : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR ARREADY";
   attribute x_interface_info of s_axi_intr_arvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR ARVALID";
   attribute x_interface_info of s_axi_intr_awready : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR AWREADY";
@@ -671,7 +765,7 @@ architecture STRUCTURE of EmbeddedTestFramework_InterruptGenerator_0_0 is
   attribute x_interface_info of s_axi_intr_araddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR ARADDR";
   attribute x_interface_info of s_axi_intr_arprot : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR ARPROT";
   attribute x_interface_info of s_axi_intr_awaddr : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR AWADDR";
-  attribute x_interface_parameter of s_axi_intr_awaddr : signal is "XIL_INTERFACENAME S_AXI_INTR, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 5, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.000, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute x_interface_parameter of s_axi_intr_awaddr : signal is "XIL_INTERFACENAME S_AXI_INTR, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 5, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN EmbeddedTestFramework_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0";
   attribute x_interface_info of s_axi_intr_awprot : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR AWPROT";
   attribute x_interface_info of s_axi_intr_bresp : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR BRESP";
   attribute x_interface_info of s_axi_intr_rdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI_INTR RDATA";

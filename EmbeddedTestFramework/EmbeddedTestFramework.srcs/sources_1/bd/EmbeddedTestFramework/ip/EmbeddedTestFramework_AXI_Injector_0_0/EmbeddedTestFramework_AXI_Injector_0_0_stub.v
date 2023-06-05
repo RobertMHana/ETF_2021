@@ -1,19 +1,19 @@
-// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-// Date        : Sat Jun 19 21:11:02 2021
-// Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+// Date        : Sun Jun  4 19:03:44 2023
+// Host        : robertPC running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_AXI_Injector_0_0/EmbeddedTestFramework_AXI_Injector_0_0_stub.v
+//               D:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_AXI_Injector_0_0/EmbeddedTestFramework_AXI_Injector_0_0_stub.v
 // Design      : EmbeddedTestFramework_AXI_Injector_0_0
 // Purpose     : Stub declaration of top-level module interface
-// Device      : xczu7ev-ffvc1156-2-e
+// Device      : xc7z010clg400-1
 // --------------------------------------------------------------------------------
 
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "TestMultiReg_v1_0,Vivado 2020.2" *)
+(* x_core_info = "TestMultiReg_v1_0,Vivado 2018.2" *)
 module EmbeddedTestFramework_AXI_Injector_0_0(trigger_out, rd_clk, rd_clk_en, dout, empty, 
   s00_axi_awid, s00_axi_awaddr, s00_axi_awlen, s00_axi_awsize, s00_axi_awburst, 
   s00_axi_awlock, s00_axi_awcache, s00_axi_awprot, s00_axi_awregion, s00_axi_awqos, 

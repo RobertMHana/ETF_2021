@@ -1,55 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1624086253">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685930715">
+  <File Type="BITSTR-BMM" Name="EmbeddedTestFramework_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="EmbeddedTestFramework_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="EmbeddedTestFramework_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="EmbeddedTestFramework_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="EmbeddedTestFramework_wrapper_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="EmbeddedTestFramework_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="EmbeddedTestFramework_wrapper_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="EmbeddedTestFramework_wrapper.msk"/>
-  <File Type="ROUTE-CLK" Name="EmbeddedTestFramework_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="EmbeddedTestFramework_wrapper.vdi"/>
-  <File Type="BG-BIT" Name="EmbeddedTestFramework_wrapper.bit"/>
-  <File Type="BG-DRC" Name="EmbeddedTestFramework_wrapper.drc"/>
-  <File Type="BG-BGN" Name="EmbeddedTestFramework_wrapper.bgn"/>
-  <File Type="BG-BIN" Name="EmbeddedTestFramework_wrapper.bin"/>
-  <File Type="BITSTR-RBT" Name="EmbeddedTestFramework_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="EmbeddedTestFramework_wrapper.nky"/>
-  <File Type="BITSTR-BMM" Name="EmbeddedTestFramework_wrapper_bd.bmm"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="EmbeddedTestFramework_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MMI" Name="EmbeddedTestFramework_wrapper.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="EmbeddedTestFramework_wrapper_methodology_drc_routed.pb"/>
-  <File Type="BITSTR-SYSDEF" Name="EmbeddedTestFramework_wrapper.sysdef"/>
-  <File Type="ROUTE-DRC-RPX" Name="EmbeddedTestFramework_wrapper_drc_routed.rpx"/>
-  <File Type="BITSTR-LTX" Name="EmbeddedTestFramework_wrapper.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="EmbeddedTestFramework_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="EmbeddedTestFramework_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="EmbeddedTestFramework_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="EmbeddedTestFramework_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="EmbeddedTestFramework_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="EmbeddedTestFramework_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="EmbeddedTestFramework_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="EmbeddedTestFramework_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="EmbeddedTestFramework_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="EmbeddedTestFramework_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="EmbeddedTestFramework_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="EmbeddedTestFramework_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="EmbeddedTestFramework_wrapper.bgn"/>
+  <File Type="PLACE-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="EmbeddedTestFramework_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="EmbeddedTestFramework_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="EmbeddedTestFramework_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="EmbeddedTestFramework_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="EmbeddedTestFramework_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="EmbeddedTestFramework_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="EmbeddedTestFramework_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="EmbeddedTestFramework_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="EmbeddedTestFramework_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="EmbeddedTestFramework_wrapper_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="EmbeddedTestFramework_wrapper.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="EmbeddedTestFramework_wrapper_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="EmbeddedTestFramework_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="EmbeddedTestFramework_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="EmbeddedTestFramework_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="EmbeddedTestFramework_wrapper.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="EmbeddedTestFramework_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="EmbeddedTestFramework_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="EmbeddedTestFramework_wrapper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="EmbeddedTestFramework_wrapper_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="EmbeddedTestFramework_wrapper_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="EmbeddedTestFramework_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="EmbeddedTestFramework_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="EmbeddedTestFramework_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="EmbeddedTestFramework_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="EmbeddedTestFramework_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="EmbeddedTestFramework_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="EmbeddedTestFramework_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="EmbeddedTestFramework_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="EmbeddedTestFramework_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="EmbeddedTestFramework_wrapper_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="EmbeddedTestFramework_wrapper_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="EmbeddedTestFramework_wrapper_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="EmbeddedTestFramework_wrapper_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="EmbeddedTestFramework_wrapper_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="EmbeddedTestFramework_wrapper_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="EmbeddedTestFramework_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="EmbeddedTestFramework_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="EmbeddedTestFramework_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="EmbeddedTestFramework_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="EmbeddedTestFramework_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="EmbeddedTestFramework_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="EmbeddedTestFramework_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="EmbeddedTestFramework_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="EmbeddedTestFramework_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="EmbeddedTestFramework_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="EmbeddedTestFramework_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="EmbeddedTestFramework_wrapper.nky"/>
+  <File Type="BG-DRC" Name="EmbeddedTestFramework_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="EmbeddedTestFramework_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/tie_low.vhd">
@@ -130,14 +149,14 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_Blanker_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_FallingEdgeDetect_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_ClockDivider_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_tie_low_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_GatedClockEnable_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Sampler_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Injector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_Reducer32to16_0_0"/>
@@ -145,7 +164,11 @@
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_FallingEdgeDetect_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXITrigger_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Sampler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXITrigger_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Injector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_0_2"/>
 </GenRun>

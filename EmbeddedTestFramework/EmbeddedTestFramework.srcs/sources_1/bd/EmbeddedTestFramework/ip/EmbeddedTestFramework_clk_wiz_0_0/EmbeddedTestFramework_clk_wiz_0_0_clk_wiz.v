@@ -56,12 +56,12 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// clk_out1__100.00000______0.000______50.0______115.831_____87.180
+// clk_out1____25.174______0.000______50.0______281.423____365.405
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_________100.000____________0.010
+// __primary_________125.000____________0.010
 
 `timescale 1ps/1ps
 
@@ -79,7 +79,7 @@ module EmbeddedTestFramework_clk_wiz_0_0_clk_wiz
   //------------------------------------
 wire clk_in1_EmbeddedTestFramework_clk_wiz_0_0;
 wire clk_in2_EmbeddedTestFramework_clk_wiz_0_0;
-  IBUF clkin1_ibuf
+  IBUF clkin1_ibufg
    (.O (clk_in1_EmbeddedTestFramework_clk_wiz_0_0),
     .I (clk_in1));
 
@@ -106,6 +106,7 @@ wire clk_in2_EmbeddedTestFramework_clk_wiz_0_0;
   wire        psdone_unused;
   wire        locked_int;
   wire        clkfbout_EmbeddedTestFramework_clk_wiz_0_0;
+  wire        clkfbout_buf_EmbeddedTestFramework_clk_wiz_0_0;
   wire        clkfboutb_unused;
     wire clkout0b_unused;
    wire clkout1_unused;
@@ -121,25 +122,21 @@ wire clk_in2_EmbeddedTestFramework_clk_wiz_0_0;
   wire        clkinstopped_unused;
   wire        reset_high;
 
-
-  
-    MMCME4_ADV
-
+  MMCME2_ADV
   #(.BANDWIDTH            ("OPTIMIZED"),
     .CLKOUT4_CASCADE      ("FALSE"),
-    .COMPENSATION         ("AUTO"),
+    .COMPENSATION         ("ZHOLD"),
     .STARTUP_WAIT         ("FALSE"),
-    .DIVCLK_DIVIDE        (1),
-    .CLKFBOUT_MULT_F      (12.000),
+    .DIVCLK_DIVIDE        (7),
+    .CLKFBOUT_MULT_F      (61.500),
     .CLKFBOUT_PHASE       (0.000),
     .CLKFBOUT_USE_FINE_PS ("FALSE"),
-    .CLKOUT0_DIVIDE_F     (12.000),
+    .CLKOUT0_DIVIDE_F     (43.625),
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
-    .CLKIN1_PERIOD        (10.000))
-  
-  mmcme4_adv_inst
+    .CLKIN1_PERIOD        (8.000))
+  mmcm_adv_inst
     // Output clocks
    (
     .CLKFBOUT            (clkfbout_EmbeddedTestFramework_clk_wiz_0_0),
@@ -156,7 +153,7 @@ wire clk_in2_EmbeddedTestFramework_clk_wiz_0_0;
     .CLKOUT5             (clkout5_unused),
     .CLKOUT6             (clkout6_unused),
      // Input clock control
-    .CLKFBIN             (clkfbout_EmbeddedTestFramework_clk_wiz_0_0),
+    .CLKFBIN             (clkfbout_buf_EmbeddedTestFramework_clk_wiz_0_0),
     .CLKIN1              (clk_in1_EmbeddedTestFramework_clk_wiz_0_0),
     .CLKIN2              (1'b0),
      // Tied to always select the primary input clock
@@ -169,8 +166,6 @@ wire clk_in2_EmbeddedTestFramework_clk_wiz_0_0;
     .DO                  (do_unused),
     .DRDY                (drdy_unused),
     .DWE                 (1'b0),
-    .CDDCDONE            (),
-    .CDDCREQ             (1'b0),
     // Ports for dynamic phase shift
     .PSCLK               (1'b0),
     .PSEN                (1'b0),
@@ -189,6 +184,10 @@ wire clk_in2_EmbeddedTestFramework_clk_wiz_0_0;
 //--------------------------------------
  // Output buffering
   //-----------------------------------
+
+  BUFG clkf_buf
+   (.O (clkfbout_buf_EmbeddedTestFramework_clk_wiz_0_0),
+    .I (clkfbout_EmbeddedTestFramework_clk_wiz_0_0));
 
 
 

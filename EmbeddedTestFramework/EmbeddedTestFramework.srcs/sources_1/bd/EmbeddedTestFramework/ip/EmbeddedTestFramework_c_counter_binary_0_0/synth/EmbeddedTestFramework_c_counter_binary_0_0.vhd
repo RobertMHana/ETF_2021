@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:c_counter_binary:12.0
--- IP Revision: 14
+-- IP Revision: 12
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY c_counter_binary_v12_0_14;
-USE c_counter_binary_v12_0_14.c_counter_binary_v12_0_14;
+LIBRARY c_counter_binary_v12_0_12;
+USE c_counter_binary_v12_0_12.c_counter_binary_v12_0_12;
 
 ENTITY EmbeddedTestFramework_c_counter_binary_0_0 IS
   PORT (
@@ -68,7 +68,7 @@ END EmbeddedTestFramework_c_counter_binary_0_0;
 ARCHITECTURE EmbeddedTestFramework_c_counter_binary_0_0_arch OF EmbeddedTestFramework_c_counter_binary_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF EmbeddedTestFramework_c_counter_binary_0_0_arch: ARCHITECTURE IS "yes";
-  COMPONENT c_counter_binary_v12_0_14 IS
+  COMPONENT c_counter_binary_v12_0_12 IS
     GENERIC (
       C_IMPLEMENTATION : INTEGER;
       C_VERBOSITY : INTEGER;
@@ -105,31 +105,31 @@ ARCHITECTURE EmbeddedTestFramework_c_counter_binary_0_0_arch OF EmbeddedTestFram
       THRESH0 : OUT STD_LOGIC;
       Q : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
-  END COMPONENT c_counter_binary_v12_0_14;
+  END COMPONENT c_counter_binary_v12_0_12;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF EmbeddedTestFramework_c_counter_binary_0_0_arch: ARCHITECTURE IS "c_counter_binary_v12_0_14,Vivado 2020.2";
+  ATTRIBUTE X_CORE_INFO OF EmbeddedTestFramework_c_counter_binary_0_0_arch: ARCHITECTURE IS "c_counter_binary_v12_0_12,Vivado 2018.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
-  ATTRIBUTE CHECK_LICENSE_TYPE OF EmbeddedTestFramework_c_counter_binary_0_0_arch : ARCHITECTURE IS "EmbeddedTestFramework_c_counter_binary_0_0,c_counter_binary_v12_0_14,{}";
+  ATTRIBUTE CHECK_LICENSE_TYPE OF EmbeddedTestFramework_c_counter_binary_0_0_arch : ARCHITECTURE IS "EmbeddedTestFramework_c_counter_binary_0_0,c_counter_binary_v12_0_12,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF EmbeddedTestFramework_c_counter_binary_0_0_arch: ARCHITECTURE IS "EmbeddedTestFramework_c_counter_binary_0_0,c_counter_binary_v12_0_14,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=14,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_IMPLEMENTATION=0,C_VERBOSITY=0,C_XDEVICEFAMILY=zynquplus,C_WIDTH=32,C_HAS_CE=1,C_HAS_SCLR=1,C_RESTRICT_COUNT=1,C_COUNT_TO=10011000000000,C_COUNT_BY=100,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=0,C_LOAD_LOW=0,C_LATENCY=1,C" & 
-"_FB_LATENCY=0,C_AINIT_VAL=0,C_SINIT_VAL=0,C_SCLR_OVERRIDES_SSET=1,C_HAS_SSET=0,C_HAS_SINIT=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF EmbeddedTestFramework_c_counter_binary_0_0_arch: ARCHITECTURE IS "EmbeddedTestFramework_c_counter_binary_0_0,c_counter_binary_v12_0_12,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=12,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_IMPLEMENTATION=0,C_VERBOSITY=0,C_XDEVICEFAMILY=zynq,C_WIDTH=32,C_HAS_CE=1,C_HAS_SCLR=1,C_RESTRICT_COUNT=1,C_COUNT_TO=10011000000000,C_COUNT_BY=100,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=0,C_LOAD_LOW=0,C_LATENCY=1,C_FB_L" & 
+"ATENCY=0,C_AINIT_VAL=0,C_SINIT_VAL=0,C_SCLR_OVERRIDES_SSET=1,C_HAS_SSET=0,C_HAS_SINIT=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF Q: SIGNAL IS "XIL_INTERFACENAME q_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}" & 
 "} value false}}}} DATA_WIDTH 32}";
   ATTRIBUTE X_INTERFACE_INFO OF Q: SIGNAL IS "xilinx.com:signal:data:1.0 q_intf DATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF SCLR: SIGNAL IS "XIL_INTERFACENAME sclr_intf, POLARITY ACTIVE_HIGH, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF SCLR: SIGNAL IS "XIL_INTERFACENAME sclr_intf, POLARITY ACTIVE_HIGH";
   ATTRIBUTE X_INTERFACE_INFO OF SCLR: SIGNAL IS "xilinx.com:signal:reset:1.0 sclr_intf RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF CE: SIGNAL IS "XIL_INTERFACENAME ce_intf, POLARITY ACTIVE_HIGH";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF CE: SIGNAL IS "XIL_INTERFACENAME ce_intf, POLARITY ACTIVE_LOW";
   ATTRIBUTE X_INTERFACE_INFO OF CE: SIGNAL IS "xilinx.com:signal:clockenable:1.0 ce_intf CE";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF q_intf:thresh0_intf:l_intf:load_intf:up_intf:sinit_intf:sset_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 25173966, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF q_intf:thresh0_intf:l_intf:load_intf:up_intf:sinit_intf:sset_intf, ASSOCIATED_RESET SCLR, ASSOCIATED_CLKEN CE, FREQ_HZ 25173966, PHASE 0.0, CLK_DOMAIN /VGASubsection/ClockingWizard_clk_out1";
   ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
 BEGIN
-  U0 : c_counter_binary_v12_0_14
+  U0 : c_counter_binary_v12_0_12
     GENERIC MAP (
       C_IMPLEMENTATION => 0,
       C_VERBOSITY => 0,
-      C_XDEVICEFAMILY => "zynquplus",
+      C_XDEVICEFAMILY => "zynq",
       C_WIDTH => 32,
       C_HAS_CE => 1,
       C_HAS_SCLR => 1,

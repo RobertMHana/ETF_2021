@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -70,11 +70,11 @@ ARCHITECTURE EmbeddedTestFramework_Reducer32to16_0_0_arch OF EmbeddedTestFramewo
     );
   END COMPONENT Reducer32to16;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF EmbeddedTestFramework_Reducer32to16_0_0_arch: ARCHITECTURE IS "Reducer32to16,Vivado 2020.2";
+  ATTRIBUTE X_CORE_INFO OF EmbeddedTestFramework_Reducer32to16_0_0_arch: ARCHITECTURE IS "Reducer32to16,Vivado 2018.2";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF EmbeddedTestFramework_Reducer32to16_0_0_arch : ARCHITECTURE IS "EmbeddedTestFramework_Reducer32to16_0_0,Reducer32to16,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF EmbeddedTestFramework_Reducer32to16_0_0_arch: ARCHITECTURE IS "EmbeddedTestFramework_Reducer32to16_0_0,Reducer32to16,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=Reducer32to16,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF EmbeddedTestFramework_Reducer32to16_0_0_arch: ARCHITECTURE IS "EmbeddedTestFramework_Reducer32to16_0_0,Reducer32to16,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=Reducer32to16,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF EmbeddedTestFramework_Reducer32to16_0_0_arch: ARCHITECTURE IS "module_ref";
 BEGIN

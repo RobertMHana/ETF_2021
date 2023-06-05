@@ -1,14 +1,14 @@
--- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Sat Jun 19 21:08:36 2021
--- Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_util_vector_logic_0_0/EmbeddedTestFramework_util_vector_logic_0_0_sim_netlist.vhdl
+-- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+-- Date        : Sat Mar 30 11:09:30 2019
+-- Host        : Robert-PC running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim -rename_top EmbeddedTestFramework_util_vector_logic_0_0 -prefix
+--               EmbeddedTestFramework_util_vector_logic_0_0_ EmbeddedTestFramework_util_vector_logic_0_0_sim_netlist.vhdl
 -- Design      : EmbeddedTestFramework_util_vector_logic_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xczu7ev-ffvc1156-2-e
+-- Device      : xc7z010clg400-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -20,8 +20,6 @@ entity EmbeddedTestFramework_util_vector_logic_0_0_util_vector_logic_v2_0_1_util
     Op1 : in STD_LOGIC_VECTOR ( 1 downto 0 );
     Op2 : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of EmbeddedTestFramework_util_vector_logic_0_0_util_vector_logic_v2_0_1_util_vector_logic : entity is "util_vector_logic_v2_0_1_util_vector_logic";
 end EmbeddedTestFramework_util_vector_logic_0_0_util_vector_logic_v2_0_1_util_vector_logic;
 
 architecture STRUCTURE of EmbeddedTestFramework_util_vector_logic_0_0_util_vector_logic_v2_0_1_util_vector_logic is
@@ -62,7 +60,7 @@ entity EmbeddedTestFramework_util_vector_logic_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of EmbeddedTestFramework_util_vector_logic_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of EmbeddedTestFramework_util_vector_logic_0_0 : entity is "util_vector_logic_v2_0_1_util_vector_logic,Vivado 2020.2";
+  attribute X_CORE_INFO of EmbeddedTestFramework_util_vector_logic_0_0 : entity is "util_vector_logic_v2_0_1_util_vector_logic,Vivado 2018.2";
 end EmbeddedTestFramework_util_vector_logic_0_0;
 
 architecture STRUCTURE of EmbeddedTestFramework_util_vector_logic_0_0 is

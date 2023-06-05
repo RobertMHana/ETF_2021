@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/InterruptMultiReg_1.0/hdl/InterruptMultiReg_v1_0_S_AXI_INTR.vhd" \
+"../../../../../../../ip_repo/InterruptMultiReg_1.0/hdl/InterruptMultiReg_v1_0.vhd" \
+
+# Do not sort compile order
+nosort

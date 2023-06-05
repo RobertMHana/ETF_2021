@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1624086099">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685930715">
   <File Type="PA-TCL" Name="EmbeddedTestFramework_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="EmbeddedTestFramework_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="EmbeddedTestFramework_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="EmbeddedTestFramework_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="EmbeddedTestFramework_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="EmbeddedTestFramework_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="EmbeddedTestFramework_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="EmbeddedTestFramework_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="EmbeddedTestFramework_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/tie_low.vhd">
@@ -81,10 +84,11 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_Blanker_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_FallingEdgeDetect_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_ClockDivider_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_tie_low_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_GatedClockEnable_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Sampler_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Injector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_Reducer32to16_0_0"/>
@@ -92,7 +96,11 @@
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_FallingEdgeDetect_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_axi_gpio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXITrigger_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Sampler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXITrigger_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_AXI_Injector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="EmbeddedTestFramework_InterruptGenerator_0_2"/>
 </GenRun>

@@ -1,5 +1,4 @@
-set_property SRC_FILE_INFO {cfile:d:/depot/Projects/ETF_2021/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_processing_system7_0_0/EmbeddedTestFramework_processing_system7_0_0.xdc rfile:../../../EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_processing_system7_0_0/EmbeddedTestFramework_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
-current_instance inst
+set_property SRC_FILE_INFO {cfile:{d:/SeaGate TransferTemp/EmbeddedTestFramework/EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_processing_system7_0_0/EmbeddedTestFramework_processing_system7_0_0.xdc} rfile:../../../EmbeddedTestFramework.srcs/sources_1/bd/EmbeddedTestFramework/ip/EmbeddedTestFramework_processing_system7_0_0/EmbeddedTestFramework_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.15
 set_property src_info {type:SCOPED_XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
