@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Wed May 26 22:07:57 2021
+// Date        : Wed May 26 22:07:56 2021
 // Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/SeaGateTransferTemp/SystemILATest/SystemILATest.srcs/sources_1/bd/SystemILATest/ip/SystemILATest_auto_pc_0/SystemILATest_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top SystemILATest_auto_pc_0 -prefix
+//               SystemILATest_auto_pc_0_ SystemILATest_auto_pc_0_stub.v
 // Design      : SystemILATest_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

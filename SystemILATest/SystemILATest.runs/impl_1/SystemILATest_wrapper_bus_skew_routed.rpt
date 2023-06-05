@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Jun 19 13:25:52 2021
-| Host         : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+| Date         : Sun Jun  4 18:22:51 2023
+| Host         : robertPC running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file SystemILATest_wrapper_bus_skew_routed.rpt -pb SystemILATest_wrapper_bus_skew_routed.pb -rpx SystemILATest_wrapper_bus_skew_routed.rpx
 | Design       : SystemILATest_wrapper
 | Device       : 7z010-clg400
@@ -107,7 +107,7 @@ set_bus_skew -from [get_cells [list {SystemILATest_i/AXI_Injector_0/U0/TestMulti
           {SystemILATest_i/AXI_Injector_0/U0/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
           {SystemILATest_i/AXI_Injector_0/U0/TestMultiReg_v1_0_S00_AXI_inst/fifo_inst/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 5.000
 Requirement: 5.000ns
-Endpoints: 6
+Endpoints: 5
 
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------

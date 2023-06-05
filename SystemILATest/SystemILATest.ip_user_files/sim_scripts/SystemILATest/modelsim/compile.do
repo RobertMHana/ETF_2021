@@ -89,9 +89,9 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../SystemILATest.srcs/sour
 "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/sim/SystemILATest.v" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/fdd4/hdl/TestMultiReg_v1_0_S00_AXI.vhd" \
-"../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/fdd4/src/fifo_injector.vhd" \
-"../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/fdd4/hdl/TestMultiReg_v1_0.vhd" \
+"../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/50e6/hdl/TestMultiReg_v1_0_S00_AXI.vhd" \
+"../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/50e6/src/fifo_injector.vhd" \
+"../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/50e6/hdl/TestMultiReg_v1_0.vhd" \
 "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ip/SystemILATest_AXI_Injector_0_0/sim/SystemILATest_AXI_Injector_0_0.vhd" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/ec67/hdl" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/5bb9/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/70fd/hdl" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/b65a" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/6180/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/a08d/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/0a8d/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/0000/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2018.2/data/xilinx_vip/include" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/ec67/hdl" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/5bb9/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/70fd/hdl" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/b65a" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/6180/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/a08d/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/0a8d/hdl/verilog" "+incdir+../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/0000/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \

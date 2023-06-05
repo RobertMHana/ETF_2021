@@ -48,9 +48,9 @@
   "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/sim/SystemILATest.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/fdd4/hdl/TestMultiReg_v1_0_S00_AXI.vhd" \
-  "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/fdd4/src/fifo_injector.vhd" \
-  "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/fdd4/hdl/TestMultiReg_v1_0.vhd" \
+  "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/50e6/hdl/TestMultiReg_v1_0_S00_AXI.vhd" \
+  "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/50e6/src/fifo_injector.vhd" \
+  "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ipshared/50e6/hdl/TestMultiReg_v1_0.vhd" \
   "../../../../SystemILATest.srcs/sources_1/bd/SystemILATest/ip/SystemILATest_AXI_Injector_0_0/sim/SystemILATest_AXI_Injector_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

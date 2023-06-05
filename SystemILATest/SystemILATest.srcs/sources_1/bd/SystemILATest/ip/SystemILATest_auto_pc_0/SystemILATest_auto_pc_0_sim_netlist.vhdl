@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Wed May 26 22:07:57 2021
+-- Date        : Wed May 26 22:07:56 2021
 -- Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               d:/SeaGateTransferTemp/SystemILATest/SystemILATest.srcs/sources_1/bd/SystemILATest/ip/SystemILATest_auto_pc_0/SystemILATest_auto_pc_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top SystemILATest_auto_pc_0 -prefix
+--               SystemILATest_auto_pc_0_ SystemILATest_auto_pc_0_sim_netlist.vhdl
 -- Design      : SystemILATest_auto_pc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -143,8 +143,6 @@ entity SystemILATest_auto_pc_0_axi_protocol_converter_v2_1_17_axi_protocol_conve
   attribute C_TRANSLATION_MODE of SystemILATest_auto_pc_0_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of SystemILATest_auto_pc_0_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of SystemILATest_auto_pc_0_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_17_axi_protocol_converter";
   attribute P_AXI3 : integer;
   attribute P_AXI3 of SystemILATest_auto_pc_0_axi_protocol_converter_v2_1_17_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;

@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Sat Apr  6 20:42:08 2019
--- Host        : Robert-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/Robert/xilinx_projects/SystemILATest/SystemILATest.srcs/sources_1/bd/SystemILATest/ip/SystemILATest_AXI_Injector_0_0/SystemILATest_AXI_Injector_0_0_stub.vhdl
+-- Date        : Mon Nov 14 20:44:53 2022
+-- Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top SystemILATest_AXI_Injector_0_0 -prefix
+--               SystemILATest_AXI_Injector_0_0_ SystemILATest_AXI_Injector_0_0_stub.vhdl
 -- Design      : SystemILATest_AXI_Injector_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

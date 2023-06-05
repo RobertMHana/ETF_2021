@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2019 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2023 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:AXI_Injector:1.0
--- IP Revision: 19
+-- IP Revision: 20
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -180,7 +180,7 @@ ARCHITECTURE SystemILATest_AXI_Injector_0_0_arch OF SystemILATest_AXI_Injector_0
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF SystemILATest_AXI_Injector_0_0_arch : ARCHITECTURE IS "SystemILATest_AXI_Injector_0_0,TestMultiReg_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF SystemILATest_AXI_Injector_0_0_arch: ARCHITECTURE IS "SystemILATest_AXI_Injector_0_0,TestMultiReg_v1_0,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_Injector,x_ipVersion=1.0,x_ipCoreRevision=19,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_ID_WIDTH=12,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6,C_S00_AXI_AWUSER_WIDTH=0,C_S00_AXI_ARUSER_WIDTH=0,C_S00_AXI_WUSER_WIDTH=0,C_S00_AXI_RUSER_WIDTH=0,C_S00_AXI_BUSER_WIDTH=0,C_S00_FIFO_FULL_THRESH=1948,C_S00_FIFO_EMPTY_THRESH=100,C_S00_FIFO_DEPTH=2048}";
+  ATTRIBUTE CORE_GENERATION_INFO OF SystemILATest_AXI_Injector_0_0_arch: ARCHITECTURE IS "SystemILATest_AXI_Injector_0_0,TestMultiReg_v1_0,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_Injector,x_ipVersion=1.0,x_ipCoreRevision=20,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_ID_WIDTH=12,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=6,C_S00_AXI_AWUSER_WIDTH=0,C_S00_AXI_ARUSER_WIDTH=0,C_S00_AXI_WUSER_WIDTH=0,C_S00_AXI_RUSER_WIDTH=0,C_S00_AXI_BUSER_WIDTH=0,C_S00_FIFO_FULL_THRESH=1948,C_S00_FIFO_EMPTY_THRESH=100,C_S00_FIFO_DEPTH=2048}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aresetn: SIGNAL IS "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW";

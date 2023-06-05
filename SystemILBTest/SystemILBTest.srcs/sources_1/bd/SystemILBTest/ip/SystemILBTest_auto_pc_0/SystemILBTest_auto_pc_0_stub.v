@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
 // Date        : Wed May 26 21:56:44 2021
 // Host        : DESKTOP-JGEC92R running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               d:/SeaGateTransferTemp/SystemILBTest/SystemILBTest.srcs/sources_1/bd/SystemILBTest/ip/SystemILBTest_auto_pc_0/SystemILBTest_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top SystemILBTest_auto_pc_0 -prefix
+//               SystemILBTest_auto_pc_0_ SystemILBTest_auto_pc_0_stub.v
 // Design      : SystemILBTest_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

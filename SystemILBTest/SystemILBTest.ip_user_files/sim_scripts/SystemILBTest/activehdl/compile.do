@@ -97,9 +97,9 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../SystemILBTest.srcs/sources
 "../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ip/SystemILBTest_processing_system7_0_0/sim/SystemILBTest_processing_system7_0_0.v" \
 
 vcom -work xil_defaultlib -93 \
-"../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ipshared/caea/hdl/TestSampler_v1_0_S00_AXI.vhd" \
-"../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ipshared/caea/src/fifo_sampler.vhd" \
-"../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ipshared/caea/hdl/TestSampler_v1_0.vhd" \
+"../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ipshared/5cf5/hdl/TestSampler_v1_0_S00_AXI.vhd" \
+"../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ipshared/5cf5/src/fifo_sampler.vhd" \
+"../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ipshared/5cf5/hdl/TestSampler_v1_0.vhd" \
 "../../../../SystemILBTest.srcs/sources_1/bd/SystemILBTest/ip/SystemILBTest_AXI_Sampler_0_0/sim/SystemILBTest_AXI_Sampler_0_0.vhd" \
 
 vcom -work lib_cdc_v1_0_2 -93 \
