@@ -101,7 +101,45 @@
         \ETF_2021\_audit2022\EmbeddedTestFramework_Audit_November-2022\InjectorUtilization\InjectorUtilizationHowItWasMeasured.png
         
 ## ILA_Characterization
-    ToDo: overview.
+    What is this?
+        A Vivado FPGA Project (there is no SDK component.) 
+    What results in the paper does this correspond to?
+        The ILA resource utilization is explored with different sample depths.
+        The ILA throughput is measured with this configuration, using the run_ila_latency.tcl 
+        located here: ETF_2021\_tcl_scripts\run_ila_latency.tcl
+    How to get the results?
+        Build (and rebuild) the project with different ILA sample depths.
+        The Utilization report generated at different sample depths provides an indication of what resources are used
+        and how the ILA scales with different sample depths.
+        Throughput is measured by running the tcl script located here ETF_2021\_tcl_scripts\run_ila_latency.tcl
+        Generate a bitstream and program the board (be sure to include /ILA_Characterization_wrapper.ltx) 
+        then run the run_ila_latency.tcl tcl script from the Tcl Console in Vivado. "source run_ila_latency.tcl" 
+        The time just before the ILA initiates is printed (to the tcl console), next the ILA triggers and fills up, 
+        finally the time is printed once again. These timestamps, along with the BRAM depth, and data width, 
+        are used to determine what the throughput of the ILA transaction is.
+    What you should know about this project:
+       ILA_Characterization: "Synthesis and implementation Out-of-date", report IP status OK.
+       Click on Generate bitstream to generate the bitstream for this project.
+       Don't forget to navigate to the directory in the tcl console to run the tcl script.
+       "cd" change directory to ETF_2021/_tcl_scripts/ (and be wary of the forward slash vs. backwards slash in the path,
+       given Windows uses the backslash but the tcl console is expecting a forward slash.)
+       
+       The timestamps in the tcl console are not obvious but look for the following:
+       # puts [format "%s.%06d" [clock format $seconds -format "%H:%M:%S"] $microseconds]
+       18:59:12.845995
+       
+       and ...
+        
+       # set microseconds [expr { $val - $seconds*1000000 }]
+       # puts [format "%s.%06d" [clock format $seconds -format "%H:%M:%S"] $microseconds]
+       18:59:13.522750
+       
+    References:
+    Project: 
+        ETF_2021\ILA_Characterization\
+    tcl script: 
+        ETF_2021\_tcl_scripts\run_ila_latency.tcl
+        
 ## VIO_Characterization
     ToDo: overview.
 ## VIO_Latency 
