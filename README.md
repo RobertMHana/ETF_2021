@@ -141,7 +141,22 @@
         ETF_2021\_tcl_scripts\run_ila_latency.tcl
         
 ## VIO_Characterization
-    ToDo: overview.
+    What is this?
+        A Vivado FPGA Project (there is no SDK component.) 
+    What results in the paper does this correspond to?
+        The Virtual IO  "VIO" resource utilization is explored.
+        Virtual IO can be used to assert signals in the FPGA fabric, characterizing resource 
+        utilization was done to provide a comparison with the Injector IP.
+    How to get the results?
+        Generate a utilization report to see what resources are used by the Virtual IO IP.
+    What you should know about this project:
+        Report IP status should already be up to date.
+        Synthesis and Implementation are out of date, click on the "Generate Bitstream"
+
+    References:
+    Project: 
+        ETF_2021/VIO_Characterization/
+        
 ## VIO_Latency 
     ToDo: overview.
 ## ILA_Trigger
