@@ -11,12 +11,9 @@ set val [clock microseconds]
 set seconds [expr { $val / 1000000 }]
 set microseconds [expr { $val - $seconds*1000000 }]
 puts [format "%s.%06d" [clock format $seconds -format "%H:%M:%S"] $microseconds]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter
-{CELL_NAME=~"ILA_Characterization_i/ila_0"}]
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter
-{CELL_NAME=~"ILA_Characterization_i/ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices
-xc7z010_1] -filter {CELL_NAME=~"ILA_Characterization_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ILA_Characterization_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ILA_Characterization_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ILA_Characterization_i/ila_0"}]]
 set val [clock microseconds]
 set seconds [expr { $val / 1000000 }]
 set microseconds [expr { $val - $seconds*1000000 }]
