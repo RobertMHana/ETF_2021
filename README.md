@@ -21,6 +21,7 @@
 ## ILA_Latency:
     What is this?
         A Vivado FPGA project with ILA (There is no software SDK component.)
+        The latency of the ILA is characterized here.
     What results in the paper does this correspond to?
         Measures the ILA Latency and throughput using tcl scripts in ETF/_tcl_scripts; 
         run_ila_latency.tcl, run_ila_throughput.tcl
@@ -42,6 +43,7 @@
 ## Sampler_Characterization:
     What is this?
         A Vivado FPGA project (There is no software SDK component.)
+        The resource utilization of the Sampler IP is characterized here.
     What results in the paper does this correspond to?
          Sampler_Characterization was used to find the Utilization of the Sampler IP.
     How to get the results?
@@ -72,6 +74,7 @@
 ## Injector_Characterization:
     What is this? 
         A Vivado FPGA project (There is no software SDK component.)
+        The resource utilization of the Injector is characterized here.
     What results in the paper does this correspond to?
         Injector_Characterization was used to find the Utilization of the Injector IP.
     How to get the results?
@@ -103,6 +106,7 @@
 ## ILA_Characterization
     What is this?
         A Vivado FPGA Project (there is no SDK component.) 
+        The resource utilization of the ILA is characterized here.
     What results in the paper does this correspond to?
         The ILA resource utilization is explored with different sample depths.
         The ILA throughput is measured with this configuration, using the run_ila_latency.tcl 
@@ -143,6 +147,7 @@
 ## VIO_Characterization
     What is this?
         A Vivado FPGA Project (there is no SDK component.) 
+        The resource utilization of the VIO is characterized here.
     What results in the paper does this correspond to?
         The Virtual IO  "VIO" resource utilization is explored.
         Virtual IO can be used to assert signals in the FPGA fabric, characterizing resource 
@@ -158,7 +163,66 @@
         ETF_2021/VIO_Characterization/
         
 ## VIO_Latency 
-    ToDo: overview.
+    What is this?
+        A Vivado FPGA Project (there is no SDK component.) 
+        The latency and throughput of the VIO are measured.
+    What results in the paper does this correspond to?
+        The virtual IO  "VIO" latency and throughput are measured with this project.
+    How to get the results?
+        Generate the bitstream and load onto the Zybo board.
+        Be sure to program the FPGA with both the bitstream and the VIO_Latency_wrapper.ltx file.
+        
+        1. Go to the ILA in "hw_ila_1" tab of the hardware manager, and set the trigger value to some lower number (such as 1000.)
+        2. In dashboard 1, hw_vio_1 configuration set probe_1 "SCLR" input to '1' and is held high, this will clear the counter.
+           Probe_0 should be set to '0'.
+            Probe_1 : SCLR, counter clear. '1', hold SCLR high before running capture on hw_ila_1.
+            Probe_0 : Chip enable should be '0' (otherwise the counter will increment before the script kicks off.)
+
+        3. Start running hw_ila_1, this waits for the a trigger (but won't trigger at this point because the counter is not Chip Enabled CE, and is held in clear.)
+            The status of the ILA will be "Waiting for trigger"
+            
+        4. Next run the tcl script.
+            Run the tcl script found here: \ETF_2021\_tcl_scripts\run_vio_latency_and_throughput.tcl
+            With the following tcl console command: 
+            
+                source run_vio_latency_and_throughput.tcl
+            
+            From this point The tcl script alone can be re-run additional times to get new values.
+            (up arrow in the tcl console prompt without having to retype the command.) 
+            
+        5. The captured value is the latency of running the tcl interaction.
+           The counter has reached this value, counting at a frequency of 100MHz.
+           The values should be in a range of about 25ms and will vary 
+           with a standard deviation of about 3ms between runs.
+           
+           Multiple runs were done to get a distribution of values and standard deviation.
+
+    What you should know about this project:
+        Report IP status should already be up to date.
+        Synthesis and Implementation are out of date, click on the "Generate Bitstream"
+        The counter is initialized on clear (first manually) and then by running the script,
+        be sure to toggle the clear and hold high before running the tcl script.
+        If the trigger setup value is too high, the trigger/capture window won't signal it has 
+        captured anything even after running the script (however a run trigger immediate will demonstrate
+        the counter has been enabled and disabled, and provide a count value; i.e. the counter 
+        had been enabled, then disabled and the count had reached a value, but a value below what
+        would have triggered the ILA.)
+        
+        To demonstrate the counter itself is working:
+        1. In the hw_vio_1 dashboard tab set both probes to '1'
+        2. In the hw_ila_1 dashboard tab, run the ILA (the ILA will now be waiting to trigger.)
+        3. Set probe_1 to '0', this takes the counter out of reset.
+        4. Set probe_0 to '0', this enables the counter.
+        5. Observe the captured samples in the window (and the count value changes.) 
+           The trigger icon and delimiting line should be drawn in the capture window 
+           and additional captured samples can be seen (incrementing by 1.) 
+           
+    References:
+    Project: 
+        ETF_2021/VIO_Characterization/
+    tcl script: 
+       \ETF_2021\_tcl_scripts\run_vio_latency_and_throughput.tcl
+       
 ## ILA_Trigger
     ToDo: overview
 ## ILA_Interrupt
@@ -173,7 +237,8 @@
     ToDo: overview 
 ## EmbeddedTestFramework 
     What is this? 
-        A Vivado FPGA project with an SDK component. This is a demo (illustrative) project of the components in action.
+        A Vivado FPGA project with an SDK component. 
+        This is a demo (illustrative) project of the components in action.
     What results in the paper does this correspond to?
        There are no particular results for this project but to simply showcase functionality of the IP.
     How to run this demo?
