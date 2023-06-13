@@ -24,13 +24,14 @@
         The latency of the ILA is characterized here.
     What results in the paper does this correspond to?
         Measures the ILA Latency and throughput using tcl scripts in ETF/_tcl_scripts; 
-        run_ila_latency.tcl, run_ila_throughput.tcl
+        run_ila_latency.tcl
     How to get the results?
          Load the bitstream, and start ILA capture, then run the associated scripts.
     What you should know about this project:
          Upgraded project to Vivado 2018.2
          "Report IP" status oringinally showed some IP neededing upgrade to 2018.2 vivado version. The reported IP was upgraded.
          This project uses an ILA, don't forget to load the ila file when loading the bitstream.
+         The run_ila_throughput.tcl script is associated with the ILA_Characterization project (not this project.)
                                 
     References:
     Project: 
@@ -38,7 +39,7 @@
     Informal notes on what it measures: 
          \ETF_2021\_audit2022\EmbeddedTestFramework_Audit_November-2022\ILA Latency\
     tcl scripts: 
-         \ETF_2021\_tcl_scripts\
+         \ETF_2021\_tcl_scripts\run_ila_latency.tcl
                                      
 ## Sampler_Characterization:
     What is this?
