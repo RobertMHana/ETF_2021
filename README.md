@@ -27,6 +27,34 @@
         run_ila_latency.tcl
     How to get the results?
          Load the bitstream, and start ILA capture, then run the associated scripts.
+         Essentially the difference between captured values (from the counter running at 100MHz) 
+         provides the latency of performing a scripted trigger and capture operation. 
+         (Keep in mind there is a long datapath between Vivado running locally
+         on your PC and reaching the ILA core.) 
+         
+        The pulse_rise_fall.vhd generates a pulse whenever a rising edge is detected.
+        This pulse feeds the ILA monitoring the counter. ILA monitoring the counter will 
+        capture on rising edge of this pulse. Whenever "run trigger" for ILA_Latency_i/ila_0
+        performed, a pulse is generated that feeds down to ILA_Latency_i/ila_1 which captures
+        the value of the counter. Running the script allows this to happen successively 1024 times, 
+        and enough for the BRAM of ILA_Latency_i/ila_1 to fill up.
+        
+        To verify this happens one sample at a time set the following:
+        Set the trigger setup to be == '1' on ILA_Latency_i/ila_0 
+        There are no  capture settings for ILA_Latency_i/ila_0 (so leave that blank.)
+        Set the capture setup to be == "R" on "ILA_Latency_i/ila_1"
+        Set the trigger setup to be == "R" on "ILA_Latency_i/ila_1"
+        
+        Run the trigger for ILA_Latency_i/ila_1, this ILA will enter a "Pre-Trigger" state.
+        With "Window sample 0 of 1024", no samples have been captured yet.
+        
+        Go to the ILA_Latency_i/ila_0 and click on "run trigger for this ILA core"
+        Notice in the ILA_Latency_i/ila_1, that 1 sample was captured.
+        Repeat this "n" number of times and verify "n" samples have been captured.
+        
+        To generate a batch of captured counter values run the tcl script.
+        The values can be parsed to generate a distribution.
+        
     What you should know about this project:
          Upgraded project to Vivado 2018.2
          "Report IP" status oringinally showed some IP neededing upgrade to 2018.2 vivado version. The reported IP was upgraded.
