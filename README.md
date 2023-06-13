@@ -56,10 +56,11 @@
         The values can be parsed to generate a distribution.
         
     What you should know about this project:
-         Upgraded project to Vivado 2018.2
-         "Report IP" status oringinally showed some IP neededing upgrade to 2018.2 vivado version. The reported IP was upgraded.
+         Downgraded project to Vivado 2018.2 with original project (This project seemed to have advanced to 2018.3)
+         "Report IP" status should be ok, and the Bitstream should be ready to load.
          This project uses an ILA, don't forget to load the ila file when loading the bitstream.
-         The run_ila_throughput.tcl script is associated with the ILA_Characterization project (not this project.)
+         The run_ila_throughput.tcl script is associated with a different project (not this one, but ILA_Characterization.)
+         Use the run_ila_latency.tcl script with this project.
                                 
     References:
     Project: 
