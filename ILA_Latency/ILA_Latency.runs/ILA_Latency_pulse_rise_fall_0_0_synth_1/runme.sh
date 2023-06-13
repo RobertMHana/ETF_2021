@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Robert/xilinx_projects/ILA_Latency/ILA_Latency.runs/ILA_Latency_pulse_rise_fall_0_0_synth_1'
+HD_PWD='D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/ILA_Latency_pulse_rise_fall_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -29,7 +29,6 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths d:/depot/Projects/ETF_2021/clock_enabler/clock_enabler.srcs/sources_1/imports/sources [current_project]
-update_ip_catalog
 set_property ip_output_repo d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/hdl/ILA_Latency_wrapper.v
@@ -61,7 +60,7 @@ set_property used_in_implementation false [get_files D:/depot/Projects/ETF_2021/
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
-set_param ips.enableIPCacheLiteLoad 1
+set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
 synth_design -top ILA_Latency_wrapper -part xc7z010clg400-1

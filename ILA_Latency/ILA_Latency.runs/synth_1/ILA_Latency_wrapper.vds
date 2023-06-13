@@ -1,9 +1,9 @@
 #-----------------------------------------------------------
-# Vivado v2018.3 (64-bit)
-# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
-# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed May 31 20:33:27 2023
-# Process ID: 5876
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jun 12 19:50:44 2023
+# Process ID: 428
 # Current directory: D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1
 # Command line: vivado.exe -log ILA_Latency_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ILA_Latency_wrapper.tcl
 # Log file: D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/ILA_Latency_wrapper.vds
@@ -13,32 +13,33 @@ source ILA_Latency_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/depot/Projects/ETF_2021/clock_enabler/clock_enabler.srcs/sources_1/imports/sources'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 309.625 ; gain = 79.652
 Command: synth_design -top ILA_Latency_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19272 
+INFO: Helper process launched with PID 14448 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 406.961 ; gain = 97.172
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 407.078 ; gain = 95.645
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_wrapper' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/hdl/ILA_Latency_wrapper.v:12]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/hdl/ILA_Latency_wrapper.v:21]
 INFO: [Synth 8-6157] synthesizing module 'ILA_Latency' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/synth/ILA_Latency.v:13]
-INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_c_counter_binary_1_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_c_counter_binary_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_c_counter_binary_1_0' (1#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_c_counter_binary_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_clk_wiz_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_clk_wiz_0_0' (2#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_ila_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_ila_0_0' (3#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_c_counter_binary_1_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_c_counter_binary_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_c_counter_binary_1_0' (1#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_c_counter_binary_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_clk_wiz_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_clk_wiz_0_0' (2#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_ila_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_ila_0_0' (3#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_ila_0_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/synth/ILA_Latency.v:45]
-INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_ila_1_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_ila_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_ila_1_0' (4#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_ila_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_pulse_rise_fall_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_pulse_rise_fall_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_pulse_rise_fall_0_0' (5#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_pulse_rise_fall_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_util_vector_logic_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_util_vector_logic_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_util_vector_logic_0_0' (6#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-5876-robertPC/realtime/ILA_Latency_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_ila_1_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_ila_1_0' (4#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_pulse_rise_fall_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_pulse_rise_fall_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_pulse_rise_fall_0_0' (5#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_pulse_rise_fall_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ILA_Latency_util_vector_logic_0_0' [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_util_vector_logic_0_0' (6#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/.Xil/Vivado-428-robertPC/realtime/ILA_Latency_util_vector_logic_0_0_stub.v:6]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/synth/ILA_Latency.v:40]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'pulse_rise_fall_0'. This will prevent further optimization [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/synth/ILA_Latency.v:49]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'clk_wiz_0'. This will prevent further optimization [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/synth/ILA_Latency.v:35]
@@ -48,7 +49,7 @@ INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance '
 INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency' (7#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/synth/ILA_Latency.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'ILA_Latency_wrapper' (8#1) [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/hdl/ILA_Latency_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 461.934 ; gain = 152.145
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 460.859 ; gain = 149.426
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -61,10 +62,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 461.934 ; gain = 152.145
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 460.859 ; gain = 149.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 461.934 ; gain = 152.145
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 460.859 ; gain = 149.426
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -75,8 +76,8 @@ Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/source
 Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_clk_wiz_0_0/ILA_Latency_clk_wiz_0_0/ILA_Latency_clk_wiz_0_0_in_context.xdc] for cell 'ILA_Latency_i/clk_wiz_0'
 Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_ila_0_0/ILA_Latency_ila_0_0/ILA_Latency_ila_0_0_in_context.xdc] for cell 'ILA_Latency_i/ila_0'
 Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_ila_0_0/ILA_Latency_ila_0_0/ILA_Latency_ila_0_0_in_context.xdc] for cell 'ILA_Latency_i/ila_0'
-Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_1_0_in_context.xdc] for cell 'ILA_Latency_i/c_counter_binary_1'
-Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_1_0_in_context.xdc] for cell 'ILA_Latency_i/c_counter_binary_1'
+Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_0_0_in_context.xdc] for cell 'ILA_Latency_i/c_counter_binary_1'
+Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_1_0/ILA_Latency_c_counter_binary_0_0_in_context.xdc] for cell 'ILA_Latency_i/c_counter_binary_1'
 Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_ila_1_0/ILA_Latency_ila_1_0/ILA_Latency_ila_1_0_in_context.xdc] for cell 'ILA_Latency_i/ila_1'
 Finished Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_ila_1_0/ILA_Latency_ila_1_0/ILA_Latency_ila_1_0_in_context.xdc] for cell 'ILA_Latency_i/ila_1'
 Parsing XDC File [d:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.srcs/sources_1/bd/ILA_Latency/ip/ILA_Latency_util_vector_logic_0_0/ILA_Latency_util_vector_logic_0_0/ILA_Latency_util_vector_logic_0_0_in_context.xdc] for cell 'ILA_Latency_i/util_vector_logic_0'
@@ -89,24 +90,21 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/ILA_Latency_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 730.355 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 730.355 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 730.355 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 730.355 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 731.215 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 730.355 ; gain = 420.566
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 731.215 ; gain = 419.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 730.355 ; gain = 420.566
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 731.215 ; gain = 419.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -121,10 +119,10 @@ Applied set_property DONT_TOUCH = true for ILA_Latency_i/ila_1. (constraint file
 Applied set_property DONT_TOUCH = true for ILA_Latency_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ILA_Latency_i/pulse_rise_fall_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 730.355 ; gain = 420.566
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 731.215 ; gain = 419.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 730.355 ; gain = 420.566
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 731.215 ; gain = 419.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -160,7 +158,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 730.355 ; gain = 420.566
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 731.215 ; gain = 419.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -174,13 +172,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'ILA_Latency_i/clk_wiz_0/clk_out1' to pin 'ILA_Latency_i/clk_wiz_0/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 775.320 ; gain = 465.531
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 774.914 ; gain = 463.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 775.320 ; gain = 465.531
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 774.914 ; gain = 463.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -192,7 +190,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 774.914 ; gain = 463.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -216,7 +214,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -229,7 +227,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -241,25 +239,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -298,25 +296,25 @@ Report Instance Areas:
 |2     |  ILA_Latency_i |ILA_Latency |    37|
 +------+----------------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 776.043 ; gain = 464.609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 784.988 ; gain = 206.777
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 784.988 ; gain = 475.199
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 776.074 ; gain = 194.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 776.074 ; gain = 464.641
 INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.383 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+38 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 794.520 ; gain = 486.578
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 794.520 ; gain = 0.000
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 793.723 ; gain = 484.098
+WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.runs/synth_1/ILA_Latency_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ILA_Latency_wrapper_utilization_synth.rpt -pb ILA_Latency_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 31 20:33:52 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 793.949 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 12 19:51:15 2023...

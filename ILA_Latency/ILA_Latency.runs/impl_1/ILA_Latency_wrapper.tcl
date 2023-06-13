@@ -71,7 +71,6 @@ set rc [catch {
   set_property webtalk.parent_dir D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.cache/wt [current_project]
   set_property parent.project_path D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.xpr [current_project]
   set_property ip_repo_paths D:/depot/Projects/ETF_2021/clock_enabler/clock_enabler.srcs/sources_1/imports/sources [current_project]
-  update_ip_catalog
   set_property ip_output_repo D:/depot/Projects/ETF_2021/ILA_Latency/ILA_Latency.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
