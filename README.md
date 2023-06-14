@@ -253,9 +253,69 @@
     tcl script: 
        \ETF_2021\_tcl_scripts\run_vio_latency_and_throughput.tcl
        
-## ILA_Trigger
-    ToDo: overview
 ## ILA_Interrupt
+    What is this?
+        A Vivado FPGA Project with an SDK (2018.2) component.
+        This is a generic and modular AXI interfaced interrupt generator. 
+        This is connected to the Sampler IP or Injector IP and notifes the Zynq processor that data needs 
+        to be unloaded (or loaded) from/to the PL. The project presents a semi-modular approach to 
+        HW interrupt generation and handling ("semi-modular" given the HW interrupt is a standalone AXI
+        interfaced module instead of residing natively in each custom IP, but still requires Zynq interaction
+        for servicing.)
+    What results in the paper does this correspond to?
+        This is a standalone hardware bench test for interrupt generation and servicing.
+    How to get the results?
+        Generate a bitstream for the ILA_interrupt project in Vivado.
+        Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+        Export to "local to project."
+        Launch SDK 2018.2 from Vivado.
+        
+        I did encounter this warning (but presently it seems this can be ignored.)
+        Could not write metadata for '/RemoteSystemsTempFiles'.
+        ETF_2021\ILA_Interrupt\ILA_Interrupt.sdk\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap 
+        (The system cannot find the path specified)
+    
+        From Vivado, open the hardware target and program the bitstream on the Zybo board, be sure to include
+        the debug probe file /ILA_Interrupt_wrapper.ltx
+        
+        When you fist program the FPGA you may get an error message
+        "WARNING: [Labtools 27-3361] The debug hub core was not detected." 
+        This can be ignored safely for now.
+        
+        In SDK Connect to serial port with the following settings:
+        Baud Rate: 11520, Data Bits: 8, Stop Bits: 1, Parity: None, Flow Control: None 
+        
+        In SDK run 1 GDB Debugger using Debug_ILA_interrupt.elf
+
+         In the SDK Terminal you should see the following output: 
+         waiting...
+         Interrupt triggered through AXI GPIO
+         Interrupt IP cleared
+         waiting...
+         Interrupt triggered through AXI GPIO
+
+        
+        Go back and refesh the FPGA Hardware Target in Vivado. 
+        Click on "Run Trigger" in the ILA window.
+        
+        Within a few seconds the ILA will fill up, AXI probes should already be present
+        in the waveform list as well as captured AXI transactions.
+        
+    What you should know about this project:
+        Report IP status should already be up to date.
+        Synthesis and Implementation are out of date, click on the "Generate Bitstream"
+        (although this is not entirely necessary to generate a resource utilization report.) 
+        The interrupt is triggered with a simple pulse and propagates to the output and
+        remains high until cleared from the AXI bus-to PL. 
+        In this project a simple program was written for test purposes to
+        trigger the interrupt from an axi gpio block, wait, and then disable, acknowledge, 
+        and re-enable the AXI interrupt IP.
+        
+    References:
+    Project: 
+        ETF_2021/ILA_Interrupt/
+        
+## ILA_Trigger
     ToDo: overview
 ## ILA_ClockDivider
     ToDo: overview  
