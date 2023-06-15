@@ -316,7 +316,98 @@
         ETF_2021/ILA_Interrupt/
         
 ## ILA_Trigger
-    ToDo: overview
+    What is this?
+           A Vivado FPGA Project with an SDK (2018.2) component.
+           This is a modular AXI interfaced programmable Trigger generator. 
+           This is connected to the Sampler IP or Injector IP and generates a trigger
+           when programmable conditions are met.
+    What results in the paper does this correspond to?
+           This is a standalone hardware bench test for trigger generation.
+    How to get the results?
+           Generate a bitstream for the ILA_Trigger project in Vivado.
+           Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+           Export to "local to project."
+           Launch SDK 2018.2 from Vivado.
+        
+        I did encounter this warning (but presently it seems this can be ignored.)
+        Could not write metadata for '/RemoteSystemsTempFiles'.
+        C:\CloneETF_2021\ETF_2021\ILA_Trigger\ILA_Trigger.sdk\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap 
+        (The system cannot find the path specified)
+    
+        From Vivado, open the hardware target and program the bitstream on the Zybo board, be sure to include
+        the debug probe file /ILA_Trigger_wrapper.ltx
+        
+        When you fist program the FPGA you may get an error message
+        "WARNING: [Labtools 27-3361] The debug hub core was not detected." 
+        This can be ignored safely for now.
+        
+        In SDK Connect to serial port with the following settings (go to the SDK Terminal and click "+" add button):
+        Baud Rate: 11520, Data Bits: 8, Stop Bits: 1, Parity: None, Flow Control: None 
+        (Use the correct COM port connection.) 
+        If you can't find the terminal window in SDK go to: 
+        Window->Show View-> Other and select the terminal folder and then the Terminal icon.
+        Open a "Serial Connection" with the terminal settings above.
+        
+        In SDK run 1 GDB Debugger using Debug_ILA_Trigger.elf
+
+        Once running you should see an output in the terminal window
+        similar to the following: 
+         ...
+         Configure and enabled: 62
+         waiting...
+         Asserting Trigger by GPIO
+         waiting for some time
+         Resetting Trigger SC register
+         Trigger SCRegister: 0
+         Pre-trigger delay count set to 17
+         Pre-trigger delay count: 17
+         Post trigger assert count set to 23
+         Post trigger assert count: 23
+         Setting Trigger conditions and enabling 0x111110
+         Configure and enabled: 62
+         waiting...
+         Asserting Trigger by GPIO
+         waiting for some time
+         Resetting Trigger SC register
+         Trigger SCRegister: 0
+         Pre-trigger delay count set to 17
+         Pre-trigger delay count: 17
+         Post trigger assert count set to 23
+         Post trigger assert count: 23
+         Setting Trigger conditions and enabling 0x111110
+         Configure and enabled: 62
+         waiting...
+         Asserting Trigger by GPIO
+         ... and so on.. 
+
+        if you get the following from SDK: 
+            ERROR	: AP transaction error, DAP status f0000021
+        Press the PORB button to clear the FPGA progamming and then PS-SRST button to clear the PS programming.
+        
+        Go back and reporgram the FPGA In Vivado.
+        Go back and reprogram the PS in SDK.
+        Click on "Refresh Device" in the Hardware manager with Xc7z010 selected in the Hardware window.
+        
+        Configure the Trigger setup for hw_ila_1 to trigger on slot_0: axi_smc_M00_AXI:WVALID and == 1'b1 
+        Then click on "Run Trigger" in the ILA window.
+        
+        Within a few seconds the ILA will fill up, AXI probes should already be present
+        in the waveform list as well as captured AXI transactions.
+        Other Axi transactions can be explored here by modifying the trigger value.
+        
+        
+    What you should know about this project:
+        Report IP status should already be up to date.
+        Synthesis and Implementation are out of date, click on the "Generate Bitstream"
+        (although this is not entirely necessary to generate a resource utilization report.) 
+        Getting the FPGA PL programmed and SDK running PS can be a little frustrating (and requires going back and forth.)
+        There is probably a better method of getting this working but I'm not currently aware of what that is exactly.
+        Bringing up the Terminal window can be difficult if you don't know exactly where to look for it (but is outlined above.)
+        
+    References:
+    Project: 
+        ETF_2021/ILA_Trigger/
+
 ## ILA_ClockDivider
     ToDo: overview  
 ## TestMultiReg
