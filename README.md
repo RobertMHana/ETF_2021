@@ -409,7 +409,63 @@
         ETF_2021/ILA_Trigger/
 
 ## ILA_ClockDivider
-    ToDo: overview  
+    What is this?
+        A Vivado FPGA Project with an SDK (2018.2) component.
+        This is a modular AXI interfaced programmable clock divider
+        that generates a clock enable output.
+    What results in the paper does this correspond to?
+        The modular AXI clock divider.
+    How to get the results?
+        Generate the bitstream and load onto the Zybo board.
+        Be sure to program the FPGA with both the bitstream and the ILA_ClockDivider_wrapper.ltx file.
+        Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+        Export to "local to project."
+        Launch SDK 2018.2 from Vivado. Launch from xssdk.bat in the Xilinx/SDK/2018.2/bin directory if 
+        SDK seems to close itself when attempting to launch from vivado and import the project
+        from \ETF_2021\ILA_ClockDivider\ILA_ClockDivider.sdk (This should normally not be necessary, but
+        I did experience issues with SDK closing itself when attempting to launch from Vivado.)
+        
+        Create a "Xilinx C/C++ Application (GDB)" from Run configuration in Run->Run Configurations.
+        Hardware Platform: ILA_ClockDivider_wrapper_hw_platform_0
+        Bitstream file:ETF_2021\ILA_ClockDivider\ILA_ClockDivider.runs\impl_1\ILA_ClockDivider_wrapper.bit
+        Initialization File: ps7_init.tcl
+        In the Target Setup select "Reset entire system"
+        In the application tab, select "check the box" next to ps7_cortex9a_0
+        Uncheck Reset entire system.
+        Uncheck Program FPGA.
+        
+        When you fist program the FPGA you may get an error message
+        "WARNING: [Labtools 27-3361] The debug hub core was not detected." 
+        This can be ignored safely for now.
+        
+        In SDK Connect to serial port with the following settings (go to the SDK Terminal and click "+" add button):
+        Baud Rate: 11520, Data Bits: 8, Stop Bits: 1, Parity: None, Flow Control: None 
+        (Use the correct COM port connection.) 
+        If you can't find the terminal window in SDK go to: 
+        Window->Show View-> Other and select the terminal folder and then the Terminal icon.
+        Open a "Serial Connection" with the terminal settings above.
+        
+        In SDK run 1 GDB Debugger using "GDB Debugger on Local" on the default name given to the run configuration.
+        
+        Output from the SDK console: 
+        Trigger SCRegister: 100000000
+        Trigger SCRegister: 4
+        
+        Select a Trigger Setup for ClockDivider_0_clk_en_out signal, equal to rising edge.
+        Then Run the the trigger.
+
+    What you should know about this project:
+        The clock divider assumes synchronous design.
+        An ILA is interfaced to the clock enable "clk_en_out" of the ClockDivider IP.
+        Report IP status should already be up to date.
+        Synthesis and Implementation may be out of date, click on the "Generate Bitstream"
+        if the bitstream is  not generated.
+        The print to the SDK Serial console will only occur once, however the clock enable rates are
+        changed frequently.
+  
+    References:
+    Project: 
+        ETF_2021/ILA_ClockDivider/ 
 ## TestMultiReg
     ToDo: overview 
 ## SystemILATest
