@@ -467,7 +467,19 @@
     Project: 
         ETF_2021/ILA_ClockDivider/ 
 ## TestMultiReg
-    ToDo: overview 
+    What is this?
+        A Vivado FPGA Project with an SDK (2018.2) component.
+        This is an integrated hardware bench test of the Sampler, Injector, 
+        clock divider, and interrupt generator.
+    What results in the paper does this correspond to?
+         Demonstrates basic functionality of IP in a system.
+    How to get the results?
+         (Currently in review)
+    What you should know about this project:
+         (Currently in review)
+    References:
+    Project: 
+        ETF_2021/TestMultiReg/ 
 ## SystemILATest
     ToDo: overview 
 ## SystemILBTest
