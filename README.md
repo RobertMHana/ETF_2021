@@ -466,20 +466,69 @@
     References:
     Project: 
         ETF_2021/ILA_ClockDivider/ 
+        
 ## TestMultiReg
     What is this?
         A Vivado FPGA Project with an SDK (2018.2) component.
-        This is an integrated hardware bench test of the Sampler, Injector, 
-        clock divider, and interrupt generator.
+        This is an integrated hardware bench demonstration of the Sampler, Injector, 
+        clock divider, and interrupt generator in action. Latency data is printed 
+        to the serial terminal. 
+        
     What results in the paper does this correspond to?
-         Demonstrates basic functionality of IP in a system.
+         Demonstrates basic functionality of IP in a system. The Injector output is interfaced 
+         to the input of the Sampler. 
+         
     How to get the results?
-         (Currently in review)
+        Generate a bitstream for the ILA_Trigger project in Vivado.
+        Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+        Export to "local to project."
+        Launch SDK 2018.2 from Vivado.
+        Edit the run configuration to program the FPGA in the Target Setup tab.
+        
+        Open a serial terminal soon after starting the run configuration.
+
+         -------------------------- INJECTOR TEST COUNTER REGS   --------------------------- 
+         Injector  counter_awvalid value is currently at 0x7AA0000C is 0 
+         Injector  counter_awready value is currently at 0x7AA00010 is 0 
+         Injector  counter_wlast value is currently at 0x7AA00014 is 417972353 
+         Injector  counter_wvalid value is currently at 0x7AA00018 is 0 
+         Injector  counter_wready value is currently at 0x7AA0001C is 0 
+         --------------------------------------------------------------------------------- 
+         Injector  counter_awvalid value is currently at 0x7AA0000C is 2 
+         Injector  counter_awready value is currently at 0x7AA00010 is 1 
+         Injector  counter_wlast value is currently at 0x7AA00014 is 559550967 
+         Injector  counter_wvalid value is currently at 0x7AA00018 is 2 
+         Injector  counter_wready value is currently at 0x7AA0001C is 0 
+
+        .. Loop. Wait for interrupts... periodically read the status registers..Sampler  Read value at 0x7AA00004 is 64 
+        Injector Read value at 0x7AA10004 is 2 
+        Injector Timer ticks are: 258436 
+        Sampler Timer ticks are: 0 
+        Injector Elapsed clock cycles are: 516872 
+        Sampler  Elapsed clock cycles are: 0 
+         Enabling only the injectorInjector Latency between reads is: 795155.875000 ns
+        Sampler  Latency between reads is: 0.000000 ns
+        ...Sampler  Read value at 0x7AA00004 is 64 
+        Injector Read value at 0x7AA10004 is 2 
+        Injector Timer ticks are: 258388 
+        Sampler Timer ticks are: 255471 
+        Injector Elapsed clock cycles are: 516776 
+        Sampler  Elapsed clock cycles are: 510942 
+        Injector Latency between reads is: 795008.187500 ns
+        Sampler  Latency between reads is: 786033.187500 ns
+
     What you should know about this project:
-         (Currently in review)
-    References:
-    Project: 
-        ETF_2021/TestMultiReg/ 
+        Report IP status should already be up to date.
+        Synthesis and Implementation are out of date, click on the "Generate Bitstream" to generate a bitstream.
+        AXITrigger_0/trigger_input and /AXI_Sampler_0/trigger are not connected, you will see a [BD 41-759] Critical warning.
+        The printed counter values wrap over the 32 bit integer limit and will report negative numbers during initialization.
+        There is no ILA or VIO associated with this project.
+        Re-running may require power cycling the board and reprogramming the 
+        PS and PL through SDK (i.e. encountering "AP transaction timeout"
+          
+        References:
+        Project: 
+            ETF_2021/TestMultiReg/
 ## SystemILATest
     ToDo: overview 
 ## SystemILBTest
