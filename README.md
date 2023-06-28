@@ -640,15 +640,23 @@
     What results in the paper does this correspond to?
        There are no particular results for this project but to simply showcase functionality of the IP.
     How to run this demo?
+       Refresh the IP Status after prompted to (everything should already be up-to-date in spite of the IP Status warning.)
+       Synthesis and Implementation are out of date, click on "Generate Bitsream."
+       Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+       Export to "local to project."
+       Launch SDK 2018.2 from Vivado.
+       On the "Target Setup" tab of the "GDB Debugger using Debug_EmbeddedTestFramework.elf on Local" run configuration
+       ensure "Program FPGA"  is selected (Click "Apply" then "run.")
        Connect a VGA monitor to the VGA port on the Zybo board and load the bitstream.
-       The dip switches correspond to different showcase functions.
-       Additional information will be available on the Wiki.
+       The dip switches correspond to different showcase functions, see line 354 of main.c
+           
     What you should know about this project:
        The initial upload of this project to github was a port attempt to the ZCU104 and was built with Vivado 2020.2
        The project has since been reverted back to an original version targeting the Zybo board, and built with Vivado 2018.2
        A VGA capable monitor is required to see the display.
        A C-coded display library has been included, this was written by Robert Umbehant (github user "wheresjames", ezdib@wheresjames.com)
        This library has been included for display demo purposes in the SDK portion of this project.
+       The timing constraints are missing from this project.
        
     References:
     Project: 
