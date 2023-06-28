@@ -577,7 +577,62 @@
             ETF_2021/SystemILATest/
             
 ## SystemILBTest
-    ToDo: overview 
+    What is this?
+        A Vivado FPGA Project with an SDK (2018.2) component.
+        This is an integrated hardware bench test used to measure the latency and throughput of the Sampler,
+        and the latency of the Timer.
+        ILA is included in the project to capture AXI transactions (see line 158 of main.c)
+        
+    What results in the paper does this correspond to?
+        These results correspond to latency and throughput measurements of the Sampler.
+         
+    How to get the results?
+        Generate a bitstream for the SystemILB_Test project in Vivado.
+        Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+        Export to "local to project."
+        Launch SDK 2018.2 from Vivado.
+        On the "Target Setup" tab of the "GDB Debugger using Debug_SystemILBTest.elf on Local" run configuration
+        ensure "Program FPGA"  is selected (Click "Apply" then "run.")
+        
+        In SDK Connect to serial port with the following settings:
+        Baud Rate: 11520, Data Bits: 8, Stop Bits: 1, Parity: None, Flow Control: None  
+
+        Once running the resulting output in the SDK Terminal console: 
+        (Re-run the run configuration with the serial port connection open to get the full test output.)
+        
+        sampler SCREGISTER value is currently at 0x7AA00004 is 0 
+        Enabling sampler.
+        sampler SCREGISTER value is currently at 0x7AA00004 is 10 
+        ********************* Latency Measurements *********************
+        PS_Clock is 50MHz, Clock speed of Private Timer is CLK_3x_2x or 250MHz with  Zynq set to 6:2:1
+        *************** Test of DMA burst length: 1    ******************
+                    Clock Cycles 
+        ---DMA burst size: 4
+                    1903 
+                    1457 
+                    1392 
+                    1384 
+                    1380 
+        average values is: 1503
+        
+         To modify the test, change select the appropriate #define 
+         statement on lines 82, 83, and 84 of main.c (select one or the other.)
+
+
+    What you should know about this project:
+        The "Report IP" Status shows the IP Status is up-to-date.
+        Timing constraints are missing from this project.
+        Utility reduction blocks have been included to prevent optimization from removing logic.
+        This project is very similar to the SystemILA_Test; however the Sampler performance is characterized
+        instead of the injector.
+        The default test is defined as TEST_LATENCY, and not TEST_THROUGHPUT (This is why the output appears
+        different than the SystemILATest, recompile with TEST_THROUGHPUT defined instead of TEST_LATENCY to 
+        get latency results.)
+        
+        References:
+        Project: 
+            ETF_2021/SystemILBTest/
+            
 ## EmbeddedTestFramework 
     What is this? 
         A Vivado FPGA project with an SDK component. 
