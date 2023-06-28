@@ -647,7 +647,7 @@
        Launch SDK 2018.2 from Vivado.
        On the "Target Setup" tab of the "GDB Debugger using Debug_EmbeddedTestFramework.elf on Local" run configuration
        ensure "Program FPGA"  is selected (Click "Apply" then "run.")
-       Connect a VGA monitor to the VGA port on the Zybo board and load the bitstream.
+       Be sure a VGA monitor is connected to the VGA port on the Zybo board.
        The dip switches correspond to different showcase functions, see line 354 of main.c
            
     What you should know about this project:
