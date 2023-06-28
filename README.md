@@ -530,7 +530,52 @@
         Project: 
             ETF_2021/TestMultiReg/
 ## SystemILATest
-    ToDo: overview 
+    What is this?
+        A Vivado FPGA Project with an SDK (2018.2) component.
+        This is an integrated hardware bench test used to measure the latency and throughput of the Injector,
+        and the latency of the Timer.
+        ILA is included in the project to capture AXI transactions (see line 158 of main.c)
+        
+    What results in the paper does this correspond to?
+        These results correspond to latency and throughput measurements of the Injector.
+         
+    How to get the results?
+        Generate a bitstream for the SystemILA_Test project in Vivado.
+        Export Hardware (including the bitstream) using "export" from the File dropdown menu.
+        Export to "local to project."
+        Launch SDK 2018.2 from Vivado.
+        On the "Target Setup" tab of the "GDB Debugger using Debug_SystemILATest.elf on Local" run configuration
+        ensure "Program FPGA"  is selected (Click "Apply" then "run.")
+        
+        In SDK Connect to serial port with the following settings:
+        Baud Rate: 11520, Data Bits: 8, Stop Bits: 1, Parity: None, Flow Control: None  
+
+        Once running the resulting output in the SDK Terminal console: 
+        (Re-run the run configuration with the serial port connection open to get the full test output.)
+        
+        ***********************
+         initial timerValue = 250000000
+         final timerValue = 0
+         DMA Done Handler finished this number of times; DmaDoneCounts = 233755
+         Size of each burst: 4
+         Total AXI data transaction length: 8 32 bit words
+         Time: 1 second
+         Bytes Transferred: 7480160
+         Throughput: 7.480160 MBytes / second
+         
+         To modify the test, change select the appropriate #define 
+         statement on lines 82, 83, and 84 of main.c (select one or the other.)
+
+
+    What you should know about this project:
+        The "Report IP" Status shows the IP Status is up-to-date.
+        Timing constraints are missing from this project.
+        Utility reduction blocks have been included to prevent optimization from removing logic.
+        
+        References:
+        Project: 
+            ETF_2021/SystemILATest/
+            
 ## SystemILBTest
     ToDo: overview 
 ## EmbeddedTestFramework 
